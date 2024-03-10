@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+.section-profile__name{
+padding: 0 48px;
+margin:80px auto;
+display: block;
+}
+.section-profile__name-text{
+	text-align: left;
+}
+
+.section-profile__name h1{
+font-size: 3.2rem;
+line-height: 4.8rem; /* 100% */	
+}
+.section-profile__name p{
+color: rgba(0, 0, 0, 0.50);
+}
+
+.section-profile__image-body{
+position: relative;
+margin: 0;	
+}
+.section-profile__image{
+width: 260px;
+height: 260px;
+}
+.section-profile{
+padding: 0 48px;
+text-align: left;
+margin-bottom:120px ;
+}
+
+.section-profile h2{
+margin: 40px 0;
+}
+
+.section-profile__aboutme{
+	border-bottom: 2px dotted #030303;
+	border-top: 2px dotted #030303;
+	padding-bottom: 40px;
+}
+
+.section-profile__exhibition{
+	border-bottom: 2px dotted #030303;
+	padding-bottom: 40px;
+}
+
+.section-profile__biography{
+	border-bottom: 2px dotted #030303;
+	padding-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
