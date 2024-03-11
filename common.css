@@ -1,5 +1,18 @@
 @charset "UTF-8";
 /* CSS Document */
+
+@font-face
+{
+font-family: Shippori Mincho;
+src: 
+   url('https://cdn.leafscape.be/Harenosora/harenosora_web.woff2') format("woff2");
+}
+.shippori-mincho-regular {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 html {
   font-size: 62.5%; /* 16px * 62.5% = 10px */
   width: 100%; 
@@ -40,12 +53,14 @@ body {
   text-align: left;
   top: 0;
   width: 112px;
+  padding-top: 8px;
   }
   
   .label .n{
   color:#009dbf;
   display: inline-block;
   width: 6%;
+  padding-right: 1.4px;
   }
   .label .another{
   color:#000000;
@@ -60,7 +75,7 @@ body {
   position: relative;}
   
   .header-content-wrapper .contents-text{
-  top: 48px;
+  top: 38px;
   width: 120px;
   text-align: center;
   position: absolute;
@@ -91,9 +106,22 @@ body {
   .line-3{
   top: 0px;
   }
-  .footer-content-wrapper{
-    text-align: right;
-    padding: 0 48px;
-    margin: 40px 0;
-  }
-  
+
+
+  /*footer*/
+.footer {
+  height: 80px;
+  padding:40px 0;
+  border-top:1px solid #030303; 
+}
+
+.footer-content-wrapper{
+  text-align: right;
+  padding: 0 24px; 
+}
+
+.footer__copyright {
+  width: 100%;
+  color:#d9d9d9;
+
+}

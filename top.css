@@ -29,7 +29,7 @@
 }
 
 .section-top__image-2 {
-	background-image: url("photo/ikisinani.JPG");
+	background-image: url("photo/utuwaskyorange.jpg");
 }
 
 .section-top__image-3 {
@@ -58,22 +58,22 @@
 	/*--tick-duration・--tick-delayの変数に値がある場合は変数の値が優先させる*/
 	&:nth-child(odd) {
 		.loop03__box:not(.no-tick) & {
-		animation: MoveLeft var(--tick-duration, 24s) var(--tick-delay, -12s) infinite linear;
+		animation: MoveLeft var(--tick-duration, 60s) var(--tick-delay, -30s) infinite linear;
 		}
 	  }
 	  &:nth-child(even) {
 		.loop03__box:not(.no-tick) & {
-		animation: MoveLeft2 var(--tick-duration, 24s) infinite linear;
+		animation: MoveLeft2 var(--tick-duration, 30s) infinite linear;
 		}
 	  }
 	}
 	
 
 .loop03__item:nth-child(odd) {
-    animation: loop 24s -12s linear infinite; /*24秒かけて-12秒後に無限ループさせる*/
+    animation: loop 60s -30s linear infinite; /*24秒かけて-12秒後に無限ループさせる*/
 }
 .loop03__item:nth-child(even) {
-    animation: loop2 24s linear infinite; /*24秒かけて無限ループさせる*/
+    animation: loop2 60s linear infinite; /*24秒かけて無限ループさせる*/
 }
 
 @keyframes loop {
