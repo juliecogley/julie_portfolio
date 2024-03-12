@@ -179,7 +179,7 @@ body {
 	  padding: 100px 0 0 0;
 	  margin: 0 auto;
 	  transform: translateX(-105%);
-	  transition: 0.3s ease-in-out;
+	  transition: 0.7s ease-in-out;
 	  box-shadow: 5px 0 25px rgba(0, 0, 0, 0.55);
 
 	}
