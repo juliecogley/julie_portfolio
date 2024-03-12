@@ -66,15 +66,18 @@ body {
   color:#000000;
   }
   
-  .header-content-wrapper .contents-rectangle{
+  .contents-rectangle{
   background-color: #d9d9d9;
   height: 80px;
     left: 0;
-    top: 0;
+    top: -80px;
     width: 120px;
-  position: relative;}
+  position: relative;
+  z-index: 999;
+  margin: 0 auto;
+}
   
-  .header-content-wrapper .contents-text{
+  .contents-text{
   top: 38px;
   width: 120px;
   text-align: center;
