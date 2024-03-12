@@ -269,6 +269,9 @@ body {
 
 .footer__copyright {
   width: 100%;
-  color:#d9d9d9;
+  color:#030303;
 
+}
+.footer .instagram{
+  text-decoration-line: none;
 }
