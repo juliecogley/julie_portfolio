@@ -91,6 +91,7 @@ body {
   position:relative;
   top: 50%;
   width: 32px;
+  display: none;
   }
   
   .line-1,.line-2,.line-3{
@@ -109,6 +110,118 @@ body {
   .line-3{
   top: 0px;
   }
+
+
+
+	/*ハンバーガーアイコン*/
+	#nav-drawer {
+	  padding: 10px 24px 0 0;
+	  text-align: right;
+	  position: relative;
+	 
+	}
+  
+	.none{
+		display: none;
+	}
+	#nav-open {
+	  display: inline-block;
+	  vertical-align: middle;
+	  width: 30px;
+	  height: 22px;
+	 position: relative;
+	  top: -62px;
+
+	}
+  
+	#nav-open span,
+	#nav-open span:before,
+	#nav-open span:after {
+	  position: absolute;
+	  height: 2px;
+	  width: 32px;
+	  background-color: #777;
+	  display: block;
+	  content: "";
+	}
+  
+	#nav-open span:before {
+	  bottom: -8px;
+	}
+  
+	#nav-open span:after {
+	  bottom: -16px;
+	}
+  
+	#nav-close {
+	  z-index: 999;
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	
+	  opacity: .5;
+	}
+  
+	#nav-content {
+	  display: block;
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  z-index: 999;
+	  width: 90%;
+	  height: 100%;
+	 
+	  background-color:#A4E0E8;
+	  text-align: center;
+	  padding: 100px 0 0 0;
+	  margin: 0 auto;
+	  transform: translateX(-105%);
+	  transition: 0.3s ease-in-out;
+	  box-shadow: 5px 0 25px rgba(0, 0, 0, 0.55);
+
+	}
+  
+	.nav-drawer__title {
+	  font-size: 1.2rem;
+	  font-weight: 600;
+	  display: block;
+	}
+  
+	.nav-drawer__link-top {
+	  display: inline-block;
+	  border-bottom: 1px #030303 solid ;
+	  border-top: 1px #030303 solid ;
+	  padding: 15px 40px;
+	}
+  
+	#nav-content ul li {
+	 
+	  margin: 0 auto 36px auto;
+	}
+  
+	#nav-content ul li a {
+	  text-decoration: none;
+	  font-size: 1.6rem;
+	  font-weight: 600;
+	  color: #333;
+	}
+  
+	#nav-input:checked~#nav-close {
+	  display: block;
+	}
+  
+	#nav-input:checked~#nav-content {
+	  transform: translateX(0%);
+	}
+  
+
+
+
+
+
+
 
 
   /*footer*/
