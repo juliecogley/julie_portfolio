@@ -84,6 +84,7 @@ body {
   position: absolute;
   }
   
+  	/*ハンバーガーアイコン(旧式)
   .header-content-wrapper .hamburger{
   height: 20px;
   right: 20px;
@@ -110,7 +111,7 @@ body {
   .line-3{
   top: 0px;
   }
-
+*/
 
 
 	/*ハンバーガーアイコン*/
