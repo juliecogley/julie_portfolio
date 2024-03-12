@@ -10,17 +10,10 @@ height: 375px;
     height: 100%;
     background-position:-145px 390px;
 	background-image: url("photo/obi.JPG");
-	transform: rotate(90deg);
+	/*transform: rotate(90deg);*/
 }
 
-.section-works__top-image{
-	width: 100%;
-    height: 100%;
-    background-color: black;
-    background-position:-145px 390px;
-	background-image: url("photo/obi.JPG");
-	transform: rotate(90deg);
-}
+
 .section-works__wrapper{
     padding: 0 24px;
     margin:120px auto 160px auto;
@@ -51,10 +44,6 @@ font-size: 2.0rem;
 	right: 7px;
 	bottom: 24px;
 }
-
-
-
-
 
 
 
