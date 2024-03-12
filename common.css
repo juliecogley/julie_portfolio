@@ -218,7 +218,37 @@ body {
 	}
   
 
+  	/*画面サイズ1060以上での指定*/
+  @media (min-width: 1060px) {
+  	#nav-open {
+      display: inline-block;
+      vertical-align: middle;
+      width: 60px;
+      height: 32px;
+     position: relative;
+      top: -50px;
+    }
+    #nav-open span,
+    #nav-open span:before,
+    #nav-open span:after {
+      position: absolute;
+      height: 2px;
+      width: 60px;
+      background-color: #777;
+      display: block;
+      content: "";
+    }
+    
+    #nav-open span:before {
+      bottom: -15px;
+    }
+    
+    #nav-open span:after {
+      bottom: -30px;
+    }
 
+
+  }
 
 
 
