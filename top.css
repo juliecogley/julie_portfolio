@@ -54,26 +54,27 @@
 	white-space: nowrap;
     padding-right: 25px;
     padding-left: 25px;
+	color:#009dbf;
 	
 	/*--tick-duration・--tick-delayの変数に値がある場合は変数の値が優先させる*/
 	&:nth-child(odd) {
 		.loop03__box:not(.no-tick) & {
-		animation: MoveLeft var(--tick-duration, 60s) var(--tick-delay, -30s) infinite linear;
+		animation: MoveLeft var(--tick-duration, 90s) var(--tick-delay, -45s) infinite linear;
 		}
 	  }
 	  &:nth-child(even) {
 		.loop03__box:not(.no-tick) & {
-		animation: MoveLeft2 var(--tick-duration, 30s) infinite linear;
+		animation: MoveLeft2 var(--tick-duration, 45s) infinite linear;
 		}
 	  }
 	}
 	
 
 .loop03__item:nth-child(odd) {
-    animation: loop 60s -30s linear infinite; /*24秒かけて-12秒後に無限ループさせる*/
+    animation: loop 90s -45s linear infinite; /*24秒かけて-12秒後に無限ループさせる*/
 }
 .loop03__item:nth-child(even) {
-    animation: loop2 60s linear infinite; /*24秒かけて無限ループさせる*/
+    animation: loop2 90s linear infinite; /*24秒かけて無限ループさせる*/
 }
 
 @keyframes loop {
@@ -109,6 +110,25 @@
 	top: -78px;
 	
 }
+
+@media(min-width:960px){
+	.section-top__name h1 {
+		font-size: 13rem;
+		font-weight: 550;
+		line-height: 8.5rem;
+		/* 116.667% */
+		position: relative;
+		top: -30px;
+		letter-spacing: 10px;
+	}
+	
+	.section-top__name-ruby{
+		position: relative;
+		top: -108px;
+		font-size: 3.0rem;
+		line-height: 4.5rem;
+		
+	}}
 
 	
 
