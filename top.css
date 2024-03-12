@@ -29,7 +29,7 @@
 }
 
 .section-top__image-2 {
-	background-image: url("photo/utuwaskyorange.jpg");
+	background-image: url("photo/kosame.JPG");
 }
 
 .section-top__image-3 {
@@ -37,7 +37,7 @@
 }
 
 .section-top__image-4 {
-	background-image: url("photo/kosame.JPG");
+	background-image: url("photo/utuwaskyorange.jpg");
 }
 
 .loop03__box {
@@ -95,18 +95,40 @@
 }
 
 .section-top__name h1 {
-	font-size: 4.8rem;
+	font-size: 4.0rem;
 	font-weight: 700;
 	line-height: 5.6rem;
 	/* 116.667% */
 	position: relative;
 	top: -30px;
+	letter-spacing: 10px;
 }
 
-.section-top__name p {
+.section-top__name-ruby{
 	position: relative;
-	top: -60px;
+	top: -78px;
+	
 }
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*cssだけでループさせる方法
