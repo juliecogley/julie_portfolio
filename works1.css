@@ -6,6 +6,9 @@
 	margin: 0 auto;
 }
 
+#nav-open{
+	top: -144px;
+	}
 .section-works1__top {
 	padding: 0 24px 0 24px;
 	margin: 80px 0 120px 0;
