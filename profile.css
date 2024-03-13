@@ -7,7 +7,6 @@
 
 #nav-open{
 top: -144px;
-
 }
 .section-works1__title {
 	max-width: 327px;
@@ -46,6 +45,29 @@ color: rgba(0, 0, 0, 0.50);
 padding-top: 24px;
 }
 
+
+
+/*画面サイズ1060以上での指定*/
+  @media (min-width: 1060px) {
+	.section-profile__name{
+display: flex;
+align-items: center;
+padding: 0 105px;
+	}
+
+	.section-profile__name-text h2{
+		font-size: 2.0rem;
+		line-height: 1.0rem; 
+
+		}
+		.section-profile__name p{
+			
+			font-size: 1.8rem;
+	
+			}
+
+
+}
 .section-works1__image-body {
 	width: 310px;
 	height: 210px;
@@ -106,6 +128,38 @@ margin: 40px 0;
 }
 
 
+/*画面サイズ1060以上での指定*/
+@media (min-width: 1060px) {
+	.section-profile{
+		max-width: 1060px;
+		/*327px+24+24=375px*/
+		display: flex;
+		padding: 0 105px;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+		gap: 35px;
+	}
+	.section-profile_wrapper1,.section-profile_wrapper2{
+		max-width: 560px;
+		text-wrap: wrap;
+		width: 50%;
+
+	}
+	.section-profile_wrapper1{
+		border-right: 1px solid #333;
+		padding-right: 35px;
+	}
+/*.section-profile__aboutme,.section-profile__exhibition,.section-profile__biography{
+	width: 375px;
+}*/
+.section-profile__aboutme,.section-profile__exhibition,.section-profile__biography{
+	border:none
+
+}
+
+	
+	
+}
 
 
 
