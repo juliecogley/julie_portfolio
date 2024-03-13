@@ -247,7 +247,16 @@ body {
       bottom: -30px;
     }
 
-
+    #nav-content ul li a {
+   
+      font-size: 3.2rem;
+      line-height:6.4rem;
+      font-weight: 600;
+ 
+    }
+    .nav-drawer__link-top {
+      padding: 15px 56px;
+    }
   }
 
 
