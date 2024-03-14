@@ -86,17 +86,12 @@ align-items: center;
 
 
 
-
-
-
-
-
 .section-works1__poem {
 	text-align: left;
 	padding: 40px 24px 0 24px;
 	border-top: 2px dotted #030303;
 	margin: 0 auto 120px auto; 
-	max-width:327px;
+	width: 50%;
 }
 .section-works1__poem p{
 	line-height: 2.4rem;
@@ -115,3 +110,14 @@ align-items: center;
     object-position: 0% 0%;	
 }
 
+
+  	/*画面サイズ1060以上での指定*/
+	  @media (min-width: 1060px) {
+		.section-works1__poem {
+			border: none;
+			-ms-writing-mode: tb-rl;  /* IE対応 */
+  writing-mode: vertical-rl;
+  text-orientation: upright; /* すべて縦方向に表示　英数字も縦に表示するなら upright、和文も横に表示するなら sideways を指定 */
+		}
+
+	  }
