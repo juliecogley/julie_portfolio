@@ -90,7 +90,7 @@ body {
 
 @media(min-width:1060px)  {
 .header-content-wrapper{
-  padding:0 50px;
+  padding:10px 50px 0 50px;
 }
 
 
@@ -98,6 +98,7 @@ body {
   .contents-rectangle{
    width:240px;
    height: 80px;
+   top: -90px;
   }
     
     .contents-text{
