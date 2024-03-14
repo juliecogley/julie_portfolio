@@ -52,10 +52,17 @@ display: flex;
 align-items: center;
 padding: 0 105px;
 align-items: center;
+margin-bottom: 0px;
 	}
 
+	.test{
+		width: 50%;
+		height: 100%;
+
+	}
 	.section-profile__name-text{
 		margin: 0px;
+		
 	}
 	.section-profile__name-text h1{
    font-size: 4.8rem;
@@ -96,10 +103,19 @@ margin: 0 auto;
 @media (min-width: 1060px) {
 	.section-profile__image-body{
 
-		width: 360px;
+		width: 50%;
 		height: 360px;
-		margin: 0 auto;
+		border-left:solid 1px; 
+		margin: 0;
 		}
+
+		.section-profile__image{
+			width: 80%;
+			height: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+
 }
 
 
@@ -164,7 +180,11 @@ margin: 40px 0;
 	border:none
 
 }
-
+.section-profile h2{
+	margin: 80px 0 40px 0;
+	font-size: 2.0rem;
+	}
+	
 	
 	
 }
