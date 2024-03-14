@@ -89,6 +89,12 @@ body {
   
 
 @media(min-width:1060px)  {
+.header-content-wrapper{
+  padding:0 50px;
+}
+
+
+
   .contents-rectangle{
    width:240px;
    height: 80px;
@@ -245,6 +251,7 @@ body {
       height: 32px;
      position: relative;
       top: -50px;
+      padding-right: 26px;
     }
     #nav-open span,
     #nav-open span:before,
