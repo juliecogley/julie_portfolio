@@ -87,6 +87,21 @@ body {
   font-weight: 600;
   }
   
+
+@media(min-width:1060px)  {
+  .contents-rectangle{
+   width:240px;
+   height: 80px;
+  }
+    
+    .contents-text{
+   width: 240px;
+    } 
+  
+}
+
+
+
   	/*ハンバーガーアイコン(旧式)
   .header-content-wrapper .hamburger{
   height: 20px;
