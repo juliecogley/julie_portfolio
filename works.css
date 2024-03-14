@@ -59,8 +59,8 @@ font-size: 2.0rem;
 	flex-direction: row-reverse;
 }
 .section-works__top{
-	width: 30vw;
-	height: 100%;}
+	width: 30%;
+	height: 2000px;}
 
 
 	.section-works__top-image{
@@ -76,8 +76,19 @@ font-size: 2.0rem;
 		margin:120px auto 160px auto;
 		text-align: left;
 		display: block;
+		width: 40%;
 	}
-
+	.section-works__wrapper h2{
+	font-size: 3.2rem;
+	}
+	.section-works__wrapper h3{
+		font-size: 2.4rem;
+		padding-top: 20px;
+		}
+		
+.section-works__index p{
+font-size: 2.0rem;
+}
 	}
 	
 
