@@ -53,40 +53,30 @@ align-items: center;
 padding: 0 105px;
 align-items: center;
 	}
+	.section-profile__name-text h1{
+   font-size: 4.8rem;
+   line-height: 2.0rem;
+	}
 
 	.section-profile__name-text h2{
-		font-size: 2.0rem;
-		line-height: 1.0rem; 
-
+		font-size: 2.4rem;
+  padding-top: 24px;
+  letter-spacing: 8px;
 		}
 		.section-profile__name p{
 			
-			font-size: 1.8rem;
+			font-size: 2.0rem;
 	
 			}
 
 
 }
-.section-works1__image-body {
-	width: 310px;
-	height: 210px;
-	max-width:327px;
-	margin: 0 auto;
-}
-
-.section-works1__image {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-    object-position: 0% 0%;	
-}
 
 
 .section-profile__image-body{
 
-width: 265px;
-height: 265px;
-max-width:327px;
+width: 260px;
+height: 260px;
 margin: 0 auto;
 }
 .section-profile__image{
@@ -95,6 +85,21 @@ margin: 0 auto;
 	object-fit: cover;
     object-position: 0% 0%;	
 }
+
+
+
+/*画面サイズ1060以上での指定*/
+@media (min-width: 1060px) {
+	.section-profile__image-body{
+
+		width: 360px;
+		height: 360px;
+		margin: 0 auto;
+		}
+}
+
+
+
 
 .section-profile{
 	max-width: 327px;
