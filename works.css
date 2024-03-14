@@ -51,4 +51,33 @@ font-size: 2.0rem;
 
 
 
+  	/*画面サイズ1060以上での指定*/
+	  @media (min-width: 1060px) {
+
+.section-works{
+	display: flex;
+	flex-direction: row-reverse;
+}
+.section-works__top{
+	width: 30vw;
+	height: 100%;}
+
+
+	.section-works__top-image{
+		
+
+		/*transform: rotate(90deg);*/
+		margin-top: 20px;
+	}
+	
+
+	.section-works__wrapper{
+		padding: 0 24px;
+		margin:120px auto 160px auto;
+		text-align: left;
+		display: block;
+	}
+
+	}
+	
 
