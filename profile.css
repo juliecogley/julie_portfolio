@@ -33,16 +33,14 @@ margin:80px 0 ;
 }
 
 .section-profile__name h1{
-font-size: 3.2rem;
-line-height: 4.8rem; 
+font-size: 2.4rem;
+line-height: 2.0rem; 
 }
-.section-profile__name-text h2{
-	line-height: 1.8rem; 
-	}
+
 
 .section-profile__name p{
 color: rgba(0, 0, 0, 0.50);
-padding-top: 24px;
+padding-top: 16px;
 }
 
 
@@ -53,6 +51,7 @@ padding-top: 24px;
 display: flex;
 align-items: center;
 padding: 0 105px;
+align-items: center;
 	}
 
 	.section-profile__name-text h2{
