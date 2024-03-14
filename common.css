@@ -19,13 +19,14 @@ html {
   width: 100%; 
 }
 body {
-  color: #333; /* RGB */
+  
   font-family:Shippori Mincho;
   font-weight: 500;
   font-size: 1.6em;
   line-height: 2.4rem;
   text-align: center;
 	background-color: #f7f2ea;
+  color: #212427;
 }
 
 
@@ -64,7 +65,7 @@ body {
   padding-right: 1.4px;
   }
   .label .another{
-  color:#000000;
+  color:#212427;
   }
   
   .contents-rectangle{
@@ -208,7 +209,7 @@ body {
 	  text-decoration: none;
 	  font-size: 1.6rem;
 	  font-weight: 600;
-	  color: #333;
+	  color:#212427;
 	}
   
 	#nav-input:checked~#nav-close {
@@ -270,7 +271,7 @@ body {
 .footer {
   height: 80px;
   padding:40px 0;
-  border-top:1px solid #030303; 
+  border-top:1px solid #212427;
 }
 
 .footer-content-wrapper{
@@ -280,7 +281,7 @@ body {
 
 .footer__copyright {
   width: 100%;
-  color:#030303;
+  color:#212427;
 
 }
 .footer .instagram{
