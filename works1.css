@@ -10,13 +10,12 @@
 	top: -144px;
 	}
 .section-works1__top {
-	padding: 0 24px 0 24px;
+	padding: 0 24px;
 	margin: 80px 0 120px 0;
 }
 
 .section-works1__title {
-	max-width: 327px;
-	/*327px+24+24=375px*/
+	width: 100%;
 	margin: 0 auto;
 	margin-bottom: 40px;
 	text-align: left;
@@ -52,6 +51,45 @@
 	object-fit: cover;
     object-position: 0% 0%;	
 }
+
+
+
+  	/*画面サイズ1060以上での指定*/
+	  @media (min-width: 1060px) {
+.section-works1__top{
+	display: flex;
+	padding: 0 150px;
+align-items: center;
+
+}
+.section-works1__title{
+	width: 50%;
+	margin: 0;
+		display: block;
+	
+	}
+	.section-works1__image-body{
+		width: 50%;
+		max-width: none;
+		height: 100%;
+		border-left: 1px solid #212427;
+		margin: 0;
+	}
+	.section-works1__image {
+		width: 80%;
+		margin: 0 auto;
+		display: block;
+	}
+
+
+}
+
+
+
+
+
+
+
 
 .section-works1__poem {
 	text-align: left;
