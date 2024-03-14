@@ -113,7 +113,7 @@ max-width: 327px;
 	.section-profile__image-body{
 
 		width: 50%;
-		height: 360px;
+		height: 100%;
 		border-left:solid 1px; 
 		margin: 0;
 		}
