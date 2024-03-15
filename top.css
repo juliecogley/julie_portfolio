@@ -98,17 +98,19 @@
 
 .section-top__name h1 {
 	font-size: 4.0rem;
-	font-weight: 700;
+	font-weight: 800;
 	line-height: 5.6rem;
 	/* 116.667% */
 	position: relative;
 	top: -30px;
 	letter-spacing: 10px;
+	color: #B93434;
 }
 
 .section-top__name-ruby{
 	position: relative;
 	top: -78px;
+	color: #009DBF;
 	
 }
 
