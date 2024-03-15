@@ -5,9 +5,9 @@
 	margin: 0 auto;
 }
 
-
-
-
+#nav-open{
+top: -144px;
+}
 .section-works1__title {
 	max-width: 327px;
 	/*327px+24+24=375px*/
@@ -21,7 +21,7 @@
 
 .section-profile__name{
 padding: 0 24px;
-margin:80px 0 ;
+margin:80px auto ;
 }
 
 .section-profile__name-text{
@@ -30,49 +30,105 @@ margin:80px 0 ;
 	margin: 0 auto;
 	margin-bottom: 40px;
 	text-align: left;
+	width: 60%;
 }
 
 .section-profile__name h1{
-font-size: 3.2rem;
-line-height: 4.8rem; 
+font-size: 2.4rem;
+line-height: 2.0rem; 
 }
-.section-profile__name-text h2{
-	line-height: 1.8rem; 
-	}
 
+.section-profile__name h2{
+	font-size: 1.8rem;
+	line-height: 2.0rem; 
+	padding-top: 10px;
+	}
+	
 .section-profile__name p{
 color: rgba(0, 0, 0, 0.50);
-padding-top: 24px;
+padding-top: 16px;
 }
 
-.section-works1__image-body {
-	width: 310px;
-	height: 210px;
-	max-width:327px;
-	margin: 0 auto;
-}
 
-.section-works1__image {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-    object-position: 0% 0%;	
+
+/*画面サイズ1060以上での指定*/
+  @media (min-width: 1060px) {
+	.section-profile__name{
+display: flex;
+padding: 0 105px;
+align-items: stretch;
+margin-bottom: 0px;
+justify-content: space-between;
+	}
+
+	.test{
+		width: 50%;
+	border-right: 1px solid #212427;
+
+	}
+	.section-profile__name-text{
+		margin: 0px;
+		
+	}
+	.section-profile__name-text h1{
+   font-size: 3.2rem;
+   line-height: 3.2rem;
+	}
+
+	.section-profile__name-text h2{
+		font-size: 2.0rem;
+		line-height: 2.0rem;
+  padding-top: 20px;
+
+		}
+		.section-profile__name p{
+			
+			font-size: 1.8rem;
+	padding-top: 20px;
+			}
+
+
 }
 
 
 .section-profile__image-body{
 
-width: 265px;
-height: 265px;
-max-width:327px;
+width: 60%;
+height: 100%;
 margin: 0 auto;
+max-width: 327px;
 }
 .section-profile__image{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
     object-position: 0% 0%;	
+	display: block;
 }
+
+
+
+/*画面サイズ1060以上での指定*/
+@media (min-width: 1060px) {
+	.section-profile__image-body{
+
+		width: 50%;
+		height: 100%;
+	
+		margin: 0;
+		}
+
+		.section-profile__image{
+			width: 80%;
+			height: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+
+}
+
+
+
 
 .section-profile{
 	max-width: 327px;
@@ -105,6 +161,42 @@ margin: 40px 0;
 }
 
 
+/*画面サイズ1060以上での指定*/
+@media (min-width: 1060px) {
+	.section-profile{
+		max-width: 1060px;
+		/*327px+24+24=375px*/
+		display: flex;
+		padding: 0 105px;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+		gap: 34px;
+	}
+	.section-profile_wrapper1,.section-profile_wrapper2{
+		max-width: 560px;
+		text-wrap: wrap;
+		width: 50%;
+
+	}
+	.section-profile_wrapper1{
+		border-right: 1px solid #333;
+		padding-right: 35px;
+	}
+/*.section-profile__aboutme,.section-profile__exhibition,.section-profile__biography{
+	width: 375px;
+}*/
+.section-profile__aboutme,.section-profile__exhibition,.section-profile__biography{
+	border:none
+
+}
+.section-profile h2{
+	margin: 80px 0 40px 0;
+	font-size: 2.0rem;
+	}
+	
+	
+	
+}
 
 
 
