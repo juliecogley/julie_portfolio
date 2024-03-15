@@ -28,32 +28,49 @@
 <body>
   <header class="header">
     <div class="header-content-wrapper">
-		<div class="label">
-      <p class="nakahara-nami"> 
-          <span class="n">N</span>
-          <span class="another">akahara
-		  <br/>
-		  </span>
-          <span class="n">N</span>
-          <span class="another">ami
-            <br/>PORTFOLIO</span>
-		  </p>
-	</div>
-   
-			 
-       <div class="hamburger" >
-         <div class="line-1"></div>
-         <div class="line-2"></div>
-         <div class="line-3"></div>
-     </div>
-	   </div> 
-     <div class="contents-rectangle">
+      <div class="label">
+        <a class="go-to-top" href="index.html">
+          <p class="nakahara-nami">
+            <span class="n">N</span>
+            <span class="another">akahara
+              <br />
+            </span>
+            <span class="n">N</span>
+            <span class="another">ami
+              <br />PORTFOLIO</span>
+          </p>
+        </a>
+      </div>
+      <!-- ハンバーガーアイコン(旧式)
+      <div class="hamburger">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+    --> 
+    </div>
+    <div class="contents-rectangle">
       <div class="contents-text">
         作品集</div>
-       </div>
-	   
-  </header>
+    </div>
+    <div id="nav-drawer">
+      <input id="nav-input" class="none" type="checkbox">
+      <label id="nav-open" for="nav-input"><span></span></label>
+      <label id="nav-close" class="none" for="nav-input"></label>
+      <nav id="nav-content" class="header__navigation">
+        <div class="nav-drawer__title none"></div>
+        <ul>
+          <li><a class="nav-drawer__link-top none" href="#top">目　次</a></li>
+          <li><a href="#profile">プロフィール</a></li>
+          <li><a href="#works">作品集</a></li>
+          <li><a href="#kotobagaki">ことばがき</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      </div>
+      </header>
   <main class="main">
+    <section class="section-works">
     <section class="section-works__top">
       <div class="section-works__top-image"></div>
     </section>
@@ -220,7 +237,7 @@
           </svg>
       </div>
     </section>
-
+  </section>
   </main>
   <footer class="footer">
     <div class="footer-content-wrapper">
