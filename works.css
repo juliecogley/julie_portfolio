@@ -60,14 +60,19 @@ font-size: 2.0rem;
 }
 .section-works__top{
 	width: 30%;
-	height: 2000px;}
+	height: 2054px;
+    
+}
 
 
 	.section-works__top-image{
-		
-
 		/*transform: rotate(90deg);*/
 		margin-top: 20px;
+		zoom: 3.5;
+		background-position:-870px 600px;
+		height: 100%;
+		top: 20px;
+		
 	}
 	
 
@@ -76,7 +81,7 @@ font-size: 2.0rem;
 		margin:120px auto 160px auto;
 		text-align: left;
 		display: block;
-		width: 40%;
+		width: 50%;
 	}
 	.section-works__wrapper h2{
 	font-size: 3.2rem;

@@ -55,15 +55,15 @@ padding-top: 16px;
   @media (min-width: 1060px) {
 	.section-profile__name{
 display: flex;
-align-items: center;
 padding: 0 105px;
-align-items: center;
+align-items: stretch;
 margin-bottom: 0px;
+justify-content: space-between;
 	}
 
 	.test{
 		width: 50%;
-		height: 100%;
+	border-right: 1px solid #212427;
 
 	}
 	.section-profile__name-text{
@@ -114,7 +114,7 @@ max-width: 327px;
 
 		width: 50%;
 		height: 100%;
-		border-left:solid 1px; 
+	
 		margin: 0;
 		}
 
@@ -170,7 +170,7 @@ margin: 40px 0;
 		padding: 0 105px;
 		justify-content: space-between;
 		flex-wrap: nowrap;
-		gap: 35px;
+		gap: 34px;
 	}
 	.section-profile_wrapper1,.section-profile_wrapper2{
 		max-width: 560px;
