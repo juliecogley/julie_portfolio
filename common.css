@@ -54,7 +54,7 @@ body {
     color: #212427;
   }
 
-  .label .nakahara-nami{
+  .nakahara-nami{
   color: transparent;
   left: 0;
   text-align: left;
@@ -302,21 +302,59 @@ text-decoration: none;
 
   /*footer*/
 .footer {
-  height: 80px;
-  padding:40px 0;
-  border-top:1px solid #212427;
+  padding:40px 24px;
+  border-top:0.5px solid #212427;
+  text-align: left;
+  background-color: #d9d9d9;
+  position: relative;
 }
 
-.footer-content-wrapper{
-  text-align: right;
-  padding: 0 24px; 
+.site-map__links{
+  margin-bottom: 40px;
 }
+
+.site-map__links h2{
+  color: #009dbf;
+ padding-bottom: 16px;
+ margin-bottom: 10px;
+  font-size: 2.0rem;
+  border-bottom: 1px dashed #212427;
+ 
+}
+
+.site-map__links li{
+ padding-bottom: 16px; 
+ margin-bottom: 10px;
+ border-bottom: 1px dashed #212427;
+}
+.links{
+  text-decoration: none;
+  color: #212427;
+}
+
 
 .footer__copyright {
   width: 100%;
   color:#212427;
+  text-align: right;
+position: absolute;
+left: -24px;
 
 }
-.footer .instagram{
-  text-decoration-line: none;
-}
+
+.footer-content-wrapper .nakahara-nami{
+
+    color: #212427;
+    text-align: left;
+    width: 112px;
+    padding-top: 8px;
+    }
+    
+    .footer-content-wrapper .n{
+    color:#009dbf;
+    display: inline-block;
+    width: 6%;
+    padding-right: 1.4px;
+    }
+   
+
