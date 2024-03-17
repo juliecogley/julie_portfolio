@@ -208,7 +208,7 @@ margin: 40px 0;
 		text-orientation: upright;
 		/* すべて縦方向に表示　英数字も縦に表示するなら upright、和文も横に表示するなら sideways を指定 */
 		padding: 80px 0;
-	width:80%;
+	width:auto;
 	}
 	.date{
 		padding-top: 400px;
