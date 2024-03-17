@@ -17,13 +17,11 @@
 }
 
 .section-works1__title {
-	width: 60%;
+	width: 100%;
 	margin: 0 auto;
 	margin-bottom: 40px;
 	text-align: left;
-	display: flex;
 	flex-wrap: wrap;
-	max-width: 327px;
 }
 
 .section-works1__title h1 {
@@ -45,10 +43,9 @@
 }
 
 .section-works1__image-body {
-	width: 60%;
+	width: 100%;
 	height: 100%;
 	margin: 0 auto;
-	max-width: 327px;
 }
 
 .section-works1__image {
@@ -102,7 +99,7 @@
 	padding: 40px 24px 0 24px;
 	border-top: 2px dotted #030303;
 	margin: 0 auto 120px auto;
-	width: 50%;
+	width: 100%;
 }
 
 .section-works1__poem p {
