@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+.main {
+	max-width: 1208px;
+	/*1160+pad24+24*/
+	margin: 0 auto;
+}
+
+#nav-open {
+	top: -144px;
+}
+
+.section-kotobagaki__name {
+	padding: 0 24px;
+	
+	margin: 80px auto;
+}
+
+.section-kotobagaki__name-text {
+	/*327px+24+24=375px*/
+	margin: 0 auto 40px auto;
+	text-align:left;
+	width: 100%;
+	line-height: 2;
+}
+
+.section-kotobagaki__name p {
+	padding-top: 16px;
+}
+
+
+
+/*画面サイズ1060以上での指定*/
+@media (min-width: 760px) {
+	.section-kotobagaki__name {
+		
+		align-items: center;
+		margin: 100px 0;
+		justify-content: space-between;
+	}
+
+	.section-kotobagaki__name-text {
+		width: 90%;
+		margin: 0px;
+	}
+
+	.section-kotobagaki__name-text h2 {
+		font-size: 2.0rem;
+		line-height: 2;
+		text-wrap: nowrap;
+	}
+
+	.section-kotobagaki__name p {
+      
+		font-size: 1.8rem;
+		margin: 0 auto;
+
+	}
+
+
+}
+
+
+.section-kotobagaki1__poem {
+	text-align: left;
+	padding: 40px 24px 40px 24px;
+	border-top: 2px dotted #030303;
+	border-bottom: 2px dotted #030303;
+	margin: 0 auto 120px auto;
+	width: 80%;
+}
+
+.section-kotobagaki1__poem p {
+	line-height: 2.4rem;
+}
+
+/*画面サイズ1060以上での指定*/
+@media (min-width: 760px) {
+	.section-kotobagaki1__poem {
+
+		-ms-writing-mode: tb-rl;
+		/* IE対応 */
+		writing-mode: vertical-rl;
+		text-orientation: upright;
+		/* すべて縦方向に表示　英数字も縦に表示するなら upright、和文も横に表示するなら sideways を指定 */
+		padding: 80px 0;
+		width: auto;
+	}
+
+	.date {
+		padding-top: 400px;
+	}
+
+}
+.inquiry-form{
+	padding: 50px 24px 60px;
+	text-align: left;
+  }
+  .inquiry-form p{
+	margin-bottom: 40px;
+  }
+  .inquiry-form input[type="text"],.inquiry-form input[type="email"],.inquiry-form select,.inquiry-form input textarea {
+	display: block;
+	width: 100%;
+	height: 40px;
+	padding: 0 10px;
+	border: solid 1px #777;
+	border-style: none;
+	font-family: "Shippori Mincho";
+  }
+
+  #form_inquiry-detail{
+	display: block;
+	width: 100%;
+	height: 40px;
+	padding: 10px 10px 0;
+	border: solid 1px #777;
+	height: 300px;
+	border-style: none;
+	font-family: "Shippori Mincho";
+  }
+  .inquiry-form textarea{
+	height: 300px;
+  }
+  .inquiry-form p label{
+	font-weight: 600;
+	font-size: 2.0rem;
+	display: block;
+	margin-bottom: 20px;
+  }
+  
+  
+  .inquiry-form p label.small-label{
+	display: inline-block;
+	font-weight: 500;
+	font-size: 1.6rem;
+	padding-left: 30px;
+  }
+  .form_inquiry-privacy-link{
+	color: #333;
+  }
+  .inquiry-form__submit{
+	display: block;
+	height: 48px;
+	max-width: 320px;
+	width: 100%;
+	background-color: #009DBF;
+	color: #f7f7f7;
+	font-size: 2.4rem;
+	margin: 0 auto;
+	border-style: none;
+	font-family: "Shippori Mincho";
+}
+
+  @media(min-width:760px){
+  .inquiry-form{
+	padding: 120px 24px;
+	max-width: 1160px;
+	margin: 0 auto;
+  }
+  .inquiry-form p label{
+	display: inline-block;
+	width: 260px;
+	vertical-align: top;
+	font-weight: 600;
+  }
+ 
+  .inquiry-form input[type="text"],.inquiry-form input[type="email"],.inquiry-form select,.inquiry-form textarea {
+	display: inline-block;
+	
+  }
+  .inquiry-form textarea{
+	width: 600px;
+	height: 450px;
+  }
+
+  .inquiry-form__privacy{
+	margin-left: 260px;
+  }
+  .inquiry-form__submit{
+	margin:0 auto;
+
+  }
+  }
+  .inquiry-form_wrapper{
+	text-wrap: nowrap;
+  }
