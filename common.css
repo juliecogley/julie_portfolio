@@ -230,6 +230,7 @@ text-decoration: none;
 	  border-bottom: 1px #030303 solid ;
 	  border-top: 1px #030303 solid ;
 	  padding: 15px 40px;
+    font-weight: 600;
 	}
   
 	#nav-content ul li {
@@ -291,7 +292,10 @@ text-decoration: none;
  
     }
     .nav-drawer__link-top {
-      padding: 15px 56px;
+      padding: 15px 80px;
+      font-size: 3.2rem;
+      line-height:6.4rem;
+      font-weight: 600;
     }
   }
 
