@@ -1,95 +1,81 @@
 @charset "UTF-8";
+
 .main {
 	max-width: 1208px;
 	/*1160+pad24+24*/
 	margin: 0 auto;
 }
 
-#nav-open{
-top: -144px;
-}
-.section-kotobagaki1__title {
-	max-width: 250px;
-	/*327px+24+24=375px*/
-	margin: 0 auto;
-	margin-bottom: 40px;
-	text-align: left;
-	display: flex;
-	flex-wrap: wrap;
+#nav-open {
+	top: -144px;
 }
 
-
-.section-kotobagaki__name{
-padding: 0 24px;
-margin:80px auto ;
+.section-kotobagaki__name {
+	padding: 0 24px;
+	margin: 80px auto;
 }
 
-.section-kotobagaki__name-text{
+.section-kotobagaki__name-text {
 	max-width: 327px;
 	/*327px+24+24=375px*/
 	margin: 0 auto 40px auto;
 	text-align: center;
 	color: rgba(0, 0, 0, 0.60);
-	width: 60%;
+	width: 80%;
 	line-height: 2;
-	}
-	
-.section-kotobagaki__name p{
-color: rgba(0, 0, 0, 0.50);
-padding-top: 16px;
+}
+
+.section-kotobagaki__name p {
+	color: rgba(0, 0, 0, 0.50);
+	padding-top: 16px;
 }
 
 
 
 /*画面サイズ1060以上での指定*/
-  @media (min-width: 1060px) {
-	.section-kotobagaki__name{
-display: flex;
-padding: 0 224px;
-align-items: center;
-margin: 200px 0;
-justify-content: space-between;
+@media (min-width: 1060px) {
+	.section-kotobagaki__name {
+		display: flex;
+		padding: 0 224px;
+		align-items: center;
+		margin: 200px 0;
+		justify-content: space-between;
 	}
 
-	.test{
-		width: 50%;
-
-
-	}
-	.section-kotobagaki__name-text{
+	.section-kotobagaki__name-text {
 		width: 90%;
 		margin: 0px;
-		
+	}
+
+	.section-kotobagaki__name-text h2 {
+		font-size: 2.0rem;
+		line-height: 2;
+		text-wrap: nowrap;
+	}
+
+	.section-kotobagaki__name p {
+
+		font-size: 1.8rem;
+		padding-top: 20px;
 	}
 
 
-	.section-kotobagaki__name-text h2{
-		font-size: 2.0rem;
-		line-height: 2;
-text-wrap: nowrap;
-		}
-		.section-kotobagaki__name p{
-			
-			font-size: 1.8rem;
-	padding-top: 20px;
-			}
-
-
 }
 
 
-.section-kotobagaki__image-body{
+.section-kotobagaki__image-body {
 
-width: 60%;
-height: 100%;
-margin: 0 auto;
-max-width: 250px;
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+	max-width: 250px;
 }
-.section-kotobagaki__image{
+
+.section-kotobagaki__image {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-    object-position: 0% 0%;	
+	object-position: 0% 0%;
 	display: block;
 }
 
@@ -97,100 +83,30 @@ max-width: 250px;
 
 /*画面サイズ1060以上での指定*/
 @media (min-width: 1060px) {
-	.section-kotobagaki__image-body{
+	.section-kotobagaki__image-body {
 
 		width: 50%;
 		height: 100%;
-	
+
 		margin: 0;
-		}
-
-		.section-kotobagaki__image{
-			width: 100%;
-			height: 100%;
-			display: block;
-			margin: 0 auto;
-		}
-
-}
-
-
-
-
-.section-kotobagaki{
-	max-width: 327px;
-	/*327px+24+24=375px*/
-	margin: 0 auto 80px auto;
-	padding: 0 24px;
-	text-align: left;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.section-kotobagaki h2{
-margin: 40px 0;
-}
-
-.section-kotobagaki__aboutme{
-	border-bottom: 2px dotted #030303;
-	border-top: 2px dotted #030303;
-	padding-bottom: 40px;
-}
-
-.section-kotobagaki__exhibition{
-	border-bottom: 2px dotted #030303;
-	padding-bottom: 40px;
-}
-
-.section-kotobagaki__biography{
-	border-bottom: 2px dotted #030303;
-	padding-bottom: 40px;
-}
-
-
-/*画面サイズ1060以上での指定*/
-@media (min-width: 1060px) {
-	.section-kotobagaki{
-		max-width: 1060px;
-		/*327px+24+24=375px*/
-		display: flex;
-		padding: 0 105px;
-		justify-content: space-between;
-		flex-wrap: nowrap;
-		gap: 34px;
 	}
-	.section-kotobagaki_wrapper1,.section-kotobagaki_wrapper2{
-		max-width: 560px;
-		text-wrap: wrap;
-		width: 50%;
 
+	.section-kotobagaki__image {
+		width: 100%;
+		height: 100%;
+		display: block;
+		margin: 0 auto;
 	}
-	.section-kotobagaki_wrapper1{
-		border-right: 1px solid #333;
-		padding-right: 35px;
-	}
-/*.section-kotobagaki__aboutme,.section-kotobagaki__exhibition,.section-kotobagaki__biography{
-	width: 375px;
-}*/
-.section-kotobagaki__aboutme,.section-kotobagaki__exhibition,.section-kotobagaki__biography{
-	border:none
 
-}
-.section-kotobagaki h2{
-	margin: 80px 0 40px 0;
-	font-size: 2.0rem;
-	}
-	
-	
-	
 }
 
 
 
 .section-kotobagaki1__poem {
 	text-align: left;
-	padding: 40px 24px 0 24px;
+	padding: 40px 24px 40px 24px;
 	border-top: 2px dotted #030303;
+	border-bottom: 2px dotted #030303;
 	margin: 0 auto 120px auto;
 	width: 80%;
 }
@@ -202,26 +118,18 @@ margin: 40px 0;
 /*画面サイズ1060以上での指定*/
 @media (min-width: 1060px) {
 	.section-kotobagaki1__poem {
-	
+
 		-ms-writing-mode: tb-rl;
 		/* IE対応 */
 		writing-mode: vertical-rl;
 		text-orientation: upright;
 		/* すべて縦方向に表示　英数字も縦に表示するなら upright、和文も横に表示するなら sideways を指定 */
 		padding: 80px 0;
-	width:auto;
+		width: auto;
 	}
-	.date{
+
+	.date {
 		padding-top: 400px;
 	}
 
 }
-
-
-
-
-
-
-
-
-

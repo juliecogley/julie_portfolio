@@ -96,8 +96,9 @@
 
 .section-works1__poem {
 	text-align: left;
-	padding: 40px 24px 0 24px;
+	padding: 40px 24px 40px 24px;
 	border-top: 2px dotted #030303;
+	border-bottom: 2px dotted #030303;
 	margin: 0 auto 120px auto;
 	width: 80%;
 }
