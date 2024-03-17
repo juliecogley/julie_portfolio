@@ -25,7 +25,8 @@ body {
   font-size: 1.6em;
   line-height: 2.4rem;
   text-align: center;
-	background-color: #f7f2ea;
+	
+  background: linear-gradient(141deg, #f7f2ea, #f5dfbf);
   color: #212427;
 }
 
@@ -208,8 +209,7 @@ text-decoration: none;
 	  z-index: 999;
 	  width: 90%;
 	  height: 100%;
-	 
-	  background-color:#A4E0E8;
+	  background: linear-gradient(141deg, #c2dfe3, #A4E0E8);
 	  text-align: center;
 	  padding: 100px 0 0 0;
 	  margin: 0 auto;
