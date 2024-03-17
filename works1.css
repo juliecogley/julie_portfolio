@@ -99,7 +99,7 @@
 	padding: 40px 24px 0 24px;
 	border-top: 2px dotted #030303;
 	margin: 0 auto 120px auto;
-	width: 100%;
+	width: 80%;
 }
 
 .section-works1__poem p {
@@ -116,6 +116,7 @@
 		text-orientation: upright;
 		/* すべて縦方向に表示　英数字も縦に表示するなら upright、和文も横に表示するなら sideways を指定 */
 		padding: 40px 0;
+		width: auto;
 	}
 
 }
