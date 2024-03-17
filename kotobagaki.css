@@ -8,8 +8,8 @@
 #nav-open{
 top: -144px;
 }
-.section-works1__title {
-	max-width: 327px;
+.section-kotobagaki1__title {
+	max-width: 250px;
 	/*327px+24+24=375px*/
 	margin: 0 auto;
 	margin-bottom: 40px;
@@ -19,21 +19,22 @@ top: -144px;
 }
 
 
-.section-profile__name{
+.section-kotobagaki__name{
 padding: 0 24px;
 margin:80px auto ;
 }
 
-.section-profile__name-text{
+.section-kotobagaki__name-text{
 	max-width: 327px;
 	/*327px+24+24=375px*/
 	margin: 0 auto 40px auto;
 	text-align: center;
 	color: rgba(0, 0, 0, 0.60);
 	width: 60%;
+	line-height: 2;
 	}
 	
-.section-profile__name p{
+.section-kotobagaki__name p{
 color: rgba(0, 0, 0, 0.50);
 padding-top: 16px;
 }
@@ -42,7 +43,7 @@ padding-top: 16px;
 
 /*画面サイズ1060以上での指定*/
   @media (min-width: 1060px) {
-	.section-profile__name{
+	.section-kotobagaki__name{
 display: flex;
 padding: 0 224px;
 align-items: center;
@@ -55,19 +56,19 @@ justify-content: space-between;
 
 
 	}
-	.section-profile__name-text{
+	.section-kotobagaki__name-text{
 		width: 90%;
 		margin: 0px;
 		
 	}
 
 
-	.section-profile__name-text h2{
+	.section-kotobagaki__name-text h2{
 		font-size: 2.0rem;
-		line-height: 2.0rem;
+		line-height: 2;
 text-wrap: nowrap;
 		}
-		.section-profile__name p{
+		.section-kotobagaki__name p{
 			
 			font-size: 1.8rem;
 	padding-top: 20px;
@@ -77,14 +78,14 @@ text-wrap: nowrap;
 }
 
 
-.section-profile__image-body{
+.section-kotobagaki__image-body{
 
 width: 60%;
 height: 100%;
 margin: 0 auto;
-max-width: 327px;
+max-width: 250px;
 }
-.section-profile__image{
+.section-kotobagaki__image{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -96,7 +97,7 @@ max-width: 327px;
 
 /*画面サイズ1060以上での指定*/
 @media (min-width: 1060px) {
-	.section-profile__image-body{
+	.section-kotobagaki__image-body{
 
 		width: 50%;
 		height: 100%;
@@ -104,8 +105,8 @@ max-width: 327px;
 		margin: 0;
 		}
 
-		.section-profile__image{
-			width: 80%;
+		.section-kotobagaki__image{
+			width: 100%;
 			height: 100%;
 			display: block;
 			margin: 0 auto;
@@ -116,7 +117,7 @@ max-width: 327px;
 
 
 
-.section-profile{
+.section-kotobagaki{
 	max-width: 327px;
 	/*327px+24+24=375px*/
 	margin: 0 auto 80px auto;
@@ -126,22 +127,22 @@ max-width: 327px;
 	flex-wrap: wrap;
 }
 
-.section-profile h2{
+.section-kotobagaki h2{
 margin: 40px 0;
 }
 
-.section-profile__aboutme{
+.section-kotobagaki__aboutme{
 	border-bottom: 2px dotted #030303;
 	border-top: 2px dotted #030303;
 	padding-bottom: 40px;
 }
 
-.section-profile__exhibition{
+.section-kotobagaki__exhibition{
 	border-bottom: 2px dotted #030303;
 	padding-bottom: 40px;
 }
 
-.section-profile__biography{
+.section-kotobagaki__biography{
 	border-bottom: 2px dotted #030303;
 	padding-bottom: 40px;
 }
@@ -149,7 +150,7 @@ margin: 40px 0;
 
 /*画面サイズ1060以上での指定*/
 @media (min-width: 1060px) {
-	.section-profile{
+	.section-kotobagaki{
 		max-width: 1060px;
 		/*327px+24+24=375px*/
 		display: flex;
@@ -158,24 +159,24 @@ margin: 40px 0;
 		flex-wrap: nowrap;
 		gap: 34px;
 	}
-	.section-profile_wrapper1,.section-profile_wrapper2{
+	.section-kotobagaki_wrapper1,.section-kotobagaki_wrapper2{
 		max-width: 560px;
 		text-wrap: wrap;
 		width: 50%;
 
 	}
-	.section-profile_wrapper1{
+	.section-kotobagaki_wrapper1{
 		border-right: 1px solid #333;
 		padding-right: 35px;
 	}
-/*.section-profile__aboutme,.section-profile__exhibition,.section-profile__biography{
+/*.section-kotobagaki__aboutme,.section-kotobagaki__exhibition,.section-kotobagaki__biography{
 	width: 375px;
 }*/
-.section-profile__aboutme,.section-profile__exhibition,.section-profile__biography{
+.section-kotobagaki__aboutme,.section-kotobagaki__exhibition,.section-kotobagaki__biography{
 	border:none
 
 }
-.section-profile h2{
+.section-kotobagaki h2{
 	margin: 80px 0 40px 0;
 	font-size: 2.0rem;
 	}
@@ -186,7 +187,7 @@ margin: 40px 0;
 
 
 
-.section-works1__poem {
+.section-kotobagaki1__poem {
 	text-align: left;
 	padding: 40px 24px 0 24px;
 	border-top: 2px dotted #030303;
@@ -194,13 +195,13 @@ margin: 40px 0;
 	width: 80%;
 }
 
-.section-works1__poem p {
+.section-kotobagaki1__poem p {
 	line-height: 2.4rem;
 }
 
 /*画面サイズ1060以上での指定*/
 @media (min-width: 1060px) {
-	.section-works1__poem {
+	.section-kotobagaki1__poem {
 	
 		-ms-writing-mode: tb-rl;
 		/* IE対応 */
