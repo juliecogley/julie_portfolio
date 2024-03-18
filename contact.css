@@ -10,12 +10,12 @@
 	top: -144px;
 }
 
-.section-kotobagaki__name {
+.section-contact__name {
 	padding: 0 24px;
 	margin: 80px auto;
 }
 
-.section-kotobagaki__name-text {
+.section-contact__name-text {
 	/*327px+24+24=375px*/
 	margin: 0 auto 40px auto;
 	text-align:left;
@@ -23,7 +23,7 @@
 	line-height: 2;
 }
 
-.section-kotobagaki__name p {
+.section-contact__name p {
 	padding: 20px 0 20px 0;
 }
 
@@ -31,26 +31,26 @@
 
 /*画面サイズ1060以上での指定*/
 @media (min-width: 760px) {
-	.section-kotobagaki__name {
+	.section-contact__name {
 		
 		align-items: center;
 		margin: 100px 0;
 		justify-content: space-between;
 	}
 
-	.section-kotobagaki__name-text {
+	.section-contact__name-text {
 		width: 100%;
 		margin: 0px;
 		display: flex;
 	}
 
-	.section-kotobagaki__name-text h2 {
+	.section-contact__name-text h2 {
 		font-size: 2.0rem;
 		line-height: 2;
 		text-wrap: nowrap;
 	}
 
-	.section-kotobagaki__name p {
+	.section-contact__name p {
       
 		font-size: 2.0rem;
 		margin: 0 auto;
@@ -59,40 +59,7 @@
 	}
 
 
-}
-
-
-.section-kotobagaki1__poem {
-	text-align: left;
-	padding: 40px 24px 40px 24px;
-	border-top: 2px dotted #030303;
-	border-bottom: 2px dotted #030303;
-	margin: 0 auto 120px auto;
-	width: 80%;
-}
-
-.section-kotobagaki1__poem p {
-	line-height: 2.4rem;
-}
-
-/*画面サイズ1060以上での指定*/
-@media (min-width: 760px) {
-	.section-kotobagaki1__poem {
-
-		-ms-writing-mode: tb-rl;
-		/* IE対応 */
-		writing-mode: vertical-rl;
-		text-orientation: upright;
-		/* すべて縦方向に表示　英数字も縦に表示するなら upright、和文も横に表示するなら sideways を指定 */
-		padding: 80px 0;
-		width: auto;
-	}
-
-	.date {
-		padding-top: 400px;
-	}
-
-}
+/*お問い合わせフォームを使う場合
 .inquiry-form{
 	padding: 50px 24px 60px;
 	text-align: left;
@@ -186,7 +153,7 @@
   .inquiry-form_wrapper{
 	text-wrap: nowrap;
   }
-
+*/
   .asterisk{
 	color: #B93434;
 	font-weight: 600;
