@@ -40,8 +40,9 @@
 	}
 
 	.section-kotobagaki__name-text {
-		width: 90%;
+		width: 100%;
 		margin: 0px;
+		display: flex;
 	}
 
 	.section-kotobagaki__name-text h2 {
@@ -52,8 +53,9 @@
 
 	.section-kotobagaki__name p {
       
-		font-size: 1.8rem;
+		font-size: 2.0rem;
 		margin: 0 auto;
+		
 
 	}
 
@@ -160,7 +162,7 @@
   }
   .inquiry-form p label{
 	display: inline-block;
-	width: 260px;
+	width: 264px;
 	vertical-align: top;
 	font-weight: 600;
   }
@@ -184,4 +186,9 @@
   }
   .inquiry-form_wrapper{
 	text-wrap: nowrap;
+  }
+
+  .asterisk{
+	color: #B93434;
+	font-weight: 600;
   }
