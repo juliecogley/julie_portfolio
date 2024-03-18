@@ -157,13 +157,26 @@
 }
 
 .img-01 {
-	background-image: url('photo/kosame.JPG');
+	background-image: url('photo/02melancholy/melancholy01.JPG');
 	animation: slide-animation-01 24s infinite;
+	background-position: 50% 50%;
 }
 
 .img-02 {
-	background-image: url('photo/kosame.JPG');
+	background-image: url('photo/02melancholy/melancholy01.JPG');
 	animation: slide-animation-02 24s infinite;
+	background-position: 50% 50%;}
+
+.img-03 {
+		background-image: url('photo/02melancholy/melancholy01.JPG');
+		animation: slide-animation-01 24s infinite;
+		background-position: 50% 50%;
+	}
+	
+.img-04 {
+		background-image: url('photo/02melancholy/melancholy01.JPG');
+		animation: slide-animation-02 24s infinite;
+		background-position: 50% 50%;
 }
 
 
