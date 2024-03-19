@@ -56,6 +56,7 @@
     padding-right: 25px;
     padding-left: 25px;
 	color: #212427;
+	line-height: 2em;
 	
 	/*--tick-duration・--tick-delayの変数に値がある場合は変数の値が優先させる*/
 	&:nth-child(odd) {
@@ -99,7 +100,7 @@
 .section-top__name h1 {
 	font-size: 4.0rem;
 	font-weight: 600;
-	line-height: 5.6rem;
+	line-height: 1.5em;
 	/* 116.667% */
 	position: relative;
 	top: -30px;
@@ -109,8 +110,9 @@
 
 .section-top__name-ruby{
 	position: relative;
-	top: -78px;
+	top: -75px;
 	color:#212427;
+	line-height: 1em;
 	
 }
 
@@ -118,7 +120,7 @@
 	.section-top__name h1 {
 		font-size: 13rem;
 		font-weight: 400;
-		line-height: 8.5rem;
+	    line-height: 1em;
 		/* 116.667% */
 		position: relative;
 		top: -30px;
@@ -127,9 +129,9 @@
 	
 	.section-top__name-ruby{
 		position: relative;
-		top: -108px;
+		top: -146px;
 		font-size: 3.0rem;
-		line-height: 4.5rem;
+		line-height: 2em;
 		
 	}
 

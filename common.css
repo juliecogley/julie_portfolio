@@ -23,7 +23,7 @@ body {
   font-family:Shippori Mincho;
   font-weight: 500;
   font-size: 1.6em;
-  line-height: 2.4rem;
+  line-height: 1em;
   text-align: center;
 	
   background: linear-gradient(141deg, #f7f2ea, #f5dfbf);
@@ -287,14 +287,14 @@ text-decoration: none;
     #nav-content ul li a {
    
       font-size: 3.2rem;
-      line-height:6.4rem;
+      line-height:2em;
       font-weight: 600;
  
     }
     .nav-drawer__link-top {
       padding: 15px 80px;
       font-size: 3.2rem;
-      line-height:6.4rem;
+      line-height:2em;
       font-weight: 600;
     }
   }

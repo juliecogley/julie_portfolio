@@ -35,12 +35,12 @@ margin:80px auto ;
 
 .section-profile__name h1{
 font-size: 2.4rem;
-line-height: 2.0rem; 
+line-height: 2em; 
 }
 
 .section-profile__name h2{
 	font-size: 1.8rem;
-	line-height: 2.0rem; 
+	line-height: 1em; 
 	padding-top: 10px;
 	}
 	
@@ -72,18 +72,18 @@ justify-content: space-between;
 	}
 	.section-profile__name-text h1{
    font-size: 3.2rem;
-   line-height: 3.2rem;
+   line-height: 1em;
 	}
 
 	.section-profile__name-text h2{
 		font-size: 2.0rem;
-		line-height: 2.0rem;
+		line-height: 2em;
   padding-top: 20px;
 
 		}
 		.section-profile__name p{
-			
 			font-size: 1.8rem;
+			line-height: 0.5em;
 	padding-top: 20px;
 			}
 
@@ -142,6 +142,7 @@ max-width: 327px;
 
 .section-profile h2{
 margin: 40px 0;
+line-height: 2em;
 }
 
 .section-profile__aboutme{
@@ -160,6 +161,9 @@ margin: 40px 0;
 	padding-bottom: 40px;
 }
 
+.section-profile__items{
+	line-height: 1.5em;
+		}
 
 /*画面サイズ1060以上での指定*/
 @media (min-width: 1060px) {
@@ -194,8 +198,9 @@ margin: 40px 0;
 	font-size: 2.0rem;
 	}
 	
-	
-	
+	.section-profile__items{
+		line-height: 1.8em;
+			}
 }
 
 
