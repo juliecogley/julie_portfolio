@@ -121,6 +121,7 @@
 		padding: 40px 0;
 		width: auto;
 	}
+
 	.section-works1__poem p {
 		line-height: 1.8em;
 	}
@@ -143,9 +144,7 @@
 	margin: 80px auto;
 }
 
-.img-01,
-.img-02,
-.img-03 {
+.img-01,.img-02,.img-03,.img-04,.img-05,.img-06,.img-07,.img-08,.img-09,.img-10,.img-11,.img-12,.img-13,.img-14{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -153,50 +152,78 @@
 	height: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
-
 	display: block;
-
 }
 
 .img-01 {
-	background-image: url('photo/01utuwa/02.JPG');
+	background-image: url('photo/01utuwa/utuwa02.JPG');
 	animation: slide-animation-01 24s infinite;
 }
 
 .img-02 {
-	background-image: url('photo/01utuwa/03.JPG');
+	background-image: url('photo/01utuwa/utuwa03.JPG');
 	animation: slide-animation-02 24s infinite;
 }
 
 .img-03 {
-	background-image: url('photo/01utuwa/04.JPG');
+	background-image: url('photo/01utuwa/utuwa04.JPG');
 	animation: slide-animation-03 24s infinite;
 }
 
 .img-04 {
-	background-image: url('photo/01utuwa/02.JPG');
-	animation: slide-animation-01 24s infinite;
+	background-image: url('photo/01utuwa/utuwa05.JPG');
+	animation: slide-animation-04 24s infinite;
 }
 
 .img-05 {
-	background-image: url('photo/01utuwa/03.JPG');
-	animation: slide-animation-02 24s infinite;
+	background-image: url('photo/01utuwa/utuwa06.JPG');
+	animation: slide-animation-05 24s infinite;
 }
 
 .img-06 {
-	background-image: url('photo/01utuwa/04.JPG');
+	background-image: url('photo/01utuwa/utuwa07.JPG');
+	animation: slide-animation-06 24s infinite;
+}
+
+.img-07 {
+	background-image: url('photo/01utuwa/utuwa08.JPG');
+	animation: slide-animation-07 24s infinite;
+}
+
+.img-08 {
+	background-image: url('photo/01utuwa/utuwa09.JPG');
+	animation: slide-animation-08 24s infinite;
+}
+
+.img-09 {
+	background-image: url('photo/01utuwa/utuwa10.JPG');
+	animation: slide-animation-09 24s infinite;
+}
+
+.img-10 {
+	background-image: url('photo/01utuwa/utuwa11.JPG');
+	animation: slide-animation-10 24s infinite;
+}
+
+.img-11 {
+	background-image: url('photo/01utuwa/utuwa12.JPG');
+	animation: slide-animation-02 24s infinite;
+}
+
+.img-12 {
+	background-image: url('photo/01utuwa/utuwa13.JPG');
 	animation: slide-animation-03 24s infinite;
 }
-	.img-07 {
-		background-image: url('photo/01utuwa/02.JPG');
-		animation: slide-animation-01 24s infinite;
-	}
 
-	.img-08 {
-		background-image: url('photo/01utuwa/03.JPG');
-		animation: slide-animation-02 24s infinite;
-	}
+.img-13 {
+	background-image: url('photo/01utuwa/utuwa14.JPG');
+	animation: slide-animation-01 24s infinite;
+}
 
+.img-14 {
+	background-image: url('photo/01utuwa/utuwa15.JPG');
+	animation: slide-animation-02 24s infinite;
+}
 
 
 @keyframes slide-animation-01 {
@@ -275,9 +302,163 @@
 		transform: scale(1.1);
 	}
 }
+@keyframes slide-animation-04 {
+	0% {
+		opacity: 1;
+		transform: scale(1.0);
+	}
+
+	30% {
+		opacity: 1;
+	}
+
+	40% {
+		opacity: 0;
+		transform: scale(1.15);
+	}
+
+	90% {
+		opacity: 0
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1.0);
+	}
+}
+
+@keyframes slide-animation-05 {
+	0% {
+		opacity: 0;
+	}
+
+	30% {
+		opacity: 0;
+		transform: scale(1.1);
+	}
+
+	40% {
+		opacity: 1;
+	}
+
+	60% {
+		opacity: 1;
+	}
+
+	70% {
+		opacity: 0;
+		transform: scale(1.0);
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes slide-animation-06 {
+	0% {
+		opacity: 0;
+	}
+
+	60% {
+		opacity: 0;
+		transform: scale(1.0);
+	}
+
+	70% {
+		opacity: 1;
+	}
+
+	90% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(1.1);
+	}
+}
+@keyframes slide-animation-07 {
+	0% {
+		opacity: 1;
+		transform: scale(1.0);
+	}
+
+	30% {
+		opacity: 1;
+	}
+
+	40% {
+		opacity: 0;
+		transform: scale(1.15);
+	}
+
+	90% {
+		opacity: 0
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1.0);
+	}
+}
+
+@keyframes slide-animation-08 {
+	0% {
+		opacity: 0;
+	}
+
+	30% {
+		opacity: 0;
+		transform: scale(1.1);
+	}
+
+	40% {
+		opacity: 1;
+	}
+
+	60% {
+		opacity: 1;
+	}
+
+	70% {
+		opacity: 0;
+		transform: scale(1.0);
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes slide-animation-09 {
+	0% {
+		opacity: 0;
+	}
+
+	60% {
+		opacity: 0;
+		transform: scale(1.0);
+	}
+
+	70% {
+		opacity: 1;
+	}
+
+	90% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(1.1);
+	}
+}
+
+
 @media (min-width: 1060px) {
 	.img-frame {
-		height:800px;
+		height: 800px;
 		width: 100%;
 
 	}
