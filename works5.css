@@ -159,43 +159,35 @@
 }
 
 .img-01 {
-	background-image: url('photo/01utuwa/02.JPG');
+	background-image: url('photo/05mi/mi01.JPG');
 	animation: slide-animation-01 24s infinite;
 }
 
 .img-02 {
-	background-image: url('photo/01utuwa/03.JPG');
+	background-image: url('photo/05mi/mi02.JPG');
 	animation: slide-animation-02 24s infinite;
 }
 
 .img-03 {
-	background-image: url('photo/01utuwa/04.JPG');
+	background-image: url('photo/05mi/mi03.JPG');
 	animation: slide-animation-03 24s infinite;
 }
 
 .img-04 {
-	background-image: url('photo/01utuwa/02.JPG');
+	background-image: url('photo/05mi/mi04.JPG');
 	animation: slide-animation-01 24s infinite;
 }
 
 .img-05 {
-	background-image: url('photo/01utuwa/03.JPG');
+	background-image: url('photo/05mi/mi05.JPG');
 	animation: slide-animation-02 24s infinite;
 }
 
 .img-06 {
-	background-image: url('photo/01utuwa/04.JPG');
+	background-image: url('photo/05mi/mi06.JPG');
 	animation: slide-animation-03 24s infinite;
 }
-	.img-07 {
-		background-image: url('photo/01utuwa/02.JPG');
-		animation: slide-animation-01 24s infinite;
-	}
 
-	.img-08 {
-		background-image: url('photo/01utuwa/03.JPG');
-		animation: slide-animation-02 24s infinite;
-	}
 
 
 
