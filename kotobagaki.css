@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 .main {
-	max-width: 1208px;
-	/*1160+pad24+24*/
+	max-width: 1108px;
+	/*1060+pad24+24*/
 	margin: 0 auto;
 }
 
