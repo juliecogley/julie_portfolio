@@ -7,6 +7,7 @@
 
 .section-top {
 	margin: 20px 0 80px 0;
+	position: relative;
 }
 
 .section-top__image {
@@ -30,7 +31,7 @@
 }
 
 .section-top__image-2 {
-	background-image: url("photo/kosame.JPG");
+	background-image: url("photo/02melancholy/melancholy01.JPG");
 }
 
 .section-top__image-3 {
@@ -43,58 +44,65 @@
 
 .loop03__box {
 	overflow: hidden;
-    display: flex;
-    width: 100vw;
-    padding-top: 10px;
-    padding-bottom: 10px;
+	display: flex;
+	width: 100vw;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	margin-inline: calc(50% - 50vw);
 }
+
 .loop03__item {
-    /*flex: 0 0 auto;*/
+	/*flex: 0 0 auto;*/
 	flex-shrink: 0;
 	white-space: nowrap;
-    padding-right: 25px;
-    padding-left: 25px;
+	padding-right: 25px;
+	padding-left: 25px;
 	color: #212427;
 	line-height: 2em;
-	
+
 	/*--tick-duration・--tick-delayの変数に値がある場合は変数の値が優先させる*/
 	&:nth-child(odd) {
 		.loop03__box:not(.no-tick) & {
-		animation: MoveLeft var(--tick-duration, 90s) var(--tick-delay, -45s) infinite linear;
+			animation: MoveLeft var(--tick-duration, 90s) var(--tick-delay, -45s) infinite linear;
 		}
-	  }
-	  &:nth-child(even) {
-		.loop03__box:not(.no-tick) & {
-		animation: MoveLeft2 var(--tick-duration, 45s) infinite linear;
-		}
-	  }
 	}
-	
+
+	&:nth-child(even) {
+		.loop03__box:not(.no-tick) & {
+			animation: MoveLeft2 var(--tick-duration, 45s) infinite linear;
+		}
+	}
+}
+
 
 .loop03__item:nth-child(odd) {
-    animation: loop 90s -45s linear infinite; /*24秒かけて-12秒後に無限ループさせる*/
+	animation: loop 90s -45s linear infinite;
+	/*24秒かけて-12秒後に無限ループさせる*/
 }
+
 .loop03__item:nth-child(even) {
-    animation: loop2 90s linear infinite; /*24秒かけて無限ループさせる*/
+	animation: loop2 90s linear infinite;
+	/*24秒かけて無限ループさせる*/
 }
 
 @keyframes loop {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(-100%);
-    }
+	from {
+		transform: translateX(100%);
+	}
+
+	to {
+		transform: translateX(-100%);
+	}
 }
 
 @keyframes loop2 {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-200%);
-    }
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-200%);
+	}
 }
 
 .section-top__name h1 {
@@ -108,42 +116,112 @@
 	color: #212427;
 }
 
-.section-top__name-ruby{
-	position: relative;
-	top: -75px;
-	color:#212427;
+
+.ruby1 {
+	position: absolute;
+	top: 120px;
+	right: 0;
+	color: #212427;
 	line-height: 1em;
-	
+	z-index: 999;
+}
+.ruby2 {
+	position: absolute;
+	top: 120px;
+	left: 0;
+	color: #212427;
+	line-height: 1em;
+	z-index: 999;
 }
 
-@media(min-width:1060px){
+@media(min-width:1060px) {
 	.section-top__name h1 {
 		font-size: 13rem;
 		font-weight: 400;
-	    line-height: 1em;
+		line-height: 1em;
 		/* 116.667% */
 		position: relative;
 		top: -30px;
 		letter-spacing: 10px;
 	}
-	
-	.section-top__name-ruby{
+
+	.section-top__name-ruby {
 		position: relative;
 		top: -146px;
 		font-size: 3.0rem;
 		line-height: 2em;
-		
+
 	}
-
-	
-
-
 }
 
+.text1 {
+	position: absolute;
+	bottom: 380px;
+	right: -8px;
+	width: 25%;
+height: 25%;
+}
+
+
+.text2 {
+	position: absolute;
+	bottom: -14px;
+	right: -8px;
+	width: 25%;
+	height: 25%;
+}
+
+.text3 {
+	position: absolute;
+	bottom: 380px;
+	left: -8px;
+	width: 25%;
+	height: 25%;
+}
+
+.text4 {
+	position: absolute;
+	bottom: -14px;
+	left: -8px;
+	width: 25%;
+	height: 25%;
+}
+
+@media(min-width:1060px) {
 	
-
-
-
+	.text1 {
+		bottom: 380px;
+		right: -20px;
+		width: 25%;
+	height: 25%;
+	}
+	
+	
+	.text2 {
+		position: absolute;
+		bottom: -14px;
+		right: -20px;
+		width: 25%;
+		height: 25%;
+	}
+	
+	.text3 {
+		position: absolute;
+		bottom: 380px;
+		left: -90px;
+		width: 25%;
+		height: 25%;
+	}
+	
+	.text4 {
+		position: absolute;
+		bottom: -14px;
+		left: -90px;
+		width: 25%;
+		height: 25%;
+	}
+	
+}
 
 
 
