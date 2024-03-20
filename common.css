@@ -164,7 +164,7 @@ body {
   z-index: 999;
   width: 95%;
   height: 100%;
-  background: linear-gradient(141deg, #c2dfe3, #A4E0E8);
+  background: linear-gradient(141deg, #4b4949, #212427);
   text-align: center;
   padding: 100px 0 0 0;
   margin: 0 auto;
@@ -175,10 +175,11 @@ body {
 
 .nav-drawer__link-top {
   display: inline-block;
-  border-bottom: 1px #030303 solid;
-  border-top: 1px #030303 solid;
+  border-bottom: 1px #f7f7f7 solid;
+  border-top: 1px #f7f7f7 solid;
   padding: 15px 40px;
-  font-weight: 600;
+  font-weight: 400;
+  color: #f7f7f7;
 }
 
 #nav-content ul li {
@@ -188,8 +189,8 @@ body {
 #nav-content ul li a {
   text-decoration: none;
   font-size: 1.6rem;
-  font-weight: 600;
-  color: #212427;
+  font-weight: 400;
+  color: #f7f7f7;
 }
 
 #nav-input:checked~#nav-close {
