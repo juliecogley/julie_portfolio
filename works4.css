@@ -26,20 +26,13 @@
 
 .section-works1__title h1 {
 	font-size: 2.2rem;
-	line-height: 1.5;
+	line-height: 2em;
 
-}
-
-.section-works1__title h2 {
-	font-size: 1.8rem;
-	line-height: 2.0rem;
-	/* 100% */
-	padding-top: 10px;
 }
 
 .section-works1__title p {
 	padding-top: 20px;
-	line-height: 2.0rem;
+	line-height: 1.5em;
 }
 
 .section-works1__image-body {
@@ -77,7 +70,10 @@
 		display: block;
 
 	}
-
+	.section-works1__title p {
+		padding-top: 20px;
+		line-height: 1.8em;
+	}
 	.section-works1__image-body {
 		width: 50%;
 		height: 100%;
@@ -106,7 +102,7 @@
 }
 
 .section-works1__poem p {
-	line-height: 2.4rem;
+	line-height: 1.5em;
 }
 
 /*画面サイズ1060以上での指定*/
@@ -121,7 +117,9 @@
 		padding: 40px 0;
 		width: auto;
 	}
-
+	.section-works1__poem p {
+		line-height: 1.8em;
+	}
 }
 
 /*

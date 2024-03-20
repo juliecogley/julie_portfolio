@@ -22,7 +22,7 @@
 	text-align: center;
 	color: rgba(0, 0, 0, 0.60);
 	width: 80%;
-	line-height: 2;
+	line-height: 2em;
 }
 
 .section-kotobagaki__name p {
@@ -112,7 +112,7 @@
 }
 
 .section-kotobagaki1__poem p {
-	line-height: 2.4rem;
+	line-height: 2em;
 }
 
 /*画面サイズ1060以上での指定*/
