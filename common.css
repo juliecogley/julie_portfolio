@@ -56,13 +56,15 @@ body {
   }
 
   .nakahara-nami{
-  color: transparent;
+  color:#212427;
   left: 0;
   text-align: left;
   top: 0;
   width: 112px;
   padding-top: 8px;
+  line-height: 1.5em;
   }
+
   
   .label .n{
   color:#009dbf;
@@ -168,7 +170,7 @@ text-decoration: none;
 	  width: 30px;
 	  height: 22px;
 	 position: relative;
-	  top: -62px;
+	  top: -56px;
 	}
   
 	#nav-open span,
@@ -349,14 +351,7 @@ left: -24px;
 .footer-logo{
   position: relative;
 }
-.footer-content-wrapper .nakahara-nami{
 
-    color: #212427;
-    text-align: left;
-    width: 112px;
-    padding-top: 8px;
-   
-    }
   
     
     .footer-content-wrapper .n{
