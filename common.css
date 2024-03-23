@@ -111,7 +111,8 @@ body {
   .contents-text {
     font-size: 2.0rem;
     top: 38px;
-    width: 240px;  
+    width: 100%; 
+    height: auto; 
     writing-mode: horizontal-tb;
     margin: 0 auto;
   }
