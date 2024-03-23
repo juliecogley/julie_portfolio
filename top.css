@@ -34,6 +34,7 @@
 
 .section-top__image-1 {
 	background-image: url("photo/utuwa_blue.JPG");
+	
 }
 
 .section-top__image-2 {
@@ -123,24 +124,6 @@
 }
 
 
-.ruby1 {
-	position: absolute;
-	top: 120px;
-	right: 0;
-	color: #212427;
-	line-height: 1em;
-	z-index: 999;
-}
-
-.ruby2 {
-	position: absolute;
-	top: 120px;
-	left: 0;
-	color: #212427;
-	line-height: 1em;
-	z-index: 999;
-}
-
 @media(min-width:1060px) {
 	.section-top__name h1 {
 		font-size: 13rem;
@@ -151,20 +134,11 @@
 		top: -30px;
 		letter-spacing: 10px;
 	}
-
-	.section-top__name-ruby {
-		position: relative;
-		top: -146px;
-		font-size: 3.0rem;
-		line-height: 2em;
-
-	}
 }
 
 .section-top__name {
 	width: 25%;
 	height: 25%;
-
 }
 
 .text1 {
@@ -202,12 +176,16 @@
 }
 
 @media(min-width:1060px) {
+	.text-container{
+width: 100%;
 
+
+	}
 	.text1 {
 		position: absolute;
-		bottom: 290px;
-		right: 0px;
-		width: 170px;
+		bottom: 380px;
+		left: 60%;
+		width:  110px;
 		height: auto;
 
 	}
@@ -215,26 +193,26 @@
 
 	.text2 {
 		position: absolute;
-		bottom: -100px;
-		right: 0px;
-		width: 170px;
+		bottom: 250px;
+		left: 40%;
+		width:  110px;
 		height: auto;
 
 	}
 
 	.text3 {
 		position: absolute;
-		bottom: 300px;
-		left: 0px;
-		width: 170px;
+		bottom: 120px;
+		left: 60%;
+		width:  110px;
 		height: auto;
 	}
 
 	.text4 {
 		position: absolute;
-		bottom: -100px;
-		left: 0px;
-		width: 170px;
+		bottom: -10px;
+		left: 40%;
+		width:  110px;
 		height: auto;
 	}
 

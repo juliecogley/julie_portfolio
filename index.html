@@ -22,15 +22,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script>$(function() {
-    setTimeout(function(){
-      $('.start p').fadeIn(1600);
-    },500); //0.5秒後にロゴをフェードイン!
-    setTimeout(function(){
-      $('.start').fadeOut(500);
-    },2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
-  });</script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>$(function () {
+      setTimeout(function () {
+        $('.start p').fadeIn(1600);
+      }, 500); //0.5秒後にロゴをフェードイン!
+      setTimeout(function () {
+        $('.start').fadeOut(500);
+      }, 2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+    });</script>
 </head>
 
 <body>
@@ -51,7 +52,7 @@
         </a>
       </div>
     </div>
- 
+
     <div id="nav-drawer">
       <input id="nav-input" class="none" type="checkbox">
       <label id="nav-open" for="nav-input"><span></span></label>
@@ -190,90 +191,20 @@
       </div>
 
       <div class="section-top__name">
-        <img class="text1" src="photo/中.svg" alt="naka">
-        <img class="text2" src="photo/原.svg" alt="hara">
-        <img class="text3" src="photo/菜.svg" alt="na">
-        <img class="text4" src="photo/海.svg" alt="mi">
+        <div class="text-container">
+          <img class="text1" src="photo/中.svg" alt="naka">
+        </div>
+        <div class="text-container">
+          <img class="text2" src="photo/原.svg" alt="hara">
+        </div>
+        <div class="text-container">
+          <img class="text3" src="photo/菜.svg" alt="na">
+        </div>
+        <div class="text-container">
+          <img class="text4" src="photo/海.svg" alt="mi">
+        </div>
       </div>
-      <!--  <div class="section-top__name-ruby">
-        <img class="ruby1" src="photo/なかはら.svg" alt="ruby1">
-        <img class="ruby2" src="photo/なみ.svg" alt="ruby2">
-      </div> -->
     </section>
-
-    <script>
-      //リサイズ時にアニメーションの速度を再計算
-      function resizeRefresh() {
-        const target = document.body;
-        const resizeObserver = new ResizeObserver((entries) => {
-          entries.forEach((entry) => {
-            calculateLoopAnimationSpeed();
-          });
-        });
-        resizeObserver.observe(target);
-      }
-
-
-      //アニメーションの速度を計算してCSS変数に
-      function calculateLoopAnimationSpeed() {
-        const targets = document.querySelectorAll('.js-tick');
-        if (!targets.length) {
-          return;
-        }
-
-        const distance = window.innerWidth;
-        const mql = window.matchMedia('(min-width: 801px)');
-        const time = mql.matches ? 18 : 9; //ここで時間を調整
-        const speed = distance / time;
-
-        targets.forEach((target) => {
-          const tickElems = target.querySelectorAll('.js-tick-item');
-          if (!tickElems.length) {
-            return;
-          }
-
-          const total = tickElems.length - 1;
-
-          tickElems.forEach((el, i) => {
-            const elWidth = el.clientWidth;
-            const elTime = Math.floor(elWidth / speed);
-            el.style.setProperty('--tick-duration', `${elTime}s`);
-            el.style.setProperty('--tick-delay', `${elTime / -2}s`);
-
-            if (i === total) {
-              el.parentNode.classList.remove('no-tick');
-            }
-
-          });
-        });
-      }
-
-      //テキストをコピーする
-      function copyText() {
-        const targets = document.querySelectorAll('.js-tick');
-        if (!targets.length) {
-          return;
-        }
-
-        targets.forEach((target) => {
-          const tickElems = target.querySelectorAll('.js-tick-item');
-          if (!tickElems.length) {
-            return;
-          }
-
-          let length = 0;
-          tickElems.forEach((el) => {
-            length += el.clientWidth;
-            el.insertAdjacentHTML('afterend', el.outerHTML);
-            if (length > window.innerWidth) {
-              return;
-            }
-          });
-        });
-      }
-
-    </script>
-
   </main>
   <footer class="footer">
     <div class="footer-content-wrapper">
@@ -310,14 +241,14 @@
     </div>
   </footer>
   <div class="start">
-<div class="start-container">
-    <p class="p1">「なににでも見えるかたち」は</p><br>
-    <p class="p2">誰にとってのなににでもなれるのではないか。</p><br>
-    <p class="p3">わたしは作品を通して</p><br>
-    <p class="p4">そこに対峙する、</p><br>
-    <p class="p5">あなたの思い出の扉を開く。</p><br>
+    <div class="start-container">
+      <p class="p1">「なににでも見えるかたち」は</p><br>
+      <p class="p2">誰にとってのなににでもなれるのではないか。</p><br>
+      <p class="p3">わたしは作品を通して</p><br>
+      <p class="p4">そこに対峙する、</p><br>
+      <p class="p5">あなたの思い出の扉を開く。</p><br>
+    </div>
   </div>
-</div>
 
 </body>
 
