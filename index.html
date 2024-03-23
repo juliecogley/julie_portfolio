@@ -22,6 +22,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>$(function() {
+    setTimeout(function(){
+      $('.start p').fadeIn(1600);
+    },500); //0.5秒後にロゴをフェードイン!
+    setTimeout(function(){
+      $('.start').fadeOut(500);
+    },2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+  });</script>
 </head>
 
 <body>
@@ -300,6 +309,14 @@
       </small>
     </div>
   </footer>
+  <div class="start">
+    <p class="p1">「なににでも見えるかたち」は</p><br>
+    <p class="p2">誰にとってのなににでもなれるのではないか。</p><br>
+    <p class="p3">わたしは作品を通して</p><br>
+    <p class="p4">そこに対峙する、</p><br>
+    <p class="p5">あなたの思い出の扉を開く。</p><br>
+</div>
+
 </body>
 
 </html>

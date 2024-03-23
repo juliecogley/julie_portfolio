@@ -111,8 +111,8 @@ body {
   .contents-text {
     font-size: 2.0rem;
     top: 38px;
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: auto;
     writing-mode: horizontal-tb;
     margin: 0 auto;
   }
@@ -313,4 +313,89 @@ body {
   display: inline-block;
   width: 6%;
   padding-right: 1.4px;
+}
+
+.start {
+  background: #FFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9000;
+}
+
+.start p {
+  width: 80%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 9999;
+  writing-mode: horizontal-tb;
+  font-size: 1.5rem;
+  line-height: 1em;
+  text-wrap: nowrap;
+}
+.p1 {
+  top: 20%;
+  left: 50%;
+}
+
+.p2 {
+  top: 35%;
+  left: 50%;
+}
+
+.p3 {
+  top: 50%;
+  left: 50%;
+}
+
+.p4 {
+  top: 65%;
+  left: 50%;
+}
+
+.p5 {
+  top: 80%;
+  left: 50%;
+}
+
+
+@media (min-width: 1060px) {
+  .start p {
+    -ms-writing-mode: tb-rl;
+    /* IE対応 */
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    /* すべて縦方向に表示　英数字も縦に表示するなら upright、和文も横に表示するなら sideways を指定 */
+    font-size: 2.0rem;
+    line-height: 1.8em;
+    top: 40%;
+  }
+
+  .p1 {
+    right: 20%;
+    left: auto;
+  }
+
+  .p2 {
+    right: 35%;
+    left: auto;
+  }
+
+  .p3 {
+    right: 50%;
+    left: auto;
+  }
+
+  .p4 {
+    right: 65%;
+    left: auto;
+  }
+
+  .p5 {
+    right: 80%;
+    left: auto;
+  }
 }
