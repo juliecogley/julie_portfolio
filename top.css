@@ -1,4 +1,12 @@
 @charset "UTF-8";
+
+
+@media(min-width:1060px) {
+	#nav-open{
+		top: -65px;
+	}
+	
+}
 .contents-rectangle {
 	display: none;
 }
