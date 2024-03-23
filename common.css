@@ -338,28 +338,28 @@ body {
   text-wrap: nowrap;
 }
 .p1 {
-  top: 20%;
-  left: 50%;
+  top: 15%;
+width: 100%;  
 }
 
 .p2 {
-  top: 35%;
-  left: 50%;
+  top: 25%;
+  width: 100%;
 }
 
 .p3 {
-  top: 50%;
-  left: 50%;
+  top: 35%;
+  width: 100%;
 }
 
 .p4 {
-  top: 65%;
-  left: 50%;
+  top: 45%;
+  width: 100%;
 }
 
 .p5 {
-  top: 80%;
-  left: 50%;
+  top: 55%;
+  width: 100%;
 }
 
 
