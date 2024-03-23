@@ -120,15 +120,6 @@
 	}
 }
 
-/*
-.img-01,.img-02,.img-03,.img-04 {
-	width: 130px;
-	height: 130px;
-	object-fit: cover;
-    object-position: 0% 0%;	
-}
-
-*/
 .img-frame {
 	position: relative;
 	width: 100%;
@@ -139,7 +130,8 @@
 
 .img-01,
 .img-02,
-.img-03 {
+.img-03,
+.img-04 {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -147,36 +139,32 @@
 	height: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
-
 	display: block;
 
 }
 
 .img-01 {
 	background-image: url('photo/03moon/moon01.JPG');
-	animation: slide-animation-01 24s infinite;
+	animation: slide-animation-01 48s infinite;
 	background-position: 50% 50%;
 }
 
 .img-02 {
 	background-image: url('photo/03moon/moon02.JPG');
-	animation: slide-animation-02 24s infinite;
+	animation: slide-animation-02 48s infinite;
 	background-position: 50% 50%;}
 
 .img-03 {
 		background-image: url('photo/03moon/moon01.JPG');
-		animation: slide-animation-01 24s infinite;
+		animation: slide-animation-01 48s infinite;
 		background-position: 50% 50%;
 	}
 	
 .img-04 {
 		background-image: url('photo/03moon/moon02.JPG');
-		animation: slide-animation-02 24s infinite;
+		animation: slide-animation-02 48s infinite;
 		background-position: 50% 50%;
 }
-
-
-
 
 @keyframes slide-animation-01 {
 	0% {

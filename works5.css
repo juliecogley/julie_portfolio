@@ -122,15 +122,6 @@
 	}
 }
 
-/*
-.img-01,.img-02,.img-03,.img-04 {
-	width: 130px;
-	height: 130px;
-	object-fit: cover;
-    object-position: 0% 0%;	
-}
-
-*/
 .img-frame {
 	position: relative;
 	width: 100%;
@@ -141,7 +132,8 @@
 
 .img-01,
 .img-02,
-.img-03 {
+.img-03,
+.img-04 {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -149,7 +141,7 @@
 	height: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
-
+    background-position: 50% 50%;
 	display: block;
 
 }
@@ -171,17 +163,17 @@
 
 .img-04 {
 	background-image: url('photo/05mi/mi04.JPG');
-	animation: slide-animation-01 24s infinite;
+	animation: slide-animation-04 24s infinite;
 }
 
 .img-05 {
 	background-image: url('photo/05mi/mi05.JPG');
-	animation: slide-animation-02 24s infinite;
+	animation: slide-animation-01 24s infinite;
 }
 
 .img-06 {
 	background-image: url('photo/05mi/mi06.JPG');
-	animation: slide-animation-03 24s infinite;
+	animation: slide-animation-02 24s infinite;
 }
 
 
@@ -241,6 +233,30 @@
 }
 
 @keyframes slide-animation-03 {
+	0% {
+		opacity: 0;
+	}
+
+	45% {
+		opacity: 0;
+		transform: scale(1.0);
+	}
+
+	55% {
+		opacity: 1;
+	}
+
+	65% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(1.1);
+	}
+}
+
+@keyframes slide-animation-04 {
 	0% {
 		opacity: 0;
 	}

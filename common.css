@@ -315,6 +315,12 @@ body {
   padding-right: 1.4px;
 }
 
+@media (min-width: 1060px) {
+  .footer__copyright {    
+    left: -50px;
+  }
+  
+}
 .start {
   background: #FFF;
   position: fixed;
