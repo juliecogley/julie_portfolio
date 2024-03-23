@@ -61,18 +61,18 @@ line-height: 2em;
 .section-works__top{
 	width: 30%;
 	height: 2054px;
-    
+    position: relative;
+	top: -174px;
+	z-index: -1;
 }
 
 
 	.section-works__top-image{
-		/*transform: rotate(90deg);*/
-		margin-top: 20px;
-		zoom: 3.5;
-		background-position:-870px 600px;
-		height: 100%;
-		top: 20px;
-		
+		zoom: 3.15;
+		background-position:-870px 900px;
+		height: 880px;	
+		position: relative;
+		top:9px;
 	}
 	
 
