@@ -325,13 +325,14 @@ body {
   z-index: 9000;
 }
 
+.start-container{
+  width: 100%;
+  writing-mode: horizontal-tb;
+}
 .start p {
-  width: 80%;
   position: fixed;
-  transform: translate(-50%, -50%);
   display: none;
   z-index: 9999;
-  writing-mode: horizontal-tb;
   font-size: 1.5rem;
   line-height: 1em;
   text-wrap: nowrap;
@@ -363,14 +364,17 @@ body {
 
 
 @media (min-width: 1060px) {
-  .start p {
-    -ms-writing-mode: tb-rl;
+  
+.start-container{
+  top: 50%;
+  -ms-writing-mode: tb-rl;
     /* IE対応 */
     writing-mode: vertical-rl;
     text-orientation: upright;
     /* すべて縦方向に表示　英数字も縦に表示するなら upright、和文も横に表示するなら sideways を指定 */
+}
+  .start p {
     font-size: 2.0rem;
-    line-height: 1.8em;
     top: 40%;
   }
 

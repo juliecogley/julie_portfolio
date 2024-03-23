@@ -101,3 +101,20 @@ padding:0;
 input, select {
 vertical-align:middle;
 }
+/* リセットCSS */
+body,ul,li { padding: 0; margin: 0;}
+/* スリックスライダー */
+.slider li {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  .slider li:first-of-type {
+    background-image: url(photo/01utuwa/utuwa01.JPG);
+  }
+  .slider li:nth-of-type(2) {
+    background-image: url(photo/01utuwa/utuwa02.JPG);
+  }
+  .slider li:last-of-type {
+    background-image: url(photo/01utuwa/utuwa03.JPG);
+  }
