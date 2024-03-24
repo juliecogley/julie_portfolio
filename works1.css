@@ -120,7 +120,7 @@
 	}
 
 	.section-works1__poem p {
-		line-height: 1.8em;
+		line-height: 2.8em;
 	}
 }
 
@@ -161,22 +161,22 @@
 
 
 .img-01 {
-	background-image: url('photo/01utuwa/utuwa01.JPG');
+	background-image: url('photo/01utuwa/utuwa02.JPG');
 	animation: slide-animation-01 24s infinite;
 }
 
 .img-02 {
-	background-image: url('photo/01utuwa/utuwa02.JPG');
+	background-image: url('photo/01utuwa/utuwa04.JPG');
 	animation: slide-animation-02 24s infinite;
 }
 
 .img-03 {
-	background-image: url('photo/01utuwa/utuwa03.JPG');
+	background-image: url('photo/01utuwa/utuwa05.JPG');
 	animation: slide-animation-03 24s infinite;
 }
 
 .img-04 {
-	background-image: url('photo/01utuwa/utuwa04.JPG');
+	background-image: url('photo/01utuwa/utuwa09.JPG');
 	animation: slide-animation-04 24s infinite;
 }
 
