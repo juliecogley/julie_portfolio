@@ -22,8 +22,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.css">
 </head>
 <body>
@@ -64,9 +62,7 @@
     </div>
   </header>
   <main class="main">
-
     <section class="section-works1__top">
-
       <div class="section-works1__title">
         <h1>そっと水をあげる</h1>
         <h2>watering flowers,is it love or not?</h2>
@@ -74,7 +70,6 @@
           可変<br>
           2024</p>
       </div>
-
       <div class="section-works1__image-body">
         <img class="section-works1__image" src="photo/01utuwa/utuwa01.JPG" alt="top_image">
       </div>
@@ -93,14 +88,17 @@
       <p>確かにそこにあったことを思い出して</p><br>
       <p>覗き込んでみてください。</p><br>
     </div>
-
+    <!-- Provide a short description of the page. 
     <div class="img-frame">
       <div class="img-01"></div>
       <div class="img-02"></div>
       <div class="img-03"></div>
       <div class="img-04"></div>
     </div>
-
+    -->
+    　<section id="first-view" class="position-relative">
+      　　　<div id="mainvisual"></div>
+      　　</section>
     <div class="back-to-works">
       <img class="back-to-works__line" src="photo/line.svg" alt="line">
       <a class="back-to-works__text" href="works.html">作品集へ戻る</a>
@@ -140,6 +138,37 @@
     </div>
   </footer>
 </body>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.js">
-
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.js"></script>
+<script type="text/javascript">
+  'use strict';
+  jQuery(function ($) {
+    $('#mainvisual').vegas({
+      slides: [
+        { src: 'photo/01utuwa/utuwa02.JPG' },
+        { src: 'photo/01utuwa/utuwa03.JPG' },
+        { src: 'photo/01utuwa/utuwa04.JPG' },
+        { src: 'photo/01utuwa/utuwa05.JPG' },
+        { src: 'photo/01utuwa/utuwa06.JPG' },
+        { src: 'photo/01utuwa/utuwa07.JPG' },
+        { src: 'photo/01utuwa/utuwa08.JPG' },
+        { src: 'photo/01utuwa/utuwa09.JPG' },
+        { src: 'photo/01utuwa/utuwa10.JPG' },
+        { src: 'photo/01utuwa/utuwa11.JPG' },
+        { src: 'photo/01utuwa/utuwa12.JPG' },
+        { src: 'photo/01utuwa/utuwa13.JPG' },
+        { src: 'photo/01utuwa/utuwa14.JPG' },
+        { src: 'photo/01utuwa/utuwa15.JPG' },
+      ],
+      transition: 'fade',
+      transitionDuration: 4000,
+      delay: 18000,
+      cover: true,
+      animation: 'random',
+      animationDuration: 20000,
+      timer: true
+    });
+  });
+</script>
 </html>

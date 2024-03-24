@@ -1,4 +1,15 @@
 @charset "UTF-8";
+.body{
+	margin: 0;
+}
+#mainvisual {
+    height: 50vh;
+  }
+  @media (min-width: 1060px) {
+	#mainvisual {
+		height: 100vh;
+	  }
+  }
 
 .main {
 	max-width: 1208px;
@@ -124,7 +135,7 @@
 	}
 }
 
-
+/*画面サイズ1060以上での指定
 .img-frame {
 	position: relative;
 	width: 100%;
@@ -293,35 +304,4 @@
 	}
 
 }
-
-.back-to-works {
-	position: relative;
-	display: flex;
-	text-align: right;
-	margin-bottom: 80px;
-}
-
-.back-to-works__text {
-	position: absolute;
-	right: 0px;
-	padding-right: 24px;
-	text-decoration: none;
-	color: #212427;
-}
-
-.back-to-works__line {
-	position: absolute;
-	right: 124px;
-	top: 10px;
-}
-
-
-@media (min-width: 1060px) {
-	.back-to-works__text {
-		padding-right: 50px;
-	}
-
-	.back-to-works__line {
-		right: 150px;
-	}
-}
+*/

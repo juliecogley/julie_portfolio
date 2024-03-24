@@ -409,3 +409,35 @@ width: 100%;
     left: auto;
   }
 }
+
+.back-to-works {
+	position: relative;
+	display: flex;
+	text-align: right;
+	margin-bottom: 80px;
+}
+
+.back-to-works__text {
+	position: absolute;
+	right: 0px;
+	padding-right: 24px;
+	text-decoration: none;
+	color: #212427;
+}
+
+.back-to-works__line {
+	position: absolute;
+	right: 124px;
+	top: 10px;
+}
+
+
+@media (min-width: 1060px) {
+	.back-to-works__text {
+		padding: 0;;
+	}
+
+	.back-to-works__line {
+		right: 100px;
+	}
+}
