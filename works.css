@@ -3,15 +3,10 @@
 .section-works__top{
 width: 100%;
 height: 200px;
-}
-
-.section-works__top-image{
-	width: 100%;
-    height: 200px;
-    background-position:-145px 390px;
-	background-image: url("photo/obi.JPG");
-	/*transform: rotate(90deg);*/
-	margin-top: 20px;
+background: url("photo/obi.JPG")center;
+background-position: center;
+background-size: cover;
+margin-top: 20px;
 }
 
 
@@ -60,21 +55,13 @@ line-height: 2em;
 }
 .section-works__top{
 	width: 30%;
-	height: 2054px;
+	height: 2000px;
     position: relative;
 	top: -174px;
 	z-index: -1;
+	zoom: 2.15;
+	background-position:-870px 1463px;
 }
-
-
-	.section-works__top-image{
-		zoom: 3.15;
-		background-position:-870px 900px;
-		height: 880px;	
-		position: relative;
-		top:9px;
-	}
-	
 
 	.section-works__wrapper{
 		padding: 0 24px;
