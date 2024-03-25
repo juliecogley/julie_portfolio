@@ -17,6 +17,19 @@ body {
   color: #212427;
 }
 
+.body{
+	margin: 0 ;
+}
+#mainvisual {
+    height: 50vh;
+	margin-bottom: 80px;
+  }
+  @media (min-width: 960px) {
+	#mainvisual {
+		height: 100vh;
+	  }
+  }
+
 .header {
   height: 80px;
   width: 100%;
@@ -434,10 +447,10 @@ width: 100%;
 
 @media (min-width: 1060px) {
 	.back-to-works__text {
-		padding: 0;;
+	padding-right: 50px;
 	}
 
 	.back-to-works__line {
-		right: 100px;
+		right: 150px;
 	}
 }
