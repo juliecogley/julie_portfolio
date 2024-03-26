@@ -145,8 +145,8 @@
 	position: absolute;
 	bottom: 380px;
 	right: -8px;
-	width: 25%;
-	height: 25%;
+	max-width: 110px;
+	height: auto;
 }
 
 
@@ -154,8 +154,8 @@
 	position: absolute;
 	bottom: -14px;
 	right: -8px;
-	width: 25%;
-	height: 25%;
+	max-width: 110px;
+	height: auto;
 
 }
 
@@ -163,16 +163,16 @@
 	position: absolute;
 	bottom: 380px;
 	left: -8px;
-	width: 25%;
-	height: 25%;
+	max-width: 110px;
+	height: auto;
 }
 
 .text4 {
 	position: absolute;
 	bottom: -14px;
 	left: -8px;
-	width: 25%;
-	height: 25%;
+	max-width: 110px;
+	height: auto;
 }
 
 @media(min-width:1060px) {
