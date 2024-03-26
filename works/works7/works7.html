@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+  <!-- Provide a short description of the page. -->
+  <meta name="description" content="美術科、彫刻家　中原菜海のポートフォリオサイトです。">
+  <meta property="og:title" content="NakaharaNami's Portfolio">
+  <meta property="og:site_name" content="NakaharaNami's Portfolio">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja-JP">
+  <meta property="og:image" content="ogp.jpg">
+  <meta property="og:description" content="美術科、彫刻家　中原菜海のポートフォリオサイトです。">
+  <meta name="twitter:card" content="summary">
+  <title> NakaharaNami's Portfolio </title>
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/works7.css">
+  <link href="../img/profile_top.JPG" rel="icon" type="image/x-icon">
+  <link rel="apple-touch-icon" href="../img/profile_top.JPG">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-content-wrapper">
+      <div class="label">
+        <a class="go-to-top" href="../../index.html">
+          <p class="nakahara-nami">
+            <span class="n">N</span>
+            <span class="another">akahara
+              <br>
+            </span>
+            <span class="n">N</span>
+            <span class="another">ami
+              <br>PORTFOLIO</span>
+          </p>
+        </a>
+      </div>
+    </div>
+    <div class="contents-rectangle">
+      <div class="contents-text">作品集</div>
+    </div>
+    <div id="nav-drawer">
+      <input id="nav-input" class="none" type="checkbox">
+      <label id="nav-open" for="nav-input"><span></span></label>
+      <label id="nav-close" class="none" for="nav-input"></label>
+      <nav id="nav-content" class="header__navigation">
+        <div class="nav-drawer__title none"></div>
+        <ul>
+          <li class="nav-drawer__link-top none">目　次</li>
+          <li><a href="../../index.html">トップページ</a></li>
+          <li><a href="../../profile/profile.html">プロフィール</a></li>
+          <li><a href="../works.html">作品集</a></li>
+          <li><a href="../../kotobagaki/kotobagaki.html">ことばがき</a></li>
+          <li><a href="../../contact/contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+
+    <section class="section-works1__top">
+
+      <div class="section-works1__title">
+        <h1>よるの森</h1>
+        <p>樟に着彩<br>
+          H600×W570×D270 (mm)<br>
+          2021</p>
+      </div>
+
+      <div class="section-works1__image-body">
+        <img class="section-works1__image" src="../../img/07mori/mori01.JPG" alt="top_image">
+      </div>
+    </section>
+
+    <div class="section-works1__poem">
+      <p>「いい夜」をあつめて</p><br>
+      <p>ここにそっと閉じ込める</p><br>
+      <p>明けなくていいよ</p><br>
+      <p>もう誰も来ない</p><br>
+      <p>午前一時のバス停</p><br>
+    </div>
+    <div id="first-view" class="position-relative">
+      <div id="mainvisual"></div>
+      </div>
+      <div class="back-to-works">
+        <img class="back-to-works__line" src="../../img/line.svg" alt="line">
+        <a class="back-to-works__text" href="../works.html">作品集へ戻る</a>
+      </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-content-wrapper">
+      <nav class="site-map">
+        <h2>目次</h2>
+        <ul class="site-map__links">
+          <li><a class="links" href="../../index.html">トップページ</a></li>
+          <li><a class="links" href="../../profile/profile.html">プロフィール</a></li>
+          <li><a class="links" href="../works.html">作品集</a></li>
+          <li><a class="links" href="../../kotobagaki/kotobagaki.html">ことばがき</a></li>
+          <li><a class="links" href="../../contact/contact.html">お問い合わせ</a></li>
+        </ul>
+        <h2>SNS</h2>
+        <ul class="site-map__links">
+          <li><a class="links" href="https://www.instagram.com/seana.73nn/#">instagram</a></li>
+        </ul>
+      </nav>
+
+      <p class="nakahara-nami">
+        <span class="n">N</span>
+        <span class="another">akahara
+          <br>
+        </span>
+        <span class="n">N</span>
+        <span class="another">ami
+          <br>PORTFOLIO</span>
+      </p>
+
+      <small class="footer__copyright">
+        ©2024 Nami Nakahara
+      </small>
+    </div>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.js"></script>
+<script type="text/javascript">
+  'use strict';
+  jQuery(function ($) {
+    $('#mainvisual').vegas({
+      slides: [
+        { src: '../../img/07mori/mori02.JPG' },
+        { src: '../../img/07mori/mori03.JPG' },
+        { src: '../../img/07mori/mori04.JPG' },
+      ],
+      transition: 'fade',
+      transitionDuration: 4000,
+      delay: 18000,
+      cover: true,
+      animation: 'random',
+      animationDuration: 20000,
+      timer: true
+    });
+  });
+</script>
+</body>
+
+</html>

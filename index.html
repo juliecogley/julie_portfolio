@@ -14,24 +14,34 @@
   <meta property="og:description" content="美術科、彫刻家　中原菜海のポートフォリオサイトです。">
   <meta name="twitter:card" content="summary">
   <title> NakaharaNami's Portfolio </title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="common.css">
-  <link rel="stylesheet" href="top.css">
-  <link href="photo/profile_top.JPG" rel="icon" type="image/x-icon">
-  <link rel="apple-touch-icon" href="photo/profile_top.JPG">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/top.css">
+  <link href="img/profile_top.JPG" rel="icon" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/profile_top.JPG">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script>$(function () {
+  <script>
+  $(function () {
+    const webStorage = function () {
+    if (sessionStorage.getItem('visit')) {
+      $('.start').hide();
+    } else {
+      sessionStorage.setItem('visit', 'true'); 
       setTimeout(function () {
         $('.start p').fadeIn(1600);
-      }, 500); //0.5秒後にロゴをフェードイン!
+      }, 500);
       setTimeout(function () {
         $('.start').fadeOut(500);
-      }, 2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
-    });</script>
+      }, 2500);
+    }
+  }
+  webStorage();
+  });
+  </script>
 </head>
 
 <body>
@@ -61,11 +71,11 @@
         <div class="nav-drawer__title none"></div>
         <ul>
           <li class="nav-drawer__link-top none">目　次</li>
-          <li><a href="index.html">トップページ</a></li>
-          <li><a href="profile.html">プロフィール</a></li>
-          <li><a href="works.html">作品集</a></li>
-          <li><a href="kotobagaki.html">ことばがき</a></li>
-          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><a class="links" href="index.html">トップページ</a></li>
+          <li><a class="links" href="profile/profile.html">プロフィール</a></li>
+          <li><a class="links" href="works/works.html">作品集</a></li>
+          <li><a class="links" href="kotobagaki/kotobagaki.html">ことばがき</a></li>
+          <li><a class="links" href="contact/contact.html">お問い合わせ</a></li>
         </ul>
       </nav>
     </div>
@@ -192,16 +202,16 @@
 
       <div class="section-top__name">
         <div class="text-container">
-          <img class="text1" src="photo/中.svg" alt="naka">
+          <img class="text1" src="../julie_portfolio/img/00top/中.svg" alt="naka">
         </div>
         <div class="text-container">
-          <img class="text2" src="photo/原.svg" alt="hara">
+          <img class="text2" src="../julie_portfolio/img/00top/原.svg" alt="hara">
         </div>
         <div class="text-container">
-          <img class="text3" src="photo/菜.svg" alt="na">
+          <img class="text3" src="../julie_portfolio/img/00top/菜.svg" alt="na">
         </div>
         <div class="text-container">
-          <img class="text4" src="photo/海.svg" alt="mi">
+          <img class="text4" src="../julie_portfolio/img/00top/海.svg" alt="mi">
         </div>
       </div>
     </section>
@@ -212,10 +222,10 @@
         <h2>目次</h2>
         <ul class="site-map__links">
           <li><a class="links" href="index.html">トップページ</a></li>
-          <li><a class="links" href="profile.html">プロフィール</a></li>
-          <li><a class="links" href="works.html">作品集</a></li>
-          <li><a class="links" href="kotobagaki.html">ことばがき</a></li>
-          <li><a class="links" href="contact.html">お問い合わせ</a></li>
+          <li><a class="links" href="profile/profile.html">プロフィール</a></li>
+          <li><a class="links" href="works/works.html">作品集</a></li>
+          <li><a class="links" href="kotobagaki/kotobagaki.html">ことばがき</a></li>
+          <li><a class="links" href="contact/contact.html">お問い合わせ</a></li>
         </ul>
         <h2>SNS</h2>
         <ul class="site-map__links">
