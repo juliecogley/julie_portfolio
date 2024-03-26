@@ -144,7 +144,7 @@
 .text1 {
 	position: absolute;
 	bottom: 380px;
-	right: -8px;
+	right: 0;
 	max-width: 110px;
 	height: auto;
 }
@@ -153,7 +153,7 @@
 .text2 {
 	position: absolute;
 	bottom: -14px;
-	right: -8px;
+	right: 0;
 	max-width: 110px;
 	height: auto;
 
@@ -162,7 +162,7 @@
 .text3 {
 	position: absolute;
 	bottom: 380px;
-	left: -8px;
+	left: 0;
 	max-width: 110px;
 	height: auto;
 }
@@ -170,7 +170,7 @@
 .text4 {
 	position: absolute;
 	bottom: -14px;
-	left: -8px;
+	left: 0;
 	max-width: 110px;
 	height: auto;
 }
@@ -187,7 +187,6 @@ width: 100%;
 		left: 60%;
 		width:  110px;
 		height: auto;
-
 	}
 
 
@@ -197,7 +196,6 @@ width: 100%;
 		left: 40%;
 		width:  110px;
 		height: auto;
-
 	}
 
 	.text3 {
