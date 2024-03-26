@@ -22,6 +22,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.css">
 </head>
 
 <body>
@@ -92,6 +93,9 @@
       <p>存在すらも不確かなものたちが積み重なって</p><br>
       <p>世界の輪郭を描いている</p>
     </div>
+    <div id="first-view" class="position-relative">
+      <div id="mainvisual"></div>
+      </div>
     <div class="back-to-works">
       <img class="back-to-works__line" src="photo/line.svg" alt="line">
      <a class="back-to-works__text" href="works.html">作品集へ戻る</a>
@@ -129,6 +133,26 @@
       </small>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.js"></script>
+<script type="text/javascript">
+  'use strict';
+  jQuery(function ($) {
+    $('#mainvisual').vegas({
+      slides: [
+        { src: 'photo/06ikisinani/ikisinani.JPG' },
+      ],
+      transition: 'fade',
+      transitionDuration: 4000,
+      delay: 18000,
+      cover: true,
+      animation: 'random',
+      animationDuration: 20000,
+      timer: true
+    });
+  });
+</script>
 </body>
 
 </html>
