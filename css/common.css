@@ -131,7 +131,8 @@ transition: all  0.3s ease;
   font-size: 2.4rem;
   }
   .label .n {
-   width: 10px;}
+   width: 10px;
+  }
   .header-content-wrapper {
     padding: 10px 50px 0 50px;
   }
@@ -357,6 +358,9 @@ transition: all  0.3s ease;
     left: -50px;
   }
   
+.footer-content-wrapper .n {
+ width: 10%;
+}
 }
 .start {
   background: #FFF;
