@@ -19,15 +19,9 @@ margin-top: 20px;
 margin-top: 40px;
 border-bottom: 2px dotted #030303;
 position: relative;
--webkit-transition: all 0.3s ease;
--moz-transition: all 0.3s ease;
--o-transition: all 0.3s ease;
-transition: all  0.3s ease;
+
 }
-.section-works__index:hover{
-background-color: #f7f7f7;
-opacity: 1;
-	}
+
 .section-works__wrapper h2{
 font-size: 2.0rem;
 line-height: 2em;
@@ -74,7 +68,7 @@ line-height: 2em;
 
 .section-works__wrapper{
 	padding: 0 24px;
-	margin:120px auto 160px auto;
+	margin:240px auto 160px auto;
 	text-align: left;
 	display: block;
 	width: 72.2%;
