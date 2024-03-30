@@ -7,19 +7,23 @@ padding: 50px 24px;
 }
 
 @media(min-width:1060px) {
-	#nav-open {
-		top: -65px;
-	}
-
+	.header-content-wrapper{
+		padding: 50px 50px;
+		}
+	
 }
+		
+#nav-open {
+	top: -100px;
+}
+
 
 .contents-rectangle {
 	display: none;
 }
 
 .section-top {
-	position: relative;
-	top: -80px;
+
 	z-index: -1;
 }
 
@@ -78,6 +82,7 @@ padding: 50px 24px;
 	padding-left: 25px;
 	color: #212427;
 	line-height: 2em;
+	padding: 10px 0;
 
 	/*--tick-duration・--tick-delayの変数に値がある場合は変数の値が優先させる*/
 	&:nth-child(odd) {
