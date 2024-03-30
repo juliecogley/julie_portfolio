@@ -3,16 +3,10 @@
 height: 0vh;
 }
 .header-content-wrapper{
-padding: 50px 24px;
+padding: 0 24px;
+height: 30vh;
 }
 
-@media(min-width:1060px) {
-.header-content-wrapper{
-		padding: 50px 50px;
-		}
-	
-}
-		
 #nav-open {
 	top: -114px;
 }
@@ -24,12 +18,25 @@ padding: 50px 24px;
 	color: #F7F7F7;
 }
 
-
-
 .contents-rectangle {
 	display: none;
 }
 
+@media(min-width:1060px) {
+	.header-content-wrapper{
+			padding: 0 50px;
+			}
+			#nav-open {
+				top: -180px;
+			}	
+	}
+	
+
+	@media(min-width:1060px) {
+				#nav-open {
+					top: -250px;
+				}	
+		}
 .section-top {
 
 	z-index: -1;
@@ -57,23 +64,23 @@ padding: 50px 24px;
 }
 
 .section-top__image-1 {
-	background-image: url("../img/profile_top.JPG");
-	background-position: 50% 80%;
+	background-image: url("../img/00top/utuwa_blue.JPG");
 
 }
 
 .section-top__image-2 {
-	background-image: url("../img/01utuwa/utuwa13.JPG");
-
+	background-image: url("../img/01utuwa/utuwa08.JPG");
+	
 }
 
 .section-top__image-3 {
 	background-image: url("../img/00top/utuwa_blue.JPG");
-	
+	background-position: 50% 70%;
 }
 
 .section-top__image-4 {
 	background-image: url("../img/01utuwa/utuwa08.JPG");
+	background-position: 50% 60%;
 }
 
 .loop03__box {
@@ -88,6 +95,7 @@ padding: 50px 24px;
 	flex-shrink: 0;
 	white-space: nowrap;
 	color: #212427;
+	opacity: .8;
 	line-height: 2em;
 	padding: 5px 25px;
 
