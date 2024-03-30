@@ -1,18 +1,26 @@
 @charset "UTF-8";
-.header{
-height: 0vh;
+
+.header {
+	height: 0vh;
 }
-.header-content-wrapper{
-padding: 0 24px;
-height: 30vh;
+
+.header-content-wrapper {
+	padding: 0 24px;
+	height: 30vh;
 }
-#nav-drawer{
+
+#nav-drawer {
 	top: auto;
 }
-#nav-open span,#nav-open span:before,#nav-open span:after{
+
+#nav-open span,
+#nav-open span:before,
+#nav-open span:after {
 	background-color: #F7F7F7;
 }
-.label .n,.label .another{
+
+.label .n,
+.label .another {
 	color: #F7F7F7;
 }
 
@@ -21,11 +29,12 @@ height: 30vh;
 }
 
 @media(min-width:1060px) {
-	.header-content-wrapper{
-			padding: 0 50px;}
+	.header-content-wrapper {
+		padding: 0 50px;
+	}
 
-			}
-		
+}
+
 .section-top {
 
 	z-index: -1;
@@ -58,7 +67,7 @@ height: 30vh;
 
 .section-top__image-2 {
 	background-image: url("../img/00top/utuwa_blue.JPG");
-	background-position: 50% 40%;	
+	background-position: 50% 40%;
 }
 
 .section-top__image-3 {
@@ -68,7 +77,7 @@ height: 30vh;
 
 .section-top__image-4 {
 	background-image: url("../img/00top/utuwa_blue.JPG");
-	background-position: 50% 60%;	
+	background-position: 50% 60%;
 }
 
 .loop03__box {
@@ -133,16 +142,14 @@ height: 30vh;
 	}
 }
 
-
-
-
 @media(min-width:1060px) {
 
 	.text-container {
 		width: 100%;
 	}
+
 	.loop03__item {
-		padding:10px 25px;
+		padding: 10px 25px;
 		font-size: 2.0rem;
 	}
 }

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 .main {
 	max-width: 1208px;
 	/*1160+pad24+24*/
@@ -47,7 +48,6 @@
 }
 
 
-/*画面サイズ1060以上での指定*/
 @media (min-width: 1060px) {
 	.section-works1__top {
 		display: flex;
@@ -81,11 +81,7 @@
 		margin: 0 auto;
 		display: block;
 	}
-
-
 }
-
-
 
 .section-works1__poem {
 	text-align: left;
@@ -100,7 +96,6 @@
 	line-height: 1.5em;
 }
 
-/*画面サイズ1060以上での指定*/
 @media (min-width: 1060px) {
 	.section-works1__poem {
 		border: none;

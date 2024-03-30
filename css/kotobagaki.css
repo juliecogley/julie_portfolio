@@ -6,7 +6,6 @@
 	margin: 0 auto;
 }
 
-
 .section-kotobagaki__name {
 	padding: 0 24px;
 	margin: 80px auto;
@@ -26,8 +25,6 @@
 	color: rgba(0, 0, 0, 0.50);
 	padding-top: 16px;
 }
-
-
 
 /*画面サイズ1060以上での指定*/
 @media (min-width: 1060px) {
@@ -51,17 +48,12 @@
 	}
 
 	.section-kotobagaki__name p {
-
 		font-size: 1.8rem;
 		padding-top: 20px;
 	}
-
-
 }
 
-
 .section-kotobagaki__image-body {
-
 	width: 60%;
 	height: 100%;
 	margin: 0 auto;
@@ -76,15 +68,10 @@
 	display: block;
 }
 
-
-
-/*画面サイズ1060以上での指定*/
 @media (min-width: 1060px) {
 	.section-kotobagaki__image-body {
-
 		width: 50%;
 		height: 100%;
-
 		margin: 0;
 	}
 
@@ -94,10 +81,7 @@
 		display: block;
 		margin: 0 auto;
 	}
-
 }
-
-
 
 .section-kotobagaki1__poem {
 	text-align: left;
@@ -112,10 +96,8 @@
 	line-height: 2em;
 }
 
-/*画面サイズ1060以上での指定*/
 @media (min-width: 1060px) {
 	.section-kotobagaki1__poem {
-
 		-ms-writing-mode: tb-rl;
 		/* IE対応 */
 		writing-mode: vertical-rl;
@@ -128,5 +110,4 @@
 	.date {
 		padding-top: 250px;
 	}
-
 }

@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/* CSS Document */
-
 html {
   font-size: 62.5%;
   /* 16px * 62.5% = 10px */
@@ -17,18 +15,20 @@ body {
   color: #212427;
 }
 
-.body{
-	margin: 0 ;
+.body {
+  margin: 0;
 }
+
 #mainvisual {
-    height: 50vh;
-	margin-bottom: 80px;
+  height: 50vh;
+  margin-bottom: 80px;
+}
+
+@media (min-width: 960px) {
+  #mainvisual {
+    height: 65vh;
   }
-  @media (min-width: 960px) {
-	#mainvisual {
-		height: 65vh;
-	  }
-  }
+}
 
 .header {
   height: 80px;
@@ -71,10 +71,12 @@ body {
 .label .another {
   color: #212427;
 }
-.portfolio{
+
+.portfolio {
   color: #212427;
-font-size: 1.6rem;
+  font-size: 1.6rem;
 }
+
 .contents-rectangle {
   background-color: #babab9;
   position: fixed;
@@ -110,32 +112,36 @@ font-size: 1.6rem;
   color: #212427;
   display: block;
 }
+
 .go-to-works {
   text-decoration: none;
   color: #212427;
   width: 70%;
   -webkit-transition: all 0.3s ease;
--moz-transition: all 0.3s ease;
--o-transition: all 0.3s ease;
-transition: all  0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.go-to-works:hover{
+.go-to-works:hover {
   background-color: #f7f7f7;
   opacity: 1;
-    }
-    .go-to-works:focus{
-      background-color: #f7f7f7;
-      opacity: 1;
-        }
+}
+
+.go-to-works:focus {
+  background-color: #f7f7f7;
+  opacity: 1;
+}
 
 @media(min-width:1060px) {
   .nakahara-nami {
-  font-size: 2.4rem;
+    font-size: 2.4rem;
   }
+
   .label .n {
-   width: 10px;
+    width: 10px;
   }
+
   .header-content-wrapper {
     padding: 10px 50px 0 50px;
   }
@@ -157,7 +163,6 @@ transition: all  0.3s ease;
     writing-mode: horizontal-tb;
     margin: 0 auto;
   }
-
 }
 
 /*ハンバーガーアイコン*/
@@ -214,8 +219,6 @@ transition: all  0.3s ease;
   opacity: .5;
 }
 
-
-
 #nav-content {
   display: block;
   position: fixed;
@@ -239,7 +242,7 @@ transition: all  0.3s ease;
   border-top: 1px #212427 solid;
   padding: 15px 40px;
   font-weight: 400;
-  color:#212427;
+  color: #212427;
 }
 
 #nav-content ul li {
@@ -261,8 +264,6 @@ transition: all  0.3s ease;
   transform: translateX(0%);
 }
 
-
-/*画面サイズ1060以上での指定*/
 @media (min-width: 1060px) {
   #nav-open {
     display: inline-block;
@@ -307,8 +308,6 @@ transition: all  0.3s ease;
   }
 }
 
-
-/*footer*/
 .footer {
   padding: 40px 24px;
   text-align: left;
@@ -340,10 +339,11 @@ transition: all  0.3s ease;
   border-bottom: 1px dashed #212427;
 }
 
-.site-map__links li a{
+.site-map__links li a {
   text-decoration: none;
   color: #212427;
 }
+
 .links {
   text-decoration: none;
   color: #212427;
@@ -367,14 +367,15 @@ transition: all  0.3s ease;
 }
 
 @media (min-width: 1060px) {
-  .footer__copyright {    
+  .footer__copyright {
     left: -50px;
   }
-  
-.footer-content-wrapper .n {
- width: 10%;
+
+  .footer-content-wrapper .n {
+    width: 10%;
+  }
 }
-}
+
 .start {
   background: #FFF;
   position: fixed;
@@ -385,10 +386,11 @@ transition: all  0.3s ease;
   z-index: 9000;
 }
 
-.start-container{
+.start-container {
   width: 100%;
   writing-mode: horizontal-tb;
 }
+
 .start p {
   position: fixed;
   display: none;
@@ -397,9 +399,10 @@ transition: all  0.3s ease;
   line-height: 1em;
   text-wrap: nowrap;
 }
+
 .p1 {
   top: 20%;
-width: 100%;  
+  width: 100%;
 }
 
 .p2 {
@@ -424,15 +427,15 @@ width: 100%;
 
 
 @media (min-width: 1060px) {
-  
-.start-container{
-  top: 50%;
-  -ms-writing-mode: tb-rl;
+  .start-container {
+    top: 50%;
+    -ms-writing-mode: tb-rl;
     /* IE対応 */
     writing-mode: vertical-rl;
     text-orientation: upright;
     /* すべて縦方向に表示　英数字も縦に表示するなら upright、和文も横に表示するなら sideways を指定 */
-}
+  }
+
   .start p {
     font-size: 2.0rem;
     top: 40%;
@@ -465,33 +468,33 @@ width: 100%;
 }
 
 .back-to-works {
-	display: block;
-	text-align: right;
-	margin-bottom: 80px;
-  
+  display: block;
+  text-align: right;
+  margin-bottom: 80px;
+
 }
 
 .back-to-works__text {
-	padding:0px 24px 0px 0px;
-	text-decoration: none;
-	color: #212427;
+  padding: 0px 24px 0px 0px;
+  text-decoration: none;
+  color: #212427;
 }
 
 
 .back-to-works__line {
-	position: absolute;
-	right: 124px;
-	top: 10px;
+  position: absolute;
+  right: 124px;
+  top: 10px;
 }
 
 
 
 @media (min-width: 1060px) {
-	.back-to-works__text {
-	padding-right: 50px;
-	}
+  .back-to-works__text {
+    padding-right: 50px;
+  }
 
-	.back-to-works__line {
-		right: 150px;
-	}
+  .back-to-works__line {
+    right: 150px;
+  }
 }

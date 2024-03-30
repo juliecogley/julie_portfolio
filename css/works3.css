@@ -26,8 +26,6 @@
 
 }
 
-
-
 .section-works1__title p {
 	padding-top: 20px;
 	line-height: 1.5em;
@@ -50,15 +48,13 @@
 }
 
 
-
-/*画面サイズ1060以上での指定*/
 @media (min-width: 1060px) {
 	.section-works1__top {
 		display: flex;
 		justify-content: center;
 		padding: 0 150px;
 		align-items: center;
-		
+
 		margin: 240px auto 120px auto;
 	}
 
@@ -90,8 +86,6 @@
 
 }
 
-
-
 .section-works1__poem {
 	text-align: left;
 	padding: 40px 24px 40px 24px;
@@ -105,7 +99,6 @@
 	line-height: 1.5em;
 }
 
-/*画面サイズ1060以上での指定*/
 @media (min-width: 1060px) {
 	.section-works1__poem {
 		border: none;

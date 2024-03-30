@@ -48,8 +48,6 @@
 }
 
 
-
-/*画面サイズ1060以上での指定*/
 @media (min-width: 1060px) {
 	.section-works1__top {
 		display: flex;
@@ -67,9 +65,11 @@
 		display: block;
 
 	}
+
 	.section-works1__title p {
 		line-height: 2.8em;
 	}
+
 	.section-works1__image-body {
 		width: 50%;
 		height: 100%;
@@ -86,8 +86,6 @@
 
 }
 
-
-
 .section-works1__poem {
 	text-align: left;
 	padding: 40px 24px 40px 24px;
@@ -101,7 +99,6 @@
 	line-height: 1.5em;
 }
 
-/*画面サイズ1060以上での指定*/
 @media (min-width: 1060px) {
 	.section-works1__poem {
 		border: none;
@@ -113,6 +110,7 @@
 		padding: 40px 0;
 		width: auto;
 	}
+
 	.section-works1__poem p {
 		line-height: 1.8em;
 	}
