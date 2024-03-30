@@ -6,11 +6,9 @@ height: 0vh;
 padding: 0 24px;
 height: 30vh;
 }
-
-#nav-open {
-	top: -114px;
+#nav-drawer{
+	top: auto;
 }
-
 #nav-open span,#nav-open span:before,#nav-open span:after{
 	background-color: #F7F7F7;
 }
@@ -24,19 +22,10 @@ height: 30vh;
 
 @media(min-width:1060px) {
 	.header-content-wrapper{
-			padding: 0 50px;
-			}
-			#nav-open {
-				top: -180px;
-			}	
-	}
-	
+			padding: 0 50px;}
 
-	@media(min-width:1060px) {
-				#nav-open {
-					top: -250px;
-				}	
-		}
+			}
+		
 .section-top {
 
 	z-index: -1;
@@ -69,7 +58,7 @@ height: 30vh;
 }
 
 .section-top__image-2 {
-	background-image: url("../img/01utuwa/utuwa08.JPG");
+	background-image: url("../img/00top/utuwa08.JPG");
 	
 }
 
@@ -79,7 +68,7 @@ height: 30vh;
 }
 
 .section-top__image-4 {
-	background-image: url("../img/01utuwa/utuwa08.JPG");
+	background-image: url("../img/00top/utuwa08.JPG");
 	background-position: 50% 60%;
 }
 

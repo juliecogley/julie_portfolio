@@ -33,6 +33,7 @@ body {
 .header {
   height: 80px;
   width: 100%;
+  position: relative;
 }
 
 .header-content-wrapper {
@@ -70,21 +71,24 @@ body {
 .label .another {
   color: #212427;
 }
-
+.portfolio{
+  color: #212427;
+font-size: 1.6rem;
+}
 .contents-rectangle {
   background-color: #babab9;
   position: fixed;
   top: 400px;
   left: 0;
-  width: 24px;
-  height: 130px;
+  width: 5vw;
+  height: 20vh;
   z-index: 999;
 }
 
 .contents-text {
   height: 100%;
+  width: 90%;
   font-size: 1.2rem;
-  left: 5px;
   text-align: center;
   position: absolute;
   font-weight: 600;
@@ -126,7 +130,6 @@ transition: all  0.3s ease;
         }
 
 @media(min-width:1060px) {
-
   .nakahara-nami {
   font-size: 2.4rem;
   }
@@ -143,6 +146,7 @@ transition: all  0.3s ease;
     top: -127px;
     position: relative;
     margin: 0 auto;
+    z-index: -1;
   }
 
   .contents-text {
@@ -158,9 +162,10 @@ transition: all  0.3s ease;
 
 /*ハンバーガーアイコン*/
 #nav-drawer {
-  padding: 10px 24px 0 0;
   text-align: right;
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 20px;
 }
 
 .header__navigation {
@@ -175,9 +180,8 @@ transition: all  0.3s ease;
   display: inline-block;
   vertical-align: middle;
   width: 30px;
-  height: 22px;
   position: relative;
-  top: -56px;
+  padding-right: 24px;
 }
 
 #nav-open span,
@@ -263,10 +267,8 @@ transition: all  0.3s ease;
     display: inline-block;
     vertical-align: middle;
     width: 60px;
-    height: 32px;
     position: relative;
-    top: -210px;
-    padding-right: 26px;
+    padding-right: 50px;
   }
 
   #nav-open span,
