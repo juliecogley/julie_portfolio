@@ -334,6 +334,16 @@ transition: all  0.3s ease;
   border-bottom: 1px dashed #212427;
 }
 
+.site-map__links li {
+  padding-bottom: 16px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #212427;
+}
+
+.site-map__links li a{
+  text-decoration: none;
+  color: #212427;
+}
 .links {
   text-decoration: none;
   color: #212427;
