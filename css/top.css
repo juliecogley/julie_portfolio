@@ -1,24 +1,37 @@
 @charset "UTF-8";
-
+.header{
+height: 0vh;
+}
+.header-content-wrapper{
+padding: 50px 24px;
+}
 
 @media(min-width:1060px) {
-	#nav-open{
+	#nav-open {
 		top: -65px;
 	}
-	
+
 }
+
 .contents-rectangle {
 	display: none;
 }
 
 .section-top {
-	margin: 40px 0 160px 0;
 	position: relative;
+	top: -80px;
+	z-index: -1;
 }
 
-.section-top__image {
+
+.section-top__image-container1 {
 	width: 100%;
-	height: 100px;
+	height: 30vh;
+}
+
+.section-top__image-container2 {
+	width: 100%;
+	height: 15vh;
 }
 
 .section-top__image-1,
@@ -34,7 +47,7 @@
 
 .section-top__image-1 {
 	background-image: url("../img/00top/utuwa_blue.JPG");
-	
+
 }
 
 .section-top__image-2 {
@@ -53,8 +66,7 @@
 	overflow: hidden;
 	display: flex;
 	width: 100vw;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	height: 6vh;
 	margin-inline: calc(50% - 50vw);
 }
 
@@ -125,12 +137,10 @@
 
 
 @media(min-width:1060px) {
-	.section-top {
-	margin: 80px 0 160px 0;
-}
-.section-top__image {
-	height: 200px;
-}
+
+	.section-top__image {
+		height: 200px;
+	}
 
 	.section-top__name h1 {
 		font-size: 13rem;
@@ -183,16 +193,17 @@
 }
 
 @media(min-width:1060px) {
-	.text-container{
-width: 100%;
+	.text-container {
+		width: 100%;
 
 
 	}
+
 	.text1 {
 		position: absolute;
 		bottom: 380px;
 		left: 60%;
-		width:  110px;
+		width: 110px;
 		height: auto;
 	}
 
@@ -201,7 +212,7 @@ width: 100%;
 		position: absolute;
 		bottom: 250px;
 		left: 40%;
-		width:  110px;
+		width: 110px;
 		height: auto;
 	}
 
@@ -209,7 +220,7 @@ width: 100%;
 		position: absolute;
 		bottom: 120px;
 		left: 60%;
-		width:  110px;
+		width: 110px;
 		height: auto;
 	}
 
@@ -217,8 +228,12 @@ width: 100%;
 		position: absolute;
 		bottom: -10px;
 		left: 40%;
-		width:  110px;
+		width: 110px;
 		height: auto;
 	}
 
+}
+
+.footer {
+	display: none;
 }
