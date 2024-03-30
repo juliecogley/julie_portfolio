@@ -98,6 +98,7 @@ height: 30vh;
 	opacity: .8;
 	line-height: 2em;
 	padding: 5px 25px;
+	font-size: 1.0rem;
 
 	/*--tick-duration・--tick-delayの変数に値がある場合は変数の値が優先させる*/
 	&:nth-child(odd) {
@@ -154,6 +155,7 @@ height: 30vh;
 	}
 	.loop03__item {
 		padding:10px 25px;
+		font-size: 2.0rem;
 	}
 }
 
