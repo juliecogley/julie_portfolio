@@ -465,16 +465,13 @@ width: 100%;
 }
 
 .back-to-works {
-	position: relative;
-	display: flex;
+	display: block;
 	text-align: right;
 	margin-bottom: 80px;
   
 }
 
 .back-to-works__text {
-	position: absolute;
-	right: 0px;
 	padding:0px 24px 0px 0px;
 	text-decoration: none;
 	color: #212427;
