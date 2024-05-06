@@ -3,27 +3,34 @@
 /* .sitefont {font-family: 'IBM Plex Mono', monospace;} */
 
 /* <uniquifier>: Use a unique and descriptive class name */
-/* <weight>: Use a value from 400 to 900 */
+/* <weight>: Use a value from 100 to 900 */
+
+.sitefont-100 {
+  font-family: "M PLUS 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
 
 .sitefont-400 {
-  font-family: "Alegreya", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+font-family: "M PLUS 2", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
 }
 
 .sitefont-700 {
-  font-family: "Alegreya", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+font-family: "M PLUS 2", sans-serif;
+font-optical-sizing: auto;
+font-weight: 700;
+font-style: normal;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Alegreya", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+font-family: "M PLUS 2", sans-serif;
+font-optical-sizing: auto;
+font-weight: 700;
+font-style: normal;
 }
 
 
