@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+.main {
+	max-width: 1208px;
+	/*1160+pad24+24*/
+	margin: 0 auto;
+}
+
+.section-works1__top {
+	padding: 0 24px;
+	margin: 80px auto 120px auto;
+
+}
+
+.section-works1__title {
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	text-align: left;
+	flex-wrap: wrap;
+}
+
+.section-works1__title h1 {
+	font-size: 2.4rem;
+	line-height: 2em;
+
+}
+
+.section-works1__title h2 {
+	font-size: 1.8rem;
+	line-height: 1.8em;
+	/* 100% */
+	padding-top: 10px;
+}
+
+.section-works1__title p {
+	padding-top: 20px;
+	line-height: 1.5em;
+}
+
+.section-works1__image-body {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.section-works1__image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 0% 0%;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+@media (min-width: 1060px) {
+	.section-works1__top {
+		display: flex;
+		justify-content: center;
+		padding: 0 150px;
+		align-items: center;
+
+		margin: 240px auto 120px auto;
+
+	}
+
+	.section-works1__title {
+		width: 50%;
+		margin: 0;
+		display: block;
+
+	}
+
+	.section-works1__image-body {
+		width: 50%;
+		height: 100%;
+		border-left: 1px solid #212427;
+		margin: 0;
+	}
+
+	.section-works1__image {
+		width: 80%;
+		margin: 0 auto;
+		display: block;
+	}
+}
+
+.section-works1__poem {
+	text-align: left;
+	padding: 40px 24px 40px 24px;
+	border-top: 2px dotted #030303;
+	border-bottom: 2px dotted #030303;
+	margin: 0 auto 120px auto;
+	width: 80%;
+}
+
+.section-works1__poem p {
+	line-height: 1.5em;
+}
+
+@media (min-width: 1060px) {
+	.section-works1__poem {
+		border: none;
+		-ms-writing-mode: tb-rl;
+		/* IE対応 */
+		writing-mode: vertical-rl;
+		text-orientation: upright;
+		/* すべて縦方向に表示　英数字も縦に表示するなら upright、和文も横に表示するなら sideways を指定 */
+		padding: 40px 0;
+		width: auto;
+	}
+
+	.section-works1__poem p {
+		line-height: 2.8em;
+	}
+}
