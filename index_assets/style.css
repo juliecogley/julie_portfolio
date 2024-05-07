@@ -133,14 +133,11 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     .hljs-strong {
     font-weight: bold;
     }
-    .ph3 pv3 bb b--light-silver{
+    .past-work{
     list-style: none;
     text-decoration: none;
-    color: #030303;
+    color: #777;
     }
-    .list pl0 ml0 center mw6 ba b--light-silver br2{
-      list-style: none;
-      text-decoration: none;
-      color: #030303;
-        
-    }
+.site-title{
+font-weight: 400;
+}   
