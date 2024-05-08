@@ -152,3 +152,8 @@ font-weight: 400;
   text-decoration: none;
   color: #777;
 }
+.profile-text{
+font-size: 0.875rem;
+line-height: 1.5;
+font-weight: 600;
+}
