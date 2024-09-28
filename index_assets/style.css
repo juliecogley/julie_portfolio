@@ -157,3 +157,14 @@ font-size: 0.875rem;
 line-height: 1.5;
 font-weight: 600;
 }
+.test1{
+margin: 0 auto;
+list-style: none;
+padding: 0;
+}
+.test2{
+  width: 100%;
+  padding:120px 80px 0px;
+  }
+.test3{
+width:100%;}
