@@ -228,7 +228,9 @@ display:none;
   font-size: 2.0rem;
   margin-bottom: 40px;
 }
-
+.section-reason__sub-title{
+  display: none;
+}
 .section-reason ul {
   margin-bottom: 80px;
   list-style: none;
@@ -299,8 +301,16 @@ display:none;
 
   .section-reason h2 {
     font-size: 3.0rem;
-    margin-bottom: 80px;
+    margin-bottom: 0;
   }
+
+.section-reason__sub-title{
+  font-size: 1.8rem;
+  display: block;	 
+  margin: 0 auto;
+  padding: 20px 0 80px 0 ;
+  font-weight: 600;
+}
 
   .section-reason ul {
     max-width: 1040px;
@@ -620,7 +630,11 @@ display:none;
 
   .section-farmars__sub-title {
     font-size: 1.8rem;
-    display: block;	  
+    display: block;	 
+    margin: 0 auto;
+    padding: 20px 0 0 0 ;
+    font-weight: 600;   
+} 
   }
 
   .section-farmars h3{
