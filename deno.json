@@ -1,0 +1,17 @@
+{
+  "imports": {
+    "lume/": "https://deno.land/x/lume@v2.3.3/",
+    "lume/cms/": "https://cdn.jsdelivr.net/gh/lumeland/cms@v0.7.0/"
+  },
+  "tasks": {
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
+    "build": "deno task lume",
+    "serve": "deno task lume -s",
+    "cms": "deno task lume cms"
+  },
+  "compilerOptions": {
+    "types": [
+      "lume/types.ts"
+    ]
+  }
+}
