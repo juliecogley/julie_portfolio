@@ -42,8 +42,8 @@ site.use(source_maps());
 site.use(sri());
 site.use(terser());
 
-site.copy("static/index_assets", ".");
-site.copy("static/portfolio", ".");
+site.copy("static/index_assets", "index_assets");
+site.copy("static/portfolio", "portfolio");
 
 // Create zip and tree scripts
 site.script("zipsite", "zip -r _site/julie_cogley_jp_site.zip _site");
