@@ -10,7 +10,7 @@ const server = new Server({
 const myUSER_1_PASS = Deno.env.get("USER_1_PASS");
 const middleware = basicAuth({
   users: {
-    "lume": `${myUSER_1_PASS}`,
+    "guest": `${myUSER_1_PASS}`,
   },
 });
 
