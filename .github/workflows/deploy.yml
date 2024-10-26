@@ -26,6 +26,6 @@ jobs:
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: jc 
+          project: julie-cogley-jp 
           import-map: "./deno.json"
           entrypoint: serve.ts
