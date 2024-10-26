@@ -1,0 +1,13 @@
+metas:
+  site: "=site.sitename"
+  title: "=title"
+  description: "=description"
+  generator: true
+  color: "#ffbc68"
+  # image: /assets/logo/logo_horiz_darkblue_bgtransparent_web.png
+  # icon: /assets/img/apple-touch-icon.png
+  # twitter: "@esolia_inc"
+  # "twitter:label1": Author
+  # "twitter:data1": "=site.author"
+site:
+  sitename: "Julie Cogley Portfolio"
