@@ -17,7 +17,12 @@ import source_maps from "lume/plugins/source_maps.ts";
 import sri from "lume/plugins/sri.ts";
 import terser from "lume/plugins/terser.ts";
 
-const site = lume();
+const site = lume(
+  {
+    src: "./src",
+    location: new URL("https://julie.cogley.jp"),
+  }
+);
 
 site.use(attributes());
 site.use(base_path());
@@ -36,5 +41,15 @@ site.use(sitemap());
 site.use(source_maps());
 site.use(sri());
 site.use(terser());
+
+site.copy("static/index_assets", ".");
+site.copy("static/portfolio", ".");
+
+// Create zip and tree scripts
+site.script("zipsite", "zip -r _site/julie_cogley_jp_site.zip _site");
+site.script("maketree", "cd _site && tree -H . -L 5 --charset utf-8 -C -h -o julie_cogley_jp_tree.html");
+// Execute scripts after build
+site.addEventListener("afterBuild", "zipsite");
+site.addEventListener("afterBuild", "maketree");
 
 export default site;
