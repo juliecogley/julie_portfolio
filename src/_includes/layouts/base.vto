@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="ja">
-
+<!-- ===== START LAYOUT: BASE ===== -->
 <head>
   <meta charset="utf-8">
   <title>{{ it.title ? `${title} | ${site.title}` : site.title }}</title>
@@ -37,5 +37,6 @@
 
   {{ include "templates/footer.vto" }}
 </body>
-
+<!-- ===== END LAYOUT: BASE ===== -->
+{{> console.log(it) }}
 </html>
