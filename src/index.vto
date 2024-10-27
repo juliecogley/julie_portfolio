@@ -6,132 +6,19 @@ description: "Top page of the site, showing a list of works with a link to a bio
 priority: 0.9
 ---
 <!-- ===== START LAYOUT: HOME ===== -->
-<article class="fl w-100">
+<article class="fl w-100 bg-white">
 {{ for item of search.pages(`type=showcase`, "order=asc") }}
 <div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">
-  <a href="{{ item.url }}" target="_blank">
+  {{ if !item.hidelink }}<a href="{{ item.url }}" target="_blank">{{ /if }}
     <div class="aspect-ratio aspect-ratio--3x4 shadow-1 br1">
       <span style="background-image:url({{ item.indeximage }});" class="dt cover bg-center aspect-ratio--object grow-large hide-child br1">
-        <span class="white dtc v-mid w-100 h-100 child bg-black-40 pa5 br1"><em>{{ item.category }}<br>{{ item.indextitle }}</em></span>
+        <span class="white dtc v-mid w-100 h-100 child bg-black-40 pa5 br1"><em><span class="bg-white-30">{{ item.category }}</span><br>{{ item.indextitle }}</em></span>
         </span>
     </div>
-  </a>
+  {{ if !item.hidelink }}</a>{{ /if }}
 </div>
 {{ /for }}
 </article>
+<div class="cf pa3 mw9 center"><!-- Needed to balance footer spacing --></div>
 
-
-    <section class="fl w-100">     
-      {{# <div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">
-        <a href="./introduction/nn-2024/index.html" target="_blank">
-        <div class="aspect-ratio aspect-ratio--3x4 shadow-1 br1">
-          <span style="background-image:url(index_assets/nn2024-05kotobagaki.jpg);"
-            class="dt cover bg-center aspect-ratio--object grow-large hide-child br1">
-            <span class="white dtc v-mid w-100 h-100 child bg-black-40 pa5 br1">     
-              <em>clientwork<br>美大生のポートフォリオサイト</em>
-            </span>
-          </span>
-        </div>
-        </a>
-     </div> #}}
-        <div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">
-          <a href="./introduction/whitening_flyer/index.html" target="_blank">
-          <div class="aspect-ratio aspect-ratio--3x4 shadow-1 br1">
-            <span style="background-image:url(index_assets/whitening_flyer01.jpg);"
-              class="dt cover bg-center aspect-ratio--object grow-large hide-child br1">
-              <span class="white dtc v-mid w-100 h-100 child bg-black-40 pa5 br1">
-                <em>clientwork<br>ホワイトニングサロンのチラシ</em>
-              </span>
-            </span>
-          </div>
-        </a>
-        </div>
-
-        <div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">
-          <a href="./introduction/fire-extinguisher_flyer/index.html" target="_blank">
-          <div class="aspect-ratio aspect-ratio--3x4 shadow-1 br1">
-            <span style="background-image:url(index_assets/fire-extinguisher_flyer.jpg);"
-              class="dt cover bg-center aspect-ratio--object grow-large hide-child br1">
-              <span class="white dtc v-mid w-100 h-100 child bg-black-40 pa5 br1">
-                <em>work<br>自治体の消火器あっせん販売チラシ</em>
-              </span>
-            </span>
-          </div>
-        </a>
-        </div>
-        <div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">
-          <div class="aspect-ratio aspect-ratio--3x4 shadow-1 br1">
-            <span style="background-image:url(index_assets/youtube.jpg);"
-              class="dt cover bg-center aspect-ratio--object grow-large hide-child br1">
-              <span class="white dtc v-mid w-100 h-100 child bg-black-40 pa5 br1">
-                <em>classwork<br>youtubeサムネイル</em>
-              </span>
-            </span>
-          </div>
-        </div>
-        <div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">
-          <a href="./introduction/kanshin-breaker_flyer/index.html" target="_blank">
-          <div class="aspect-ratio aspect-ratio--3x4 shadow-1 br1">
-            <span style="background-image:url(index_assets/kanshin-breaker_flyer01.png);"
-              class="dt cover bg-center aspect-ratio--object grow-large hide-child br1">
-              <span class="white dtc v-mid w-100 h-100 child bg-black-40 pa5 br1">
-                <em>work<br>自治体の感震ブレーカー普及啓発チラシ</em>
-              </span>
-            </span>
-          </div>
-        </a>
-          </div>
-  
-        <div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">
-          <a href="./introduction/kanshin-breaker-shikyuu_flyer/index.html" target="_blank">
-          <div class="aspect-ratio aspect-ratio--3x4 shadow-1 br1">
-            <span style="background-image:url(index_assets/kanshin-breaker-shikyuu_flyer.PNG);"
-              class="dt cover bg-center aspect-ratio--object grow-large hide-child br1">
-              <span class="white dtc v-mid w-100 h-100 child bg-black-40 pa5 br1">
-                <em>work<br>感震ブレーカー無料支給チラシ</em>
-              </span>
-            </span>
-          </div>
-        </a>
-          </div>
-          <div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">
-            <a href="./introduction/maruntain-top/index.html" target="_blank">
-            <div class="aspect-ratio aspect-ratio--3x4 shadow-1 br1">
-              <span style="background-image:url(index_assets/maruitain-top.PNG);"
-                class="dt cover bg-center aspect-ratio--object grow-large hide-child br1">
-                <span class="white dtc v-mid w-100 h-100 child bg-black-40 pa5 br1">
-                  <em>hobby<br>Tシャツのイラストデザイン</em>
-                </span>
-              </span>
-            </div>
-          </a>
-          </div>
-
-        <div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">
-          <div class="aspect-ratio aspect-ratio--3x4 shadow-1 br1">
-            <span style="background-image:url(index_assets/uminohi.JPG);"
-              class="dt cover bg-center aspect-ratio--object grow-large hide-child br1">
-              <span class="white dtc v-mid w-100 h-100 child bg-black-40 pa5 br1">
-                <em>hobby<br>海の日ポスターコンクール2024応募作品『かめとこども』</em>
-              </span>
-            </span>
-          </div>
-        </div>
-        <div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">
-          <div class="aspect-ratio aspect-ratio--3x4 shadow-1 br1">
-            <span style="background-image:url(index_assets/suisai2.JPG);"
-              class="dt cover bg-center aspect-ratio--object grow-large hide-child br1">
-              <span class="white dtc v-mid w-100 h-100 child bg-black-40 pa5 br1">
-                <em>hobby<br>『夕陽の八丈小島』</em>
-              </span>
-            </span>
-          </div>
-        </div>
-     
-    </section>
-    <div data-name="component">
-      <article class="cf pa3 mw9 center">
-      </article>
-    </div>
-  </main>
 <!-- ===== END LAYOUT: HOME ===== -->
