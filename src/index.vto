@@ -6,6 +6,21 @@ description: "Top page of the site, showing a list of works with a link to a bio
 priority: 0.9
 ---
 <!-- ===== START LAYOUT: HOME ===== -->
+<article class="fl w-100">
+{{ for item of search.pages(`type=showcase`, "date=desc") }}
+<div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">
+  <a href="{{ item.url }}" target="_blank">
+    <div class="aspect-ratio aspect-ratio--3x4 shadow-1 br1">
+      <span style="background-image:url({{ item.bgimage }});" class="dt cover bg-center aspect-ratio--object grow-large hide-child br1">
+        <span class="white dtc v-mid w-100 h-100 child bg-black-40 pa5 br1"><em>{{ item.category }}<br>{{ item.indextitle }}</em></span>
+        </span>
+    </div>
+  </a>
+</div>
+{{ /for }}
+</article>
+
+
     <section class="fl w-100">     
       <div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">
         <a href="./introduction/nn-2024/index.html" target="_blank">
