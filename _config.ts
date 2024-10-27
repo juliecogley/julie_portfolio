@@ -37,7 +37,13 @@ site.use(metas());
 site.use(nav());
 site.use(pagefind());
 site.use(robots());
-site.use(sitemap());
+site.use(sitemap({
+  // query: "external_link=undefined",
+  lastmod: "lastmod",
+  priority: "priority",
+  filename: "sitemap.xml",
+  sort: "lastmod=desc",
+}));
 site.use(source_maps());
 site.use(sri());
 site.use(terser());
