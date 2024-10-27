@@ -48,7 +48,7 @@ site.use(source_maps());
 site.use(sri());
 site.use(terser());
 
-site.copy("static/index_assets", "index_assets");
+site.copy("static/assets", "assets");
 site.copy("static/portfolio", "portfolio");
 
 // Create zip and tree scripts
