@@ -12,7 +12,11 @@ priority: 0.9
   {{ if !item.hidelink }}<a href="{{ item.url }}" target="_blank">{{ /if }}
     <div class="aspect-ratio aspect-ratio--3x4 shadow-1 br1">
       <span style="background-image:url({{ item.indeximage }});" class="dt cover bg-center aspect-ratio--object grow-large hide-child br1">
-        <span class="white dtc v-mid w-100 h-100 child bg-black-40 pa5 br1"><em><span class="bg-white-30">{{ item.category }}</span><br>{{ item.indextitle }}</em></span>
+        <span class="white dtc v-mid w-100 h-100 child bg-black-40 pa5 br1"><em><span class="bg-white-40">{{ item.category }}
+        {{if item.url.includes("/private/")}}
+        <span class="dark-red">&nbsp;{{ "lock" |> phosphor("duotone") }}</span>
+        {{/if}}
+        </span><br>{{ item.indextitle }}</em></span>
         </span>
     </div>
   {{ if !item.hidelink }}</a>{{ /if }}
