@@ -16,34 +16,82 @@ svg {
 /* <uniquifier>: Use a unique and descriptive class name */
 /* <weight>: Use a value from 100 to 900 */
 
-.sitefont-100 {
-  font-family: "Noto Sans Japanese", sans-serif;
+.m-plus-2-100 {
+  font-family: "M PLUS 2", sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
 }
 
-.sitefont-400 {
-font-family: "Noto Sans Japanese", sans-serif;
-font-optical-sizing: auto;
-font-weight: 400;
-font-style: normal;
+.m-plus-2-200 {
+  font-family: "M PLUS 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
 }
 
-.sitefont-700 {
-font-family: "Noto Sans Japanese", sans-serif;
-font-optical-sizing: auto;
-font-weight: 700;
-font-style: normal;
+.m-plus-2-300 {
+  font-family: "M PLUS 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.m-plus-2-300 {
+  font-family: "M PLUS 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.m-plus-2-500 {
+  font-family: "M PLUS 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.m-plus-2-600 {
+  font-family: "M PLUS 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: bold;
+}
+
+.m-plus-2-700 {
+  font-family: "M PLUS 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: bold;
+}
+
+.m-plus-2-800 {
+  font-family: "M PLUS 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: bold;
+}
+
+.m-plus-2-900 {
+  font-family: "M PLUS 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: bold;
 }
 
 h1, h2, h3, h4, h5, h6 {
-font-family: "Noto Sans Japanese", sans-serif;
+font-family: "M PLUS 2", sans-serif;
 font-optical-sizing: auto;
 font-weight: 700;
-font-style: normal;
+font-style: bold;
 }
 
+html {
+  font-family: "M PLUS 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
 /*
 github.com style (c) Vasily Polovnyov <vast@whiteants.net>
