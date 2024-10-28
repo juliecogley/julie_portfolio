@@ -5,6 +5,8 @@ html {
 svg {
   width: 1em;
   height: 1em;
+  vertical-align: middle;
+  padding-bottom: .25em;
 }
 
 .blue { color: #0074D9; }
