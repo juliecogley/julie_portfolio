@@ -2,6 +2,11 @@ html {
   background-color:#333;
 }
 
+svg {
+  width: 1em;
+  height: 1em;
+}
+
 .blue { color: #0074D9; }
 .bg-blue { background-color: #0074D9; }
 /* .sitefont {font-family: 'IBM Plex Mono', monospace;} */

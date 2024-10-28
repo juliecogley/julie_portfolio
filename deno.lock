@@ -31,6 +31,7 @@
       "jsr:@std/yaml@1.0.5": "jsr:@std/yaml@1.0.5",
       "jsr:@std/yaml@^1.0.5": "jsr:@std/yaml@1.0.5",
       "npm:@js-temporal/polyfill@0.4.4": "npm:@js-temporal/polyfill@0.4.4",
+      "npm:@phosphor-icons/core@2.1.1": "npm:@phosphor-icons/core@2.1.1",
       "npm:date-fns@4.1.0": "npm:date-fns@4.1.0",
       "npm:estree-walker@3.0.3": "npm:estree-walker@3.0.3",
       "npm:ico-endec@0.1.6": "npm:ico-endec@0.1.6",
@@ -290,6 +291,10 @@
       },
       "@pagefind/windows-x64@1.1.1": {
         "integrity": "sha512-b7/qPqgIl+lMzkQ8fJt51SfguB396xbIIR+VZ3YrL2tLuyifDJ1wL5mEm+ddmHxJ2Fki340paPcDan9en5OmAw==",
+        "dependencies": {}
+      },
+      "@phosphor-icons/core@2.1.1": {
+        "integrity": "sha512-v4ARvrip4qBCImOE5rmPUylOEK4iiED9ZyKjcvzuezqMaiRASCHKcRIuvvxL/twvLpkfnEODCOJp5dM4eZilxQ==",
         "dependencies": {}
       },
       "@types/estree@1.0.6": {
@@ -726,6 +731,9 @@
     "https://deno.land/x/lume@v2.3.3/plugins/url.ts": "3718185697778f3b4dd17924d9d282d0a5a74030301e7fcae8a7f1b21f0ef9a9",
     "https://deno.land/x/lume@v2.3.3/plugins/vento.ts": "c6e147e15cade62f162f07b94067f43a240bd9c5d814286d8f77a5bceae3ae19",
     "https://deno.land/x/lume@v2.3.3/plugins/yaml.ts": "8cb20b4bf3a265be0d975235b537c9807db2f34d357fc27546c05d628d3fda9f",
+    "https://deno.land/x/lume_icon_plugins@v0.2.4/catalogs/phosphor.ts": "cc966c642ae20a099590569d1508b0b85afe649a2e9c4ffe7edb96ec851cff94",
+    "https://deno.land/x/lume_icon_plugins@v0.2.4/catalogs/utils.ts": "64cf66b209b4174e28365d1d558473aba58799a9cfd0f46150b267df30f01a1e",
+    "https://deno.land/x/lume_icon_plugins@v0.2.4/phosphor.ts": "0adb518884e2f78de71c5e1dbc6cd925163e50dae3c8e909bc0f2708cc3faa3d",
     "https://deno.land/x/vento@v1.12.10/deps.ts": "65b1f0943c280aa0f1e35b2d52be64e699550d933f17d192cd7db8af4163835a",
     "https://deno.land/x/vento@v1.12.10/mod.ts": "296c9cc4253c1b88a94fc630a05d9a12947a908966f2db43968141f1c282a7d6",
     "https://deno.land/x/vento@v1.12.10/plugins/echo.ts": "0c9de6b508ebf79908ecdaf406757bf0a86ab960bf527a51c6523445fc2d66d2",
