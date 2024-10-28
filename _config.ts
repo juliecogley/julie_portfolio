@@ -59,10 +59,12 @@ site.use(transformImages({
   matches: /\.(jpg|jpeg|png|webp)$/i  // This regex matches only image files
 }));
 
-//site.copy("static/assets", "assets");
+//site.copy("assets", "assets");
 site.copy("static/portfolio", "portfolio");
 //site.copy([".jpg",".JPG",".png",".PNGl",".pdf",".PDF",".docx",".DOCX",".xlsx",".XLSX",".pptx",".PPTX",".zip",".ZIP"]);
-site.copy(".pdf",".docx",".pptx",".xlsx",".zip",".svg");
+site.copy(".jpg",".png",".pdf",".docx",".pptx",".xlsx",".zip",".svg");
+site.copy("assets/persona-a.svg", "assets/persona-a.svg");
+site.copy("assets/persona-b.svg", "assets/persona-b.svg");
 
 // Create zip and tree scripts
 site.script("zipsite", "zip -r _site/julie_cogley_jp_site.zip _site");
