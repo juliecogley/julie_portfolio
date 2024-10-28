@@ -171,7 +171,7 @@ display:none;
 }
 
 .section-top__image {
-  background-image: url("../index_assets/topimage.jpg");
+  background-image: url("/assets/topimage.jpg");
   background-position:center bottom;
   background-repeat:no-repeat ;
   background-size: cover;
@@ -940,7 +940,7 @@ padding: 0;
 }
 
 .footer-image__visual{
-  background-image: url("../index_assets/footerimage.jpg");
+  background-image: url("/assets/footerimage.jpg");
   background-position:center bottom;
   background-repeat:no-repeat ;
   background-size: cover;
