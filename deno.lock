@@ -32,6 +32,7 @@
       "jsr:@std/yaml@^1.0.5": "jsr:@std/yaml@1.0.5",
       "npm:@js-temporal/polyfill@0.4.4": "npm:@js-temporal/polyfill@0.4.4",
       "npm:@phosphor-icons/core@2.1.1": "npm:@phosphor-icons/core@2.1.1",
+      "npm:date-fns": "npm:date-fns@4.1.0",
       "npm:date-fns@4.1.0": "npm:date-fns@4.1.0",
       "npm:estree-walker@3.0.3": "npm:estree-walker@3.0.3",
       "npm:ico-endec@0.1.6": "npm:ico-endec@0.1.6",

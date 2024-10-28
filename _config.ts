@@ -2,6 +2,8 @@ import lume from "lume/mod.ts";
 import attributes from "lume/plugins/attributes.ts";
 import base_path from "lume/plugins/base_path.ts";
 import date from "lume/plugins/date.ts";
+import { enUS } from "npm:date-fns/locale/en-US";
+import { ja } from "npm:date-fns/locale/ja";
 // import favicon from "lume/plugins/favicon.ts";
 import feed from "lume/plugins/feed.ts";
 import filter_pages from "lume/plugins/filter_pages.ts";
@@ -27,7 +29,7 @@ const site = lume(
 
 site.use(attributes());
 site.use(base_path());
-site.use(date());
+site.use(date({ locales: { enUS, ja } }));
 // site.use(favicon());
 site.use(feed());
 site.use(filter_pages());
