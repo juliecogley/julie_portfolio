@@ -62,7 +62,7 @@ site.use(transformImages({
 //site.copy("assets", "assets");
 site.copy("static/portfolio", "portfolio");
 //site.copy([".jpg",".JPG",".png",".PNGl",".pdf",".PDF",".docx",".DOCX",".xlsx",".XLSX",".pptx",".PPTX",".zip",".ZIP"]);
-site.copy([".pdf",".docx",".pptx",".xlsx",".zip",".svg"]);
+site.copy([".gif",".pdf",".docx",".pptx",".xlsx",".zip",".svg"]);
 //site.copy("assets/persona-a.svg", "assets/persona-a.svg");
 //site.copy("assets/persona-b.svg", "assets/persona-b.svg");
 
