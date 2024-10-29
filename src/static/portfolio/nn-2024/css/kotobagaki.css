@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+.main {
+	max-width: 1108px;
+	/*1060+pad24+24*/
+	margin: 0 auto;
+}
+
+.section-kotobagaki__name {
+	padding: 0 24px;
+	margin: 80px auto;
+}
+
+.section-kotobagaki__name-text {
+	max-width: 327px;
+	/*327px+24+24=375px*/
+	margin: 0 auto 40px auto;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.60);
+	width: 80%;
+	line-height: 2em;
+}
+
+.section-kotobagaki__name p {
+	color: rgba(0, 0, 0, 0.50);
+	padding-top: 16px;
+}
+
+/*画面サイズ1060以上での指定*/
+@media (min-width: 1060px) {
+	.section-kotobagaki__name {
+		display: flex;
+		padding: 0 224px;
+		align-items: center;
+		margin: 240px 0;
+		justify-content: space-between;
+	}
+
+	.section-kotobagaki__name-text {
+		width: 90%;
+		margin: 0px;
+	}
+
+	.section-kotobagaki__name-text h2 {
+		font-size: 2.0rem;
+		line-height: 2;
+		text-wrap: nowrap;
+	}
+
+	.section-kotobagaki__name p {
+		font-size: 1.8rem;
+		padding-top: 20px;
+	}
+}
+
+.section-kotobagaki__image-body {
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+	max-width: 250px;
+}
+
+.section-kotobagaki__image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 0% 0%;
+	display: block;
+}
+
+@media (min-width: 1060px) {
+	.section-kotobagaki__image-body {
+		width: 50%;
+		height: 100%;
+		margin: 0;
+	}
+
+	.section-kotobagaki__image {
+		width: 100%;
+		height: 100%;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.section-kotobagaki1__poem {
+	text-align: left;
+	padding: 40px 24px 40px 24px;
+	border-top: 2px dotted #030303;
+	border-bottom: 2px dotted #030303;
+	margin: 0 auto 120px auto;
+	width: 80%;
+}
+
+.section-kotobagaki1__poem p {
+	line-height: 2em;
+}
+
+@media (min-width: 1060px) {
+	.section-kotobagaki1__poem {
+		-ms-writing-mode: tb-rl;
+		/* IE対応 */
+		writing-mode: vertical-rl;
+		text-orientation: upright;
+		/* すべて縦方向に表示　英数字も縦に表示するなら upright、和文も横に表示するなら sideways を指定 */
+		padding: 80px 0;
+		width: auto;
+	}
+
+	.date {
+		padding-top: 250px;
+	}
+}

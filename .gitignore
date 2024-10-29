@@ -53,3 +53,7 @@ bundle/
 # AWS stuff for publishing static files
 .aws-credentials.json
 .awspublish*
+
+# Lume
+_site
+_cache

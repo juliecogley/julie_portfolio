@@ -1,0 +1,20 @@
+metas:
+  type: "website"
+  site: "=site.title"
+  title: "=title"
+  lang: "ja"
+  description: "=description"
+  # image: /assets/logo/logo_horiz_darkblue_bgtransparent_web.png
+  # icon: /assets/img/apple-touch-icon.png
+  keywords: [Julie Cogley, Portfolio, Web Design, Web Development, Graphic Design, Branding, UI/UX Design, Japan, Tokyo]
+  generator: true
+  color: "#ffbc68"
+  robots: true
+  twitter: "@juliecogley"
+  "twitter:label1": Author
+  "twitter:data1": "=site.author"
+site:
+  title: "Julie Cogley Portfolio"
+  author: "Julie Cogley"
+  description: "This portfolio site contains Julie Cogley's biographical information and a showcase of her works."
+  navbgcolor: "blue"
