@@ -16,11 +16,18 @@ img {
   border-radius: 0.3rem;
 }
 
-.blue { color: #0074D9; }
-.bg-blue { background-color: #0074D9; }
-/* .sitefont {font-family: 'IBM Plex Mono', monospace;} */
+ruby { 
+  ruby-position: under; 
+  ruby-align: start;
+  color: silver;
+  /* font-weight: 500; */
+  font-size: 2rem;
+  letter-spacing: .5rem;
+}
+ruby  ruby { ruby-position: over; }
 
-/* <uniquifier>: Use a unique and descriptive class name */
+/* .sitefont M PLUS 2 */
+/* -suffix: Use a unique and descriptive class name for each weight */
 /* <weight>: Use a value from 100 to 900 */
 
 .m-plus-2-100 {
