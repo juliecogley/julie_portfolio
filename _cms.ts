@@ -96,7 +96,7 @@ cms.collection(
     },
     {
       name: "category",
-      type: "list",
+      type: "select",
       label: "Category",
       description: "Category to categorize the page on the top index",
       init(field) {
