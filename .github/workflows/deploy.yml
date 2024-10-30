@@ -2,7 +2,7 @@ name: Publish on Deno Deploy
 
 on:
   push:
-    branches: [ lume ]
+    branches: [ main ]
 
 jobs:
   build:
