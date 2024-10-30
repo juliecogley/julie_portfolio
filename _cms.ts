@@ -54,7 +54,8 @@ cms.collection(
     {
       name: "indeximage",
       type: "file",
-      description: "Image to display on the top page.",
+      label: "Image for Top Index",
+      description: "Image to display on the top page showcase grid.",
       uploads: "assets",
       attributes: {
         accept: "image/*",
