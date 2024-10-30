@@ -35,7 +35,11 @@ cms.storage(
 );
 
 // Configure an upload folder
-cms.upload("assets", "gh:/src/assets", "/assets");
+cms.upload({
+  name: "assets", 
+  storage: "gh:/src/assets", 
+  publicPath: "/assets",
+});
 
 // Pages collection
 cms.collection(
