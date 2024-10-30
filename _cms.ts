@@ -35,7 +35,7 @@ cms.storage(
 );
 
 // Configure an upload folder
-cms.upload("assets", "gh:src/assets");
+cms.upload("uploads", "gh:src/assets");
 
 // Pages collection
 cms.collection(
@@ -56,7 +56,7 @@ cms.collection(
       type: "file",
       label: "Image for Top Index",
       description: "Image to display on the top page showcase grid.",
-      uploads: "assets",
+      uploads: "uploads",
       attributes: {
         accept: "image/*",
         required: true,
@@ -88,7 +88,7 @@ cms.collection(
           name: "image",
           type: "file",
           description: "Image to link in head metadata.",
-          uploads: "assets",
+          uploads: "uploads",
           attributes: {
             accept: "image/*",
             required: true,
