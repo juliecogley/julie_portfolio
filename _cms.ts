@@ -52,24 +52,6 @@ cms.collection(
       },
     },
     {
-      name: "metas.title",
-      type: "text",
-      label: "Title of the Page",
-      description: "Visible in browser tab and page source head section",
-      attributes: {
-        required: true,
-      },
-    },
-    {
-      name: "metas.description",
-      type: "textarea",
-      label: "Description for the Page",
-      description: "Visible in search engine results",
-      attributes: {
-        required: true,
-      },
-    },
-    {
       name: "indeximage",
       type: "file",
       description: "Image to display on the top page.",
@@ -80,15 +62,39 @@ cms.collection(
       },
     },
     {
-      name: "metas.image",
-      type: "file",
-      description: "Image to link in head metadata.",
-      uploads: "assets",
-      attributes: {
-        accept: "image/*",
-        required: true,
-      },
-    },    
+      name: "metas",
+      type: "object",
+      fields: [
+        {
+          name: "title",
+          type: "text",
+          label: "Title of the Page",
+          description: "Visible in browser tab and page source head section",
+          attributes: {
+            required: true,
+          },
+        },
+        {
+          name: "description",
+          type: "textarea",
+          label: "Description for the Page",
+          description: "Visible in search engine results",
+          attributes: {
+            required: true,
+          },
+        },
+        {
+          name: "image",
+          type: "file",
+          description: "Image to link in head metadata.",
+          uploads: "assets",
+          attributes: {
+            accept: "image/*",
+            required: true,
+          },
+        },    
+      ],
+    }
     {
       name: "category",
       type: "list",
