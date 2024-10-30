@@ -31,11 +31,12 @@ cms.storage(
     owner: "juliecogley",
     repo: "julie_portfolio",
     branch: "main",
+    path: "src",
   }),
 );
 
 // Configure an upload folder
-cms.upload("assets", "gh:/src/assets", "/assets");
+cms.upload("assets", "gh:assets");
 
 // Pages collection
 cms.collection(
