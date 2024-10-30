@@ -11,7 +11,7 @@ const cms = lumeCMS({
     description: "Edit the content of the Julie Cogley Portfolio site.",
     url: "https://julie.cogley.jp",
     body: `
-    <p>This is a monolingual portfolio site, with a top index page, an about page, showcase pages to provide narrative about projects, and as-is copies of specific sites.</p>
+    <p>This is the CMS for a Japanese-language portfolio site, with a top index page, an about page, showcase pages to provide narrative about projects, and as-is copies of specific sites to act as a design archive.</p>
     `,
   },
   auth: {
