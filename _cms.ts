@@ -41,7 +41,7 @@ cms.upload("assets", "gh:assets");
 // Pages collection
 cms.collection(
   "showcase",
-  "gh:/src/showcase/*.vto",
+  "gh:showcase/*.vto",
   [
     {
       name: "indextitle",
