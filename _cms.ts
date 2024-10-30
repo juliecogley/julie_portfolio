@@ -56,7 +56,6 @@ cms.collection(
       type: "file",
       label: "Image for Top Index",
       description: "Image to display on the top page showcase grid.",
-      uploads: "uploads",
       attributes: {
         accept: "image/*",
         required: true,
@@ -88,7 +87,6 @@ cms.collection(
           name: "image",
           type: "file",
           description: "Image to link in head metadata.",
-          uploads: "uploads",
           attributes: {
             accept: "image/*",
             required: true,
