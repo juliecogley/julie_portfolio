@@ -38,7 +38,7 @@ cms.storage(
 // Configure an upload folder
 cms.upload("assets", "gh:assets");
 
-// Pages collection
+// Showcase pages collection
 cms.collection(
   "showcase",
   "gh:showcase/*.vto",
@@ -118,4 +118,36 @@ cms.collection(
   ],
 );
 
+cms.document({
+  name: "Top Page",
+  description: "Edit the content of the home page",
+  store: "src:index.vto",
+  fields: [
+    "title: text",
+    "description: text",
+    "priority: number",
+    "content: markdown",
+  ]
+});
+
+cms.document({
+  name: "About Page",
+  description: "Edit the content of the about page",
+  store: "src:about.vto",
+  fields: [
+    "title: text",
+    "description: text",
+    "priority: number",
+    "content: markdown",
+  ]
+});
+
+cms.document({
+  name: "ld-person",
+  description: "Edit the content of the ld+json script for the person",
+  store: "src:_includes/templates/ld-person.vto",
+  content: "markdown",
+})
+
 export default cms;
+
