@@ -94,7 +94,7 @@ cms.collection(
           },
         },    
       ],
-    }
+    },
     {
       name: "category",
       type: "list",
