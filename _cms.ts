@@ -142,11 +142,13 @@ cms.document({
   ]
 });
 
-// cms.document({
-//   name: "ld-person",
-//   description: "Edit the content of the ld-person script for the person, which will appear in the head of the about page",
-//   store: "gh:_includes/templates/ld-person.vto",
-//   content: "markdown",
-// })
+cms.document({
+  name: "ld-person",
+  description: "Edit the content of the ld-person script for the person, which will appear in the head of the about page",
+  store: "gh:_includes/templates/ld-person.vto",
+  fields: [
+    "content: markdown",
+  ]
+})
 
 export default cms;
