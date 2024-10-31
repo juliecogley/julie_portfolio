@@ -118,17 +118,17 @@ cms.collection(
   ],
 );
 
-// cms.document({
-//   name: "Top Page",
-//   description: "Edit the content of the home page",
-//   store: "src:index.vto",
-//   fields: [
-//     "title: text",
-//     "description: text",
-//     "priority: number",
-//     "content: markdown",
-//   ]
-// });
+cms.document({
+  name: "Top Page",
+  description: "Edit the content of the home page",
+  store: "src:index.vto",
+  fields: [
+    "title: text",
+    "description: text",
+    "priority: number",
+    "content: markdown",
+  ]
+});
 
 // cms.document({
 //   name: "About Page",
