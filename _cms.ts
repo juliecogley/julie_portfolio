@@ -30,7 +30,7 @@ cms.storage(
     client: new Octokit({ auth: Deno.env.get("GITHUB_TOKEN") }),
     owner: "juliecogley",
     repo: "julie_portfolio",
-    branch: "main",
+    branch: "review",
     path: "src",
   }),
 );
@@ -125,7 +125,7 @@ cms.document({
   fields: [
     "title: text",
     "description: text",
-    "priority: number",
+    "priority: text",
     "content: markdown",
   ]
 });
@@ -137,7 +137,7 @@ cms.document({
   fields: [
     "title: text",
     "description: text",
-    "priority: number",
+    "priority: text",
     "content: markdown",
   ]
 });
