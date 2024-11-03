@@ -30,7 +30,7 @@ cms.storage(
     client: new Octokit({ auth: Deno.env.get("GITHUB_TOKEN") }),
     owner: "juliecogley",
     repo: "julie_portfolio",
-    branch: "review",
+    branch: "main",
     path: "src",
   }),
 );
