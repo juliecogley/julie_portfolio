@@ -125,7 +125,7 @@ cms.document({
   fields: [
     "title: text",
     "description: text",
-    "priority: number",
+    "priority: text",
     "content: markdown",
   ]
 });
@@ -137,7 +137,7 @@ cms.document({
   fields: [
     "title: text",
     "description: text",
-    "priority: number",
+    "priority: text",
     "content: markdown",
   ]
 });
