@@ -125,7 +125,18 @@ cms.document({
   fields: [
     "title: text",
     "description: text",
-    "priority: text",
+    {
+      name: "priority",
+      type: "number",
+      label: "Priority for sitemap",
+      description: "1 is highest priority, 0 is lowest priority, and you can set decimal numbers in between like 0.9.",
+      attributes: {
+        required: false,
+        min: 0,
+        max: 1,
+        step: 0.1,
+      },
+    },
     "content: markdown",
   ]
 });
@@ -137,7 +148,18 @@ cms.document({
   fields: [
     "title: text",
     "description: text",
-    "priority: text",
+    {
+      name: "priority",
+      type: "number",
+      label: "Priority for sitemap",
+      description: "1 is highest priority, 0 is lowest priority, and you can set decimal numbers in between like 0.9.",
+      attributes: {
+        required: false,
+        min: 0,
+        max: 1,
+        step: 0.1,
+      },
+    },
     "content: markdown",
   ]
 });
