@@ -12,6 +12,7 @@ const middleware = basicAuth({
   users: {
     "guest": `${myUSER_1_PASS}`,
   },
+  errorMessage: "401 Unauthorized, contact site owner for access.",
 });
 
 server.use((req, next) => {
