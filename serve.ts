@@ -46,7 +46,7 @@ server.use(csp({
   "X-XSS-Protection": true,
   "X-Permitted-Cross-Domain-Policies": true,
   "X-Powered-By": true,
-});
+}));
 
 server.use(async (request, next) => {
   const response = await next(request);
