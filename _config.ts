@@ -21,6 +21,8 @@ import terser from "lume/plugins/terser.ts";
 import phosphor from "https://deno.land/x/lume_icon_plugins@v0.2.4/phosphor.ts";
 import picture from "lume/plugins/picture.ts";
 import transformImages from "lume/plugins/transform_images.ts";
+import brotli from "lume/plugins/brotli.ts";
+
 
 const site = lume(
   {
@@ -58,6 +60,7 @@ site.use(transformImages({
   cache: true, // Toggle cache
   matches: /\.(jpg|jpeg|png|webp)$/i  // This regex matches only image files
 }));
+site.use(brotli());
 
 //site.copy("assets", "assets");
 site.copy("static/portfolio", "portfolio");
