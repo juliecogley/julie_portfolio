@@ -1,5 +1,6 @@
 import Server from "lume/core/server.ts";
-import { basicAuth } from "https://deno.land/x/lume@v2.3.2/middlewares/basic_auth.ts";
+import { basicAuth } from "lume/middlewares/basic_auth.ts"
+import precompress from "lume/middlewares/precompress.ts";
 
 const server = new Server({
   port: 8000,
@@ -21,6 +22,8 @@ server.use((req, next) => {
   }
   return next(req);
 });
+
+server.use(precompress());
 
 function isProtected(req) {
   const url = new URL(req.url);
