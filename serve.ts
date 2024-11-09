@@ -4,10 +4,10 @@ import precompress from "lume/middlewares/precompress.ts";
 import expires from "lume/middlewares/expires.ts";
 // import csp from "https://raw.githubusercontent.com/lumeland/experimental-plugins/main/csp/mod.ts";
 
-//import csp from "https://raw.githubusercontent.com/RickCogley/experimental-plugins/refs/heads/main/csp/mod.ts"
+import csp from "https://raw.githubusercontent.com/RickCogley/experimental-plugins/refs/heads/main/csp/mod.ts"
 
 // import csp from "lume/middlewares/csp.ts";
-import csp from "https://raw.githubusercontent.com/lumeland/csp/refs/heads/main/mod.ts";
+// import csp from "https://raw.githubusercontent.com/lumeland/csp/refs/heads/main/mod.ts";
 
 const server = new Server({
   port: 8000,
@@ -39,10 +39,7 @@ function isProtected(req) {
 server.use(precompress());
 server.use(expires());
 // pass your preferred security header options:
-//const DEFAULT_MAX_AGE = 365 * 86400;
-
-const headers = response.headers;
-const options = {
+server.use(csp({
   "Strict-Transport-Security": {
     maxAge: DEFAULT_MAX_AGE,
     includeSubDomains: true,
@@ -53,10 +50,8 @@ const options = {
   "X-Content-Type-Options": true,
   "X-XSS-Protection": true,
   "X-Permitted-Cross-Domain-Policies": true,
-  "X-Powered-By": false,
-};
-
-server.use(csp(headers, options));
+  "X-Powered-By": true,
+}));
 
 // server.use(async (request, next) => {
 //   const response = await next(request);
