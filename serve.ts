@@ -38,7 +38,7 @@ server.use(expires());
 // pass your preferred security header options:
 server.use(csp({
   "Strict-Transport-Security": {
-    maxAge: DEFAULT_MAX_AGE,
+    maxAge: 365 * 24 * 60 * 60, // one year
     includeSubDomains: true,
     preload: true,
   },
