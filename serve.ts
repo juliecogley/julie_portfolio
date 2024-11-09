@@ -39,6 +39,7 @@ function isProtected(req) {
 server.use(precompress());
 server.use(expires());
 // pass your preferred security header options:
+const DEFAULT_MAX_AGE = 365 * 86400;
 server.use(csp({
   "Strict-Transport-Security": {
     maxAge: DEFAULT_MAX_AGE,
