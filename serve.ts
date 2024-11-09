@@ -6,8 +6,8 @@ import expires from "lume/middlewares/expires.ts";
 
 //import csp from "https://raw.githubusercontent.com/RickCogley/experimental-plugins/refs/heads/main/csp/mod.ts"
 
-import csp from "lume/middlewares/csp.ts";
-// https://raw.githubusercontent.com/lumeland/csp/refs/heads/main/mod.ts
+// import csp from "lume/middlewares/csp.ts";
+import csp from "https://raw.githubusercontent.com/lumeland/csp/refs/heads/main/mod.ts";
 
 const server = new Server({
   port: 8000,
