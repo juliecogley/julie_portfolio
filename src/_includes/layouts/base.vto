@@ -1,42 +1,53 @@
 <!DOCTYPE html>
 <html class="no-js" lang="ja">
-<!-- ===== START LAYOUT: BASE ===== -->
-<head>
-  <meta charset="utf-8">
-  <title>{{ it.title ? `${title} | ${site.title}` : site.title }}</title>
-  <meta name="description" content="{{ it.description ? `${description} | ${site.description}` : site.description }}">
-  <meta http-equiv="Content-Language" content="ja">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0">
-  <meta http-equiv="last-modified" content="{{ date }}" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css">
-  <link rel="stylesheet" href="/styles.css?cb={{ cacheBuster }}">
-  <link href="/assets/julie_cogley.jpg" rel="icon" type="image/x-icon">
-  <link rel="apple-touch-icon" href="/assets/julie_cogley.jpg">
-  {{ if "ldPerson" in it }}
-    {{ include "templates/ld-person.vto" }}
-  {{ /if }} 
-</head>
+  <!-- ===== START LAYOUT: BASE ===== -->
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ it.title ? `${title} | ${site.title}` : site.title }}</title>
+    <meta
+      name="description"
+      content="{{ it.description ? `${description} | ${site.description}` : site.description }}"
+    />
+    <meta http-equiv="Content-Language" content="ja" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0"
+    />
+    <meta http-equiv="last-modified" content="{{ date }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css?cb={{ cacheBuster }}" />
+    <link href="/assets/julie_cogley.jpg" rel="icon" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/assets/julie_cogley.jpg" />
+    {{ if "ldPerson" in it }}
+      {{ include "templates/ld-person.vto" }}
+    {{ /if }}
+  </head>
 
-<body class="w-100 bg-white black-80 m-plus-2-300">
-{{ include "templates/nav.vto" }}
-  <main>
-    {{ content }}
-  </main>
+  <body class="w-100 bg-white black-80 m-plus-2-300">
+    {{ include "templates/nav.vto" }}
+    <main>
+      {{ content }}
+    </main>
 
+    <script src="/js/highlight.min.js"></script>
+    <script>
+      hljs.highlightBlock(document.querySelector("#css"));
+      hljs.highlightBlock(document.querySelector("#html"));
+    </script>
 
-  <script src="/js/highlight.min.js"></script>
-  <script>
-    hljs.highlightBlock(document.querySelector('#css'))
-    hljs.highlightBlock(document.querySelector('#html'))
-  </script>
-
-  {{ include "templates/footer.vto" }}
-</body>
-<!-- ===== END LAYOUT: BASE ===== -->
-{{# {{> console.log(it) }} #}}
+    {{ include "templates/footer.vto" }}
+  </body>
+  <!-- ===== END LAYOUT: BASE ===== -->
+  {{# {{> console.log(it) }} #}}
 </html>
