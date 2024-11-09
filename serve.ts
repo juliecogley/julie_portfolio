@@ -54,14 +54,14 @@ server.use(csp({
   "X-Powered-By": true,
 }));
 
-server.use(async (request, next) => {
-  const response = await next(request);
+// server.use(async (request, next) => {
+//   const response = await next(request);
 
-  // Add additional headers to the request
-  response.headers.set("X-Powered-By", "Lume and sweat, blood, and tears");
+//   // Add additional headers to the request
+//   response.headers.set("X-Powered-By", "Lume and sweat, blood, and tears");
 
-  return response;
-});
+//   return response;
+// });
 
 server.start();
 
