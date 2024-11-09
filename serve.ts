@@ -47,17 +47,8 @@ server.use(csp({
   "X-Content-Type-Options": true,
   "X-XSS-Protection": true,
   "X-Permitted-Cross-Domain-Policies": true,
-  "X-Powered-By": "xLume and sweat, blood, and tears",
+  "X-Powered-By": "Lume and sweat, blood, and tears",
 }));
-
-server.use(async (request, next) => {
-  const response = await next(request);
-
-  // Add additional headers to the request
-  response.headers.set("X-Powered-By", "Lume and sweat, blood, and tears");
-
-  return response;
-});
 
 server.start();
 
