@@ -23,12 +23,11 @@ import picture from "lume/plugins/picture.ts";
 import transformImages from "lume/plugins/transform_images.ts";
 import brotli from "lume/plugins/brotli.ts";
 
-
 const site = lume(
   {
     src: "./src",
     location: new URL("https://julie.cogley.jp"),
-  }
+  },
 );
 
 site.use(attributes());
@@ -58,7 +57,7 @@ site.use(phosphor());
 site.use(picture(/* Options */));
 site.use(transformImages({
   cache: true, // Toggle cache
-  matches: /\.(jpg|jpeg|png|webp)$/i  // This regex matches only image files
+  matches: /\.(jpg|jpeg|png|webp)$/i, // This regex matches only image files
 }));
 site.use(brotli());
 
@@ -69,7 +68,10 @@ site.copyRemainingFiles();
 
 // Create zip and tree scripts
 site.script("zipsite", "zip -r _site/julie_cogley_jp_site.zip _site");
-site.script("maketree", "cd _site && tree -H . -L 5 --charset utf-8 -C -h -o julie_cogley_jp_tree.html");
+site.script(
+  "maketree",
+  "cd _site && tree -H . -L 5 --charset utf-8 -C -h -o julie_cogley_jp_tree.html",
+);
 // Execute scripts after build
 site.addEventListener("afterBuild", "zipsite");
 site.addEventListener("afterBuild", "maketree");

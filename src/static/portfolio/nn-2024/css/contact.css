@@ -1,76 +1,75 @@
 @charset "UTF-8";
 
 .main {
-	max-width: 1208px;
-	/*1160+pad24+24*/
-	margin: 0 auto;
+  max-width: 1208px;
+  /*1160+pad24+24*/
+  margin: 0 auto;
 }
 
 .section-contact__name {
-	padding: 0 24px;
-	margin: 80px auto;
+  padding: 0 24px;
+  margin: 80px auto;
 }
 
 .section-contact__name-text {
-	/*327px+24+24=375px*/
-	margin: 0 auto 40px auto;
-	text-align: left;
-	width: 100%;
-	line-height: 2;
+  /*327px+24+24=375px*/
+  margin: 0 auto 40px auto;
+  text-align: left;
+  width: 100%;
+  line-height: 2;
 }
 
 .section-contact__name p {
-	padding: 20px 0 20px 0;
-	line-height: 1.5em;
+  padding: 20px 0 20px 0;
+  line-height: 1.5em;
 }
 
 @media (min-width: 760px) {
-	.section-contact__name {
+  .section-contact__name {
+    align-items: center;
+    margin: 100px 0;
+    justify-content: space-between;
+  }
 
-		align-items: center;
-		margin: 100px 0;
-		justify-content: space-between;
-	}
+  .section-contact__name-text {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+  }
 
-	.section-contact__name-text {
-		width: 100%;
-		margin: 0px;
-		display: flex;
-	}
+  .section-contact__name-text h2 {
+    font-size: 2.0rem;
+    line-height: 2;
+    text-wrap: nowrap;
+  }
 
-	.section-contact__name-text h2 {
-		font-size: 2.0rem;
-		line-height: 2;
-		text-wrap: nowrap;
-	}
-
-	.section-contact__name p {
-		font-size: 2.0rem;
-		line-height: 1.8em;
-		margin: 120px auto 0 auto;
-		padding: 0 0 80px 0;
-	}
+  .section-contact__name p {
+    font-size: 2.0rem;
+    line-height: 1.8em;
+    margin: 120px auto 0 auto;
+    padding: 0 0 80px 0;
+  }
 }
 .asterisk {
-	color: #B93434;
-	font-weight: 600;
+  color: #b93434;
+  font-weight: 600;
 }
 
 .container {
-	position: relative;
-	width: 100%;
-	overflow: hidden;
-	padding-top: 100%;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 100%;
 }
 
 .responsive-iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-	border: none;
-	border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border: 0;
 }

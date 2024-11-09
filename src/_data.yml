@@ -6,7 +6,17 @@ metas:
   description: "=description"
   # image: /assets/logo/logo_horiz_darkblue_bgtransparent_web.png
   # icon: /assets/img/apple-touch-icon.png
-  keywords: [Julie Cogley, Portfolio, Web Design, Web Development, Graphic Design, Branding, UI/UX Design, Japan, Tokyo]
+  keywords: [
+    Julie Cogley,
+    Portfolio,
+    Web Design,
+    Web Development,
+    Graphic Design,
+    Branding,
+    UI/UX Design,
+    Japan,
+    Tokyo,
+  ]
   generator: true
   color: "#ffbc68"
   robots: true

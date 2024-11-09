@@ -92,7 +92,7 @@ cms.collection(
             accept: "image/*",
             required: true,
           },
-        },    
+        },
       ],
     },
     {
@@ -109,7 +109,8 @@ cms.collection(
       name: "order",
       type: "number",
       label: "Order",
-      description: "Order in which the page will appear in the top menu. View all showcase pages at /showcase/ to see how the order number is currently set.",
+      description:
+        "Order in which the page will appear in the top menu. View all showcase pages at /showcase/ to see how the order number is currently set.",
       attributes: {
         required: true,
       },
@@ -129,7 +130,8 @@ cms.document({
       name: "priority",
       type: "number",
       label: "Priority for sitemap",
-      description: "1 is highest priority, 0 is lowest priority, and you can set decimal numbers in between like 0.9.",
+      description:
+        "1 is highest priority, 0 is lowest priority, and you can set decimal numbers in between like 0.9.",
       attributes: {
         required: false,
         min: 0,
@@ -138,7 +140,7 @@ cms.document({
       },
     },
     "content: markdown",
-  ]
+  ],
 });
 
 cms.document({
@@ -152,7 +154,8 @@ cms.document({
       name: "priority",
       type: "number",
       label: "Priority for sitemap",
-      description: "1 is highest priority, 0 is lowest priority, and you can set decimal numbers in between like 0.9.",
+      description:
+        "1 is highest priority, 0 is lowest priority, and you can set decimal numbers in between like 0.9.",
       attributes: {
         required: false,
         min: 0,
@@ -161,16 +164,17 @@ cms.document({
       },
     },
     "content: markdown",
-  ]
+  ],
 });
 
 cms.document({
   name: "ld-person",
-  description: "Edit the content of the ld-person script for the person, which will appear in the head of the about page",
+  description:
+    "Edit the content of the ld-person script for the person, which will appear in the head of the about page",
   store: "gh:_includes/templates/ld-person.vto",
   fields: [
     "content: markdown",
-  ]
-})
+  ],
+});
 
 export default cms;

@@ -2,7 +2,7 @@ name: Publish on Deno Deploy
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
@@ -26,6 +26,6 @@ jobs:
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: julie-cogley-jp 
+          project: julie-cogley-jp
           import-map: "./deno.json"
           entrypoint: serve.ts

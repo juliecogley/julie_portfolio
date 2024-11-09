@@ -1,90 +1,86 @@
 @charset "UTF-8";
 
 .section-works__top {
-	width: 100%;
-	height: 200px;
-	background: url("../img/obi.JPG")center;
-	background-position: 0 200px;
-	background-size: cover;
-	margin-top: 20px;
+  width: 100%;
+  height: 200px;
+  background: url("../img/obi.JPG") center;
+  background-position: 0 200px;
+  background-size: cover;
+  margin-top: 20px;
 }
 
-
 .section-works__wrapper {
-	padding: 0 24px;
-	margin: 40px auto 160px auto;
-	text-align: left;
+  padding: 0 24px;
+  margin: 40px auto 160px auto;
+  text-align: left;
 }
 
 .section-works__index {
-	margin-top: 40px;
-	border-bottom: 2px dotted #030303;
-	position: relative;
-
+  margin-top: 40px;
+  border-bottom: 2px dotted #030303;
+  position: relative;
 }
 
 .section-works__wrapper h2 {
-	font-size: 2.0rem;
-	line-height: 2em;
+  font-size: 2.0rem;
+  line-height: 2em;
 }
 
 .section-works__wrapper h3 {
-	font-size: 1.6rem;
-	line-height: 1.8em;
+  font-size: 1.6rem;
+  line-height: 1.8em;
 }
 
 .section-works__index p {
-	color: #777;
-	margin: 16px 0;
-	line-height: 1.5em;
+  color: #777;
+  margin: 16px 0;
+  line-height: 1.5em;
 }
 
 .arrow {
-	width: 10px;
-	height: 18px;
-	position: absolute;
-	right: 7px;
-	bottom: 24px;
+  width: 10px;
+  height: 18px;
+  position: absolute;
+  right: 7px;
+  bottom: 24px;
 }
 
-
 @media (min-width: 1060px) {
+  .section-works {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 
-	.section-works {
-		display: flex;
-		flex-direction: row-reverse;
-	}
+  .section-works__top {
+    width: 100vh;
+    height: 30vw;
+    position: fixed;
+    top: -20px;
+    right: 0;
+    transform: rotate(90deg) translateX(100%);
+    transform-origin: top right;
+    z-index: -1;
+    background-position: center;
+  }
 
-	.section-works__top {
-		width: 100vh;
-		height: 30vw;
-		position: fixed;
-		top: -20px;
-		right: 0;
-		transform: rotate(90deg) translateX(100%);
-		transform-origin: top right;
-		z-index: -1;
-		background-position: center;
-	}
+  .section-works__wrapper {
+    padding: 0 24px;
+    margin: 240px auto 160px auto;
+    text-align: left;
+    display: block;
+    width: 72.2%;
+  }
 
-	.section-works__wrapper {
-		padding: 0 24px;
-		margin: 240px auto 160px auto;
-		text-align: left;
-		display: block;
-		width: 72.2%;
-	}
+  .section-works__wrapper h2 {
+    font-size: 3.2rem;
+  }
 
-	.section-works__wrapper h2 {
-		font-size: 3.2rem;
-	}
+  .section-works__wrapper h3 {
+    font-size: 2.4rem;
+    padding-top: 20px;
+  }
 
-	.section-works__wrapper h3 {
-		font-size: 2.4rem;
-		padding-top: 20px;
-	}
-
-	.section-works__index p {
-		font-size: 2.0rem;
-	}
+  .section-works__index p {
+    font-size: 2.0rem;
+  }
 }
