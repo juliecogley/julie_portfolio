@@ -47,7 +47,7 @@ server.use(csp({
   "X-Content-Type-Options": true,
   "X-XSS-Protection": true,
   "X-Permitted-Cross-Domain-Policies": true,
-  "X-Powered-By": true,
+  "X-Powered-By": "xLume and sweat, blood, and tears",
 }));
 
 server.use(async (request, next) => {
