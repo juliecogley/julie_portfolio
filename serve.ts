@@ -4,6 +4,8 @@ import precompress from "lume/middlewares/precompress.ts";
 import expires from "lume/middlewares/expires.ts";
 // import csp from "https://raw.githubusercontent.com/lumeland/experimental-plugins/main/csp/mod.ts";
 
+import csp from "https://raw.githubusercontent.com/RickCogley/experimental-plugins/refs/heads/main/csp/mod.ts"
+
 const server = new Server({
   port: 8000,
   root: `${Deno.cwd()}/_site`,
@@ -33,20 +35,20 @@ function isProtected(req) {
 // assumes you are precompressing, say with the brotli plugin
 server.use(precompress());
 server.use(expires());
-// pass your preferred security header options:
-// server.use(csp({
-//   "Strict-Transport-Security": {
-//     maxAge: DEFAULT_MAX_AGE,
-//     includeSubDomains: true,
-//     preload: true,
-//   },
-//   "Referrer-Policy": ["no-referrer", "strict-origin-when-cross-origin"],
-//   "X-Frame-Options": true,
-//   "X-Content-Type-Options": true,
-//   "X-XSS-Protection": true,
-//   "X-Permitted-Cross-Domain-Policies": true,
-//   "X-Powered-By": true,
-// }));
+pass your preferred security header options:
+server.use(csp({
+  "Strict-Transport-Security": {
+    maxAge: DEFAULT_MAX_AGE,
+    includeSubDomains: true,
+    preload: true,
+  },
+  "Referrer-Policy": ["no-referrer", "strict-origin-when-cross-origin"],
+  "X-Frame-Options": true,
+  "X-Content-Type-Options": true,
+  "X-XSS-Protection": true,
+  "X-Permitted-Cross-Domain-Policies": true,
+  "X-Powered-By": true,
+}));
 
 server.use(async (request, next) => {
   const response = await next(request);
