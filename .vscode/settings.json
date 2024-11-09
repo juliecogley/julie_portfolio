@@ -1,7 +1,6 @@
 {
   "deno.enable": true,
   "files.autoSave": "afterDelay",
-  "editor.fontSize": 16,
   "editor.fontFamily": "'Ricty Diminished Discord with Fira Code', 'PragmataPro Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.tabSize": 2,
   "deno.codeLens.implementations": true,
