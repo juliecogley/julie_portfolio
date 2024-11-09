@@ -35,7 +35,7 @@ function isProtected(req) {
 // assumes you are precompressing, say with the brotli plugin
 server.use(precompress());
 server.use(expires());
-pass your preferred security header options:
+// pass your preferred security header options:
 server.use(csp({
   "Strict-Transport-Security": {
     maxAge: DEFAULT_MAX_AGE,
