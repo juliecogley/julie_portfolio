@@ -2,30 +2,46 @@ name: Publish on Deno Deploy
 
 on:
   push:
+    # Run on main branch pushes
     branches: [main]
+  # Allow to manually trigger the workflow
+  workflow_dispatch:
+  schedule:
+    # Rebuild every day at 8:04 PM UTC
+    - cron: '4 20 * * *'
 
 jobs:
   build:
+    # What OS to use
     runs-on: ubuntu-latest
     permissions:
       id-token: write
       contents: read
 
+    # What steps to run
     steps:
       - name: Clone repository
+        # Git clone the repository
         uses: actions/checkout@v4
 
       - name: Setup Deno environment
+        # Downloads deno and caches it
         uses: denoland/setup-deno@v2
         with:
+          # Latest Deno 2.x version
           deno-version: v2.x
 
       - name: Build site
+        # Run the build script from deno.json
         run: deno task build
 
       - name: Deploy to Deno Deploy
+        # Push the built site to Deno Deploy
         uses: denoland/deployctl@v1
         with:
+          # Deno Deploy project name
           project: julie-cogley-jp
+          # Where are the deno components located
           import-map: "./deno.json"
+          # Which file acts as the web server
           entrypoint: serve.ts
