@@ -7,7 +7,8 @@
     "lume": "export TZ='Asia/Tokyo' && echo \"import 'lume/cli.ts'\" | deno run -A -",
     "build": "deno task lume",
     "serve": "deno task lume -s",
-    "cms": "deno task lume cms"
+    "cms": "deno task lume cms",
+    "format": "echo '=== Regular deno fmt... ===' && deno fmt --ignore=_dist && echo '=== Deno fmt for vento... ===' && deno fmt --unstable-component --ignore=_dist"
   },
   "compilerOptions": {
     "types": [
