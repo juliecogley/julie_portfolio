@@ -67,11 +67,21 @@ site.copy("static/portfolio", "portfolio");
 site.copyRemainingFiles();
 
 // Create zip and tree scripts
-site.script("zipsite", "zip -r _site/julie_cogley_jp_site.zip _site");
+site.script(
+  "zipsite",
+  "zip -r _site/julie_cogley_jp_site.zip _site",
+);
 site.script(
   "maketree",
   "cd _site && tree -H . -L 5 --charset utf-8 -C -h -o julie_cogley_jp_tree.html",
 );
+site.script(
+  "getjpholidays",
+  "cd src/_data && curl https://holidays-jp.github.io/api/v1/date.json -o jp-holidays.json",
+);
+
+// Execute scripts before build
+site.addEventListener("beforeBuild", "getjpholidays");
 // Execute scripts after build
 site.addEventListener("afterBuild", "zipsite");
 site.addEventListener("afterBuild", "maketree");
