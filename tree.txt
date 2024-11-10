@@ -1,0 +1,93 @@
+.
+├── .github
+│   └── workflows
+│       └── deploy.yml
+├── .vscode
+│   ├── julie_portfolio.code-workspace
+│   └── settings.json
+├── _site
+│   ├── about
+│   │   ├── index.html
+│   │   └── index.html.br
+│   ├── archive
+│   │   └── oldindex.zip
+│   ├── assets
+│   │   ├── Git-icon-white.svg
+│   │   ├── Hibiscus.jpg
+│   │   ├── Hibiscus.png
+│   │   ├── Hibiscus.webp
+...
+│   ├── portfolio
+│   │   ├── corolla_lp
+│   │   └── nn-2024
+│   ├── showcase
+│   │   ├── hachijojima-sunset_watercolor
+│   │   │   ├── index.html
+│   │   │   └── index.html.br
+...
+│   │   ├── private
+│   │   │   ├── fire-extinguisher_flyer
+│   │   │   │   ├── index.html
+│   │   │   │   └── index.html.br
+│   │   │   ├── kanshin-breaker-shikyuu_flyer
+│   │   │   │   ├── index.html
+│   │   │   │   └── index.html.br...
+│   │   ├── index.html
+│   │   └── index.html.br
+│   ├── feed.rss
+│   ├── index.html
+│   ├── index.html.br
+│   ├── julie_cogley_jp_site.zip
+│   ├── julie_cogley_jp_tree.html
+│   ├── robots.txt
+│   ├── sitemap.xml
+│   ├── styles.css
+│   ├── styles.css.br
+│   └── styles.css.map
+├── src
+│   ├── _data
+│   │   └── jp-holidays.json
+│   ├── _includes
+│   │   ├── layouts
+│   │   │   └── base.vto
+│   │   └── templates
+│   │       ├── footer.vto
+│   │       ├── ld-person.vto
+│   │       └── nav.vto
+│   ├── archive
+│   │   └── oldindex.zip
+│   ├── assets
+│   │   ├── .DS_Store
+│   │   ├── Git-icon-white.svg
+│   │   ├── Hibiscus.jpg...
+│   ├── showcase
+│   │   ├── _data.yml
+│   │   ├── fire-extinguisher_flyer.vto
+│   │   ├── hachijojima-sunset_watercolor.vto
+│   │   ├── index.vto
+│   │   ├── kanshin-breaker-shikyuu_flyer.vto
+│   │   ├── kanshin-breaker_flyer.vto
+│   │   ├── maruntain-top_tshirt.vto
+│   │   ├── nn-2024.vto
+│   │   ├── sea-turtle_painting.vto
+│   │   ├── whitening_flyer.vto
+│   │   └── youtube-gadget_flyer.vto
+│   ├── static
+│   │   └── portfolio
+│   │       ├── corolla_lp
+│   │       └── nn-2024
+│   ├── _data.ts
+│   ├── _data.yml
+│   ├── about.vto
+│   ├── index.vto
+│   └── styles.css
+├── .DS_Store
+├── .editorconfig
+├── .gitattributes
+├── .gitignore
+├── README.md
+├── _cms.ts
+├── _config.ts
+├── deno.json
+├── deno.lock
+└── serve.ts
