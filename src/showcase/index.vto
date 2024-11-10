@@ -9,37 +9,36 @@ templateEngine: [vto]
 ---
 <!-- ===== START LAYOUT: HOME ===== -->
 
-<h1 class="mw10 pa4">Showcase ページ一覧 {{ "tree" |> phosphor("duotone") }}</h1>
+<h1 class="mw10 pa4">
+  Showcase ページ一覧 {{ "tree" |> phosphor("duotone") }}
+</h1>
 
 {{# <article class="fl w-100 bg-white"> #}}
 <article class="cf pa4 mw10 center f6 lh-copy">
- <table class="collapse ba br2 b--black-10 pv2 ph3 mt4">
-  <tr class="striped--near-white">
-    <th class="pv2 ph3 tl f6 fw6 ttu">Index Order</th>
-    <th class="pv2 ph3 tl f6 fw6 ttu">Category</th>
-    <th class="pv2 ph3 tl f6 fw6 ttu">Search Engine Title</th>
-    <th class="pv2 ph3 tl f6 fw6 ttu">URL</th>
-    <th class="pv2 ph3 tl f6 fw6 ttu">Index Title</th>
-    <th class="pv2 ph3 tl f6 fw6 ttu">Index Image</th>
-    <th class="pv2 ph3 tl f6 fw6 ttu">Index Hide Link</th>
-  </tr>
-  {{ for item of search.pages(`type=showcase`, "order=asc") }}
-  <tr class="striped--near-white">
-    <td class="pv2 ph3">{{ item.order }}</td>
-    <td class="pv2 ph3">{{ item.category }}</td>
-    <td class="pv2 ph3">{{ item.metas.title }}</td>
-    <td class="pv2 ph3"><a href="{{ item.url }}">{{ item.url }}</a></td>
-    <td class="pv2 ph3">{{ item.indextitle }}</td>
-    <td class="pv2 ph3">{{ item.indeximage }}</td>
-    <td class="pv2 ph3">{{ item.hidelink }}</td>
-  </tr>
-  {{ /for }}
- </table>
+  <table class="collapse ba br2 b--black-10 pv2 ph3 mt4">
+    <tr class="striped--near-white">
+      <th class="pv2 ph3 tl f6 fw6 ttu">Index Order</th>
+      <th class="pv2 ph3 tl f6 fw6 ttu">Category</th>
+      <th class="pv2 ph3 tl f6 fw6 ttu">Search Engine Title</th>
+      <th class="pv2 ph3 tl f6 fw6 ttu">URL</th>
+      <th class="pv2 ph3 tl f6 fw6 ttu">Index Title</th>
+      <th class="pv2 ph3 tl f6 fw6 ttu">Index Image</th>
+      <th class="pv2 ph3 tl f6 fw6 ttu">Index Hide Link</th>
+    </tr>
+    {{ for item of search.pages(`type=showcase`, "order=asc") }}
+      <tr class="striped--near-white">
+        <td class="pv2 ph3">{{ item.order }}</td>
+        <td class="pv2 ph3">{{ item.category }}</td>
+        <td class="pv2 ph3">{{ item.metas.title }}</td>
+        <td class="pv2 ph3"><a href="{{ item.url }}">{{ item.url }}</a></td>
+        <td class="pv2 ph3">{{ item.indextitle }}</td>
+        <td class="pv2 ph3">{{ item.indeximage }}</td>
+        <td class="pv2 ph3">{{ item.hidelink }}</td>
+      </tr>
+    {{ /for }}
+  </table>
 </article>
 
-
-
 <div class="cf pa3 mw9 center"><!-- Needed to balance footer spacing --></div>
-
 
 <!-- ===== END LAYOUT: HOME ===== -->
