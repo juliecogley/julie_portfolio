@@ -77,7 +77,7 @@ site.script(
 );
 site.script(
   "getjpholidays",
-  "cd src/_data && curl https://holidays-jp.github.io/api/v1/date.json -o jp-holidays.json",
+  "cd src/_data && curl https://holidays-jp.github.io/api/v1/date.json -o jp_holidays.json",
 );
 
 // Execute scripts before build
