@@ -1,6 +1,6 @@
 ---
 layout: layouts/base.vto
-title: JCP Site TOP
+title: JCP Site トップ
 date: Git Last Modified
 description: "Top page of the site, showing a list of works with a link to a bio page."
 priority: 0.9
@@ -18,7 +18,7 @@ priority: 0.9
 <div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">
   {{ if !item.hidelink }}<a href="{{ item.url }}" target="_blank">{{ /if }}
     <div class="aspect-ratio aspect-ratio--3x4 shadow-1 br1">
-      <span style="background-image:url({{ item.indeximage }});" class="dt cover bg-center aspect-ratio--object grow-large hide-child br1">
+      <span style="background-image:url({{ item.indeximage }});" class="dt cover bg-center aspect-ratio--object grow hide-child br1">
         <span class="white dtc v-mid w-100 h-100 child bg-black-40 pa5 br1"><em><span class="bg-white-40">{{ item.category }}
         {{if item.url.includes("/private/")}}
         <span class="dark-red">&nbsp;{{ "lock-laminated" |> phosphor("duotone") }}{{ "password" |> phosphor("duotone") }}</span>
