@@ -1,5 +1,9 @@
 html {
-  background-color: #333;
+    background-color: #333;
+    font-family: "text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 svg {
@@ -20,7 +24,7 @@ ruby {
   ruby-position: under;
   ruby-align: start;
   color: silver;
-  /* font-weight: 500; */
+  font-weight: 200;
   font-size: 2rem;
   letter-spacing: 0.5rem;
 }
@@ -28,85 +32,142 @@ ruby ruby {
   ruby-position: over;
 }
 
-/* .sitefont M PLUS 2 */
+/* .text standard text font loaded via Lume Google Font Plugin */
+/* .display display English-only text font loaded via Lume Google Font Plugin */
 /* -suffix: Use a unique and descriptive class name for each weight */
-/* <weight>: Use a value from 100 to 900 */
+/* <weight>: Use a value from 100 to 700 */
 
-.m-plus-2-100 {
-  font-family: "M PLUS 2", sans-serif;
+.text {
+    font-family: "text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-100 {
+  font-family: "text", sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
 }
 
-.m-plus-2-200 {
-  font-family: "M PLUS 2", sans-serif;
+.text-200 {
+  font-family: "text", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
 }
 
-.m-plus-2-300 {
-  font-family: "M PLUS 2", sans-serif;
+.text-300 {
+  font-family: "text", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
 }
 
-.m-plus-2-300 {
-  font-family: "M PLUS 2", sans-serif;
+.text-400 {
+  font-family: "text", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
-.m-plus-2-500 {
-  font-family: "M PLUS 2", sans-serif;
+.text-500 {
+  font-family: "text", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
 
-.m-plus-2-600 {
-  font-family: "M PLUS 2", sans-serif;
+.text-600 {
+  font-family: "text", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: bold;
 }
 
-.m-plus-2-700 {
-  font-family: "M PLUS 2", sans-serif;
+.text-700 {
+  font-family: "text", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: bold;
 }
 
-.m-plus-2-800 {
-  font-family: "M PLUS 2", sans-serif;
+.text-800 {
+  font-family: "text", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: bold;
 }
 
-.m-plus-2-900 {
-  font-family: "M PLUS 2", sans-serif;
+.text-900 {
+  font-family: "text", sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: bold;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "M PLUS 2", sans-serif;
+  font-family: "text", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: bold;
 }
 
-html {
-  font-family: "M PLUS 2", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+.display {
+    font-family: "display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.display-100 {
+    font-family: "display", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.display-200 {
+    font-family: "display", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.display-300 {
+    font-family: "display", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.display-400 {
+    font-family: "display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.display-500 {
+    font-family: "display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.display-600 {
+    font-family: "display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: bold;
+}
+
+.display-700 {
+    font-family: "display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: bold;
 }
 
 /*
@@ -212,9 +273,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   list-style: none;
   text-decoration: none;
   color: #777;
-}
-.site-title {
-  font-weight: 400;
 }
 .sns-links {
   color: #fff;
