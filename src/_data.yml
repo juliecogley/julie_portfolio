@@ -25,6 +25,7 @@ metas:
   "twitter:data1": "=site.author"
 site:
   title: "Julie Cogley Portfolio"
+  navtoplink: "トップ"
   author: "Julie Cogley"
   description: "This portfolio site contains Julie Cogley's biographical information and a showcase of her works."
   navbgcolor: "gray"
