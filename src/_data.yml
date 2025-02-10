@@ -7,6 +7,15 @@ metas:
   # image: /assets/logo/logo_horiz_darkblue_bgtransparent_web.png
   # icon: /assets/img/apple-touch-icon.png
   keywords: [
+    コグレー珠里,
+    ポートフォリオ,
+    ウェブデザイン,
+    ウェブ開発,
+    グラフィックデザイン,
+    ブランディング,
+    UI/UXデザイン,
+    日本,
+    東京,
     Julie Cogley,
     Portfolio,
     Web Design,
@@ -24,8 +33,8 @@ metas:
   "twitter:label1": Author
   "twitter:data1": "=site.author"
 site:
-  title: "Julie Cogley Portfolio"
-  navtoplink: "トップ"
-  author: "Julie Cogley"
+  title: "コグレー珠里のポートフォリオ サイト"
+  navtoplink: "Top"
+  author: "コグレー珠里"
   description: "This portfolio site contains Julie Cogley's biographical information and a showcase of her works."
   navbgcolor: "gray"
