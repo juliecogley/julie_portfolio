@@ -75,6 +75,7 @@ site.use(brotli());
 
 //site.copy("assets", "assets");
 site.copy("static/portfolio", "portfolio");
+site.copy("_data/jp_holidays.json", "jp_holidays.json");
 //site.copy([".gif",".pdf",".docx",".pptx",".xlsx",".zip",".svg"]);
 site.copyRemainingFiles();
 
