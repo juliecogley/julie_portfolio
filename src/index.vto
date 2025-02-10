@@ -6,13 +6,7 @@ description: "Top page of the site, showing a list of works with a link to a bio
 priority: 0.9
 ---
 <!-- ===== START LAYOUT: HOME ===== -->
-<div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">本日は{{ todaysDateJAJP }}{{ set today = todaysDateYYYYMMDD }}{{ if holidays[today] }} ({{ holidays[today] }}){{ /if }}
 
-{{# {{ for key,value of jp_holidays }}
-{{ key }}{{value}}
-{{ /for }} #}}
-
-</div>
 <article class="fl w-100 bg-white">
 {{ for item of search.pages(`type=showcase`, "order=asc") }}
 <div class="fl w-100 w-50-m w-25-l pv3 pa3-m pa4-l">
