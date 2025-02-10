@@ -83,28 +83,28 @@ ruby ruby {
   font-family: "text", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
-  font-style: bold;
+  font-style: normal;
 }
 
 .text-700 {
   font-family: "text", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
-  font-style: bold;
+  font-style: normal;
 }
 
 .text-800 {
   font-family: "text", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
-  font-style: bold;
+  font-style: normal;
 }
 
 .text-900 {
   font-family: "text", sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
-  font-style: bold;
+  font-style: normal;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -160,14 +160,14 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "display", serif;
     font-optical-sizing: auto;
     font-weight: 600;
-    font-style: bold;
+    font-style: normal;
 }
 
 .display-700 {
     font-family: "display", serif;
     font-optical-sizing: auto;
     font-weight: 700;
-    font-style: bold;
+    font-style: normal;
 }
 
 /*
