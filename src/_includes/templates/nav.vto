@@ -1,21 +1,22 @@
 <!-- ===== START TEMPLATE: NAV ===== -->
-<nav class="db dt-l w-100 border-box pa3 ph5-l bg-{{site.navbgcolor}} display">
-  <a class="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l display-700" href="/" title="サイトのトップ">
-      <h1>{{ site.authoren |> toUpperCase }}</h1>
+<nav class="db dt-l w-100 border-box pa3 ph5-l bg-{{site.navbgcolor}} display" x-data="{ open: false }">
+  <a class="db dtc-l v-mid mid-gray link dim w-25 w-25-l tc tl-l mb2 mb0-l" href="/" title="サイトのトップ">
+      <h1><span class="display-200">{{ site.authorfnen |> toUpperCase }}</span> <span class="display-400">{{ site.authorlnen |> toUpperCase }}</span></h1>
   </a>
-  <div class="db dtc-l v-mid w-100 w-75-l tr-l text-100">
-    <a
-      class="link dim dark-gray f6 f5-l dib mr3 mr4-l"
-      href="/"
-      title="{{ site.title }}"
-    ><span class="display-500">{{ site.navtoplink |> toUpperCase }}</span></a>
-  </div>
-  <div class="db dtc-l v-mid w-100 w-75-l tr-l text-100">
-    <a
-      class="link dim dark-gray f6 f5-l dib mr3 mr4-l"
-      href="/about"
-      title="コグレー珠里のバイオグラフィー ページ"
-    ><span class="display-500">{{ "About" |> toUpperCase }}</span></a>
-  </div>
+  <button type="button" class="menu-btn" x-on:click="open=!open">
+      <i class="f3">{{ "list" |> phosphor("duotone") }}</i>
+  </button>
+  <div class="menu" x-bind:class="{'is-active' : open }">
+    <div class="menu__item"><a
+    class="link dim white f3 f1-l dib"
+    href="/"
+    title="{{ site.title }}"
+  ><span class="display-500">{{ site.navtoplink |> toUpperCase }}</span></a></div>
+    <div class="menu__item"><a
+    class="link dim white f3 f2-m f1-l dib"
+    href="/about"
+    title="コグレー珠里のバイオグラフィー ページ"
+  ><span class="display-500">{{ "About" |> toUpperCase }}</span></a></div>
+</div>
 </nav>
 <!-- ===== END TEMPLATE: NAV ===== -->

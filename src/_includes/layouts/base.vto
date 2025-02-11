@@ -21,6 +21,7 @@
       href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"
     />
     <link rel="stylesheet" href="/styles.css?cb={{ cacheBuster }}" />
+    <script src="//unpkg.com/alpinejs" defer></script>
     <link href="/assets/julie_cogley.jpg" rel="icon" type="image/x-icon" />
     <link rel="apple-touch-icon" href="/assets/julie_cogley.jpg" />
     {{ if "ldPerson" in it }}
@@ -28,7 +29,7 @@
     {{ /if }}
   </head>
 
-  <body class="w-100 bg-white black-80 text-300">
+  <body class="w-100 bg-white black-80 text-300 z-0">
     {{ include "templates/nav.vto" }}
     <main>
       {{ content }}
