@@ -1,69 +1,19 @@
 <!-- ===== START TEMPLATE: FOOTER ===== -->
 <!-- SVG Icons are from https://simpleicons.org -->
-<footer
-  style="background-image: url(/assets/footer_bg2.gif)"
-  class="tc-l bg-center cover bg-black text"
->
+<footer class="tc-l bg-center cover bg-black text">
   <div class="w-100 ph3 pv5 bg-black-70">
-    <span class="white-40"><small>&copy; <span id="copyright-year"></span> {{ site.authoren }}, juo00oc@gmail.com<br>
-    更新日付 {{ date |> date("HUMAN_DATETIME", "ja")}}<br>
-    本日は<span id="holiday"></span><br></small></span>
+    <span class="white-60"><small>&copy;<span id="copyright-year"></span> {{ site.authoren }}, juo00oc@gmail.com<br>
+    </small></span>
     <a
       rel="me"
       class="link white-90 bg-transparent hover-green inline-flex items-center ma2 tc br2 pa2"
-      href="https://www.instagram.com/jo00oc/?hl=ja"
+      href="https://www.instagram.com/kt2sygr"
       title="Instagram"
       target="_blank"
     >{{ "instagram-logo" |> phosphor("duotone") }}
       <span class="f6 ml3 pr2 display-300">Instagram</span>
     </a>
-    <a
-      rel="me"
-      class="link white-90 bg-transparent hover-green inline-flex items-center ma2 tc br2 pa2"
-      href="https://github.com/juliecogley"
-      title="GitHub"
-      target="_blank"
-    >{{ "github-logo" |> phosphor("duotone") }}
-      <span class="f6 ml3 pr2 display-300">GitHub</span>
-    </a>
   </div>
 </footer>
-    <script>
-        async function checkHoliday() {
-            try {
-                const response = await fetch('/jp_holidays.json');
-                const holidays = await response.json();
 
-                // Debugging: Log the fetched data
-                console.log('Fetched holidays:', holidays);
-
-                const today = new Date().toISOString().split('T')[0];
-                const todayjp = new Date().toLocaleString('ja-JP',{ year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' });
-
-                // const todaytest = "2025-02-11";
-                const holidayName = holidays[today];
-                const holidayElement = document.getElementById('holiday');
-
-                if (holidayName) {
-                    holidayElement.textContent = `${todayjp} (${holidayName})`;
-                } else {
-                    holidayElement.textContent = `${todayjp}`;
-                }
-            } catch (error) {
-                console.error('Error checking holiday:', error);
-                document.getElementById('holiday').textContent = 'Error checking holiday';
-            }
-        }
-
-        checkHoliday();
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const currentYear = new Date().getFullYear();
-            document.getElementById('copyright-year').textContent = currentYear;
-        });
-
-    </script>
-    <script>
-
-    </script>
 <!-- ===== END TEMPLATE: FOOTER ===== -->
