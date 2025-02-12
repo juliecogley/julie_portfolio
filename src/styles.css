@@ -1,5 +1,5 @@
 html {
-    background-color: #333;
+    background-color: #f8fbf8;
     font-family: "text", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -24,13 +24,19 @@ ruby {
   ruby-position: under;
   ruby-align: start;
   color: silver;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 2rem;
   letter-spacing: 0.5rem;
 }
 ruby ruby {
   ruby-position: over;
 }
+
+footer {
+    background-color: #fbfcfa;
+}
+
+
 
 /*----------------------------
 * Hamburger 開閉ボタン
