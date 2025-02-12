@@ -1,6 +1,6 @@
 <!-- ===== START TEMPLATE: FOOTER ===== -->
 <!-- SVG Icons are from https://simpleicons.org -->
-<footer class="tc-l bg-center cover text">
+<footer class="tc bg-center cover text">
   <div class="w-100 ph3 pv5">
     <span class="black-60"><small>&copy;<span id="copyright-year"></span> {{ site.authoren }}, juo00oc@gmail.com<br>
     </small></span>
@@ -14,6 +14,8 @@
       <span class="f6 ml3 pr2 display-300">Instagram</span>
     </a>
   </div>
+  <script>
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+  </script>
 </footer>
-
 <!-- ===== END TEMPLATE: FOOTER ===== -->
