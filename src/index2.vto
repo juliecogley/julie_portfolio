@@ -1,0 +1,29 @@
+---
+layout: layouts/base.vto
+title: コグレー珠里 ポートフォリオ サイトのトップ
+date: Git Last Modified
+description: "Top page of the site, showing a list of works with a link to a bio page."
+priority: 0.9
+---
+<!-- ===== START LAYOUT: HOME ===== -->
+
+<article class="fl w-100 bg-white">
+{{ for item of search.pages(`type=showcase flyer`, "order=asc") }}
+<div class="fl w-100 w-50-m w-25-l pv3 pa4">
+  {{ if !item.hidelink }}<a href="{{ item.url }}" target="_blank">{{ /if }}
+    <div class="aspect-ratio aspect-ratio--1x1 shadow-1 br4">
+      <span style="background-image:url({{ item.indeximage }});" class="dt cover bg-center aspect-ratio--object grow hide-child br4">
+        <span class="white dtc v-mid w-100 h-100 child bg-black-40 pa5 br4"><em><span class="bg-white-40">{{ item.category }}
+        {{if item.url.includes("/private/")}}
+        <span class="dark-red">&nbsp;{{ "lock-laminated" |> phosphor("duotone") }}{{ "password" |> phosphor("duotone") }}</span>
+        {{/if}}
+        </span><br>{{ item.indextitle }}</em></span>
+      </span>
+    </div>
+  {{ if !item.hidelink }}</a>{{ /if }}
+</div>
+{{ /for }}
+</article>
+<div class="cf pa3 mw9 center"><!-- Needed to balance footer spacing --></div>
+
+<!-- ===== END LAYOUT: HOME ===== -->
