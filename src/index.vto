@@ -9,13 +9,13 @@ priority: 0.9
 
 <section class="cf w-100 pa2-ns bg-white">
 {{ for item of home.links }}
-<article class="fl w-100 w-50-m w-25-ns pa4-ns">
-  <a class="link" href="{{ item.url }}"><div class="grow overflow-hidden aspect-ratio aspect-ratio--1x1">
+<article class="fl w-100 w-50-m w-25-ns pa4">
+  <a class="link" href="{{ item.url }}"><div class="grow overflow-hidden aspect-ratio aspect-ratio--1x1 br4">
     <img style="background-image:url({{ item.image }});"
     class="db bg-center cover aspect-ratio--object" />
   </div></a>
-  <h3 class="f5 f4-ns mb0 gray"><a href="{{ item.url }}" class="ph2 ph0-ns pb3 db gray bg-transparent link hover-{{ item.hovercolor }}">{{ item.icon |> phosphor("duotone") }} {{ item.title }}</a></h3>
-  <h3 class="f6 f5 fw4 mt2 black-60">{{ item.subtitle }}</h3>
+  <h3 class="f5 f4-ns gray ma2"><a href="{{ item.url }}" class="db bg-transparent link gray hover-{{ item.hovercolor }}">{{ item.icon |> phosphor("duotone") }} {{ item.title }}</a></h3>
+  <p class="black-60 ma2 pl1">{{ item.subtitle }}</p>
 </article>
 {{ /for }}
 </section>
