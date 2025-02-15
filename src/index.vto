@@ -7,23 +7,18 @@ priority: 0.9
 ---
 <!-- ===== START LAYOUT: HOME ===== -->
 
-<article class="fl w-100 bg-white">
-{{ for item of search.pages(`type=showcase`, "order=asc") }}
-<div class="fl w-100 w-50-m w-25-l pa4">
-  {{ if !item.hidelink }}<a href="{{ item.url }}" target="_blank">{{ /if }}
-    <div class="aspect-ratio aspect-ratio--1x1 shadow-1 br4">
-      <span style="background-image:url({{ item.indeximage }});" class="dt cover bg-center aspect-ratio--object grow hide-child br4">
-        <span class="white dtc v-mid w-100 h-100 child bg-black-40 pa5 br4"><em><span class="bg-white-40">{{ item.category }}
-        {{if item.url.includes("/private/")}}
-        <span class="dark-red">&nbsp;{{ "lock-laminated" |> phosphor("duotone") }}{{ "password" |> phosphor("duotone") }}</span>
-        {{/if}}
-        </span><br>{{ item.indextitle }}</em></span>
-      </span>
-    </div>
-  {{ if !item.hidelink }}</a>{{ /if }}
-</div>
-{{ /for }}
+<section class="cf w-100 pa2-ns bg-white">
+{{ for item of home.links }}
+<article class="fl w-100 w-50-m w-25-ns pa4-ns">
+  <a class="link" href="{{ item.url }}"><div class="grow overflow-hidden aspect-ratio aspect-ratio--1x1">
+    <img style="background-image:url({{ item.image }});"
+    class="db bg-center cover aspect-ratio--object" />
+  </div></a>
+  <h3 class="f5 f4-ns mb0 gray"><a href="{{ item.url }}" class="ph2 ph0-ns pb3 db gray bg-transparent link hover-{{ item.hovercolor }}">{{ item.icon |> phosphor("duotone") }} {{ item.title }}</a></h3>
+  <h3 class="f6 f5 fw4 mt2 black-60">{{ item.subtitle }}</h3>
 </article>
+{{ /for }}
+</section>
 <div class="cf pa3 mw9 center"><!-- Needed to balance footer spacing --></div>
 
 <!-- ===== END LAYOUT: HOME ===== -->
