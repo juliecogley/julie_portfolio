@@ -41,3 +41,9 @@ site:
   authorlnen: "Cogley"
   description: "This portfolio site contains Julie Cogley's biographical information and a showcase of her works."
   navbgcolor: "white"
+footer:
+  links:
+    - title: "Instagram"
+      url: "https://www.instagram.com/kt2sygr"
+      icon: "instagram-logo"
+      hovercolor: "green"

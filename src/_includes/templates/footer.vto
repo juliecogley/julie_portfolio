@@ -4,15 +4,16 @@
   <div class="w-100 ph3 pv5">
     <span class="black-60"><small>&copy;<span id="copyright-year"></span> {{ site.authoren }}, juo00oc@gmail.com<br>
     </small></span>
-    <a
-      rel="me"
-      class="link black-90 bg-transparent hover-green inline-flex items-center ma2 tc br2 pa2"
-      href="https://www.instagram.com/kt2sygr"
-      title="Instagram"
-      target="_blank"
-    >{{ "instagram-logo" |> phosphor("duotone") }}
-      <span class="f6 ml3 pr2 display-300">Instagram</span>
-    </a>
+    {{ for item of footer.links }}
+      <a
+        rel="me"
+        class="link black-90 bg-transparent hover-{{ item.hovercolor }} inline-flex items-center ma2 tc br2 pa2"
+        href="{{ item.url }}"
+        title="{{ item.title }}"
+      >{{ item.icon |> phosphor("duotone") }}
+        <span class="f6 ml3 pr2 display-300">{{ item.title }}</span>
+      </a>
+    {{ /for }}
   </div>
   <script>
     document.getElementById('copyright-year').textContent = new Date().getFullYear();
