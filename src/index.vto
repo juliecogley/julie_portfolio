@@ -15,7 +15,7 @@ priority: 0.9
     class="db bg-center cover aspect-ratio--object" />
   </div></a>
   <h3 class="f5 f4-ns gray ma2"><a href="{{ item.url }}" class="db bg-transparent link gray hover-{{ item.hovercolor }}">{{ item.icon |> phosphor("duotone") }} {{ item.title }}</a></h3>
-  <p class="black-60 ma2 pl1">{{ item.subtitle }}</p>
+  {{# <p class="black-60 ma2 pl1">{{ item.subtitle }}</p> #}}
 </article>
 {{ /for }}
 </section>
