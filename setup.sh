@@ -1,4 +1,4 @@
-# setup.sh to be auto-run from devcontainer.json on codespace creation
+# setup.sh to be auto-run from devcontainer.json via postCreateCommand on codespace creation
 echo "= ADD PATHS and INITS to .bashrc ="
 echo 'export PATH="/home/node/.deno/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(starship init bash)"' >> ~/.bashrc
