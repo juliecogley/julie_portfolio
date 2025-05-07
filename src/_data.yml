@@ -63,7 +63,7 @@ home:
       hovercolor: "dark-green"
       image: "/assets/top-flyerdesign.png"
       imagealt: "フライヤーデザイン 画像 by Julie Cogley"
-      - title: "Logo Design"
+    - title: "Logo Design"
       subtitle: "ロゴの作品集"
       url: "/showcase/group3"
       icon: "palette"
