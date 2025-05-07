@@ -1,21 +1,21 @@
 ---
 layout: layouts/base.vto
-indextitle: "Logo Design"
-indeximage: /assets/top-logodesign.png
+indextitle: "Illustration"
+indeximage: /assets/top-illustration.jpg
 category: GROUP
 date: Git Last Modified
-description: "Group index page of the site, showing a list of logo design works with a link to a bio page."
+description: "Group index page of the site, showing a list of illustration works with a link to a bio page."
 priority: 0.9
 metas:
-  title: "Logo Design"
-  description: "Group index page of the site, showing a list of logo design works with a link to a bio page."
-  image: /assets/top-logodesign.png
+  title: "Illustration"
+  description: "Group index page of the site, showing a list of illustration works with a link to a bio page."
+  image: /assets/top-illustration.jpg
 ---
 <!-- ===== START LAYOUT: HOME ===== -->
 
 <article class="fl w-100 bg-white">
 <h1 class="pl4 text-100">{{ indextitle }}</h1>
-{{ for item of search.pages(`type=showcase Logo Design`, "order=asc") }}
+{{ for item of search.pages(`type=showcase illustration`, "order=asc") }}
 <div class="fl w-100 w-50-m w-25-l pa4">
   {{ if !item.hidelink }}<a href="{{ item.url }}" target="_blank">{{ /if }}
     <div class="aspect-ratio aspect-ratio--1x1 shadow-1 br4">
