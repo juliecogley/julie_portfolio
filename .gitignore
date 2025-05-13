@@ -40,12 +40,15 @@ build/Release
 # Build directories
 dist
 bundle
+_bin
 
 # Node Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
 npm-debug.log
 bundle/
+yarn.lock
+package-lock.json
 
 # Mac File System File...utterly useless to anyone but me.
 .DS_Store
@@ -57,3 +60,9 @@ bundle/
 # Lume
 _site
 _cache
+deno.lock
+errors.log
+_seo_report_en.json
+_seo_report_ja.json
+errors.log
+src/_data/*.json

@@ -23,6 +23,7 @@ import phosphor from "https://deno.land/x/lume_icon_plugins@v0.2.4/phosphor.ts";
 import picture from "lume/plugins/picture.ts";
 import transformImages from "lume/plugins/transform_images.ts";
 import brotli from "lume/plugins/brotli.ts";
+import cssBanner from "https://raw.githubusercontent.com/RickCogley/hibana/refs/heads/main/plugins/css_banner.ts?3";
 
 const site = lume(
   {
@@ -31,6 +32,16 @@ const site = lume(
   },
 );
 
+// Load first, order does not matter
+site.use(attributes());
+site.use(date({ locales: { enUS, ja } }));
+site.use(metas());
+site.use(nav());
+site.use(pagefind());
+site.use(filter_pages());
+site.use(robots());
+
+// CSS and JS source maps
 site.use(googleFonts({
   subsets: ["latin", "latin-ext","[2]","[3]","[4]","[5]","[6]","[7]","[8]","[9]","[10]","[11]","[12]","[13]","[14]","[15]","[16]","[17]","[18]","[19]","[20]","[21]","[22]","[23]","[24]","[25]","[26]","[27]","[28]","[29]","[30]","[31]","[32]","[33]","[34]","[35]","[36]","[37]","[38]","[39]","[40]","[41]","[42]","[43]","[44]","[45]","[46]","[47]","[48]","[49]","[50]","[51]","[52]","[53]","[54]","[55]","[56]","[57]","[58]","[59]","[60]","[61]","[62]","[63]","[64]","[65]","[66]","[67]","[68]","[69]","[70]","[71]","[72]","[73]","[74]","[75]","[76]","[77]","[78]","[79]","[80]","[81]","[82]","[83]","[84]","[85]","[86]","[87]","[88]","[89]","[90]","[91]","[92]","[93]","[94]","[95]","[96]","[97]","[98]","[99]","[100]","[101]","[102]","[103]","[104]","[105]","[106]","[107]","[108]","[109]","[110]","[111]","[112]","[113]","[114]","[115]","[116]","[117]","[118]","[119]"],
   cssFile: "styles.css",
@@ -42,19 +53,42 @@ site.use(googleFonts({
       "https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap",
   },
 }));
-site.use(attributes());
-site.use(base_path());
-site.use(date({ locales: { enUS, ja } }));
-// site.use(favicon());
-site.use(feed());
-site.use(filter_pages());
-site.use(inline());
+site.use(source_maps());
 site.use(lightningcss());
-site.use(metas());
-// site.use(minify_html());
-site.use(nav());
-site.use(pagefind());
-site.use(robots());
+site.use(terser());
+
+// Modify urls
+site.use(base_path());
+
+// Images
+// site.use(favicon());
+site.use(picture(/* Options */));
+site.use(transformImages({
+  cache: true, // Toggle cache
+  matches: /\.(jpg|jpeg|png|webp)$/i, // This regex matches only image files
+}));
+
+// Markdown
+// site.use(title());
+// site.use(toc());
+// site.use(image());
+// site.use(footnotes());
+// site.hooks.addMarkdownItPlugin(alert);
+
+// Utils
+site.use(cssBanner({
+  message: "===juliecogley - css jokes are always in style===",
+}));
+// site.use(shuffle());
+
+// Assets in HTML
+// site.use(icons());
+site.use(phosphor());
+site.use(inline());
+site.use(sri());
+
+// Generate files with URLs
+site.use(feed());
 site.use(sitemap({
   // query: "external_link=undefined",
   lastmod: "lastmod",
@@ -62,22 +96,16 @@ site.use(sitemap({
   filename: "sitemap.xml",
   sort: "lastmod=desc",
 }));
-site.use(source_maps());
-site.use(sri());
-site.use(terser());
-site.use(phosphor());
-site.use(picture(/* Options */));
-site.use(transformImages({
-  cache: true, // Toggle cache
-  matches: /\.(jpg|jpeg|png|webp)$/i, // This regex matches only image files
-}));
+
+// Optimize HTML
+// site.use(minify_html());
 site.use(brotli());
 
 //site.copy("assets", "assets");
 site.copy("static/portfolio", "portfolio");
 site.copy("_data/jp_holidays.json", "jp_holidays.json");
 //site.copy([".gif",".pdf",".docx",".pptx",".xlsx",".zip",".svg"]);
-site.copyRemainingFiles();
+site.add("assets");
 
 // Create zip and tree scripts
 site.script(
